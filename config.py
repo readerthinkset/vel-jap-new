@@ -1,4 +1,4 @@
-﻿"""
+"""
 Velocity Japanese Video Generator - Configuration (V3 Visual Masterpiece)
 """
 import os
@@ -28,7 +28,7 @@ CTA_TEXT = "Visit velocityjapanese.com • Follow for Daily Lessons!"
 FOOTER_TAG = "@VelocityJapanese"
 
 # AI Configuration (Pollinations)
-POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY") or "sk_K98O2j1UlpALX9TBAoAuEdqxL1hpB7zh"
+POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY")
 POLLINATIONS_ENDPOINT = "https://gen.pollinations.ai/v1/chat/completions"
 AI_MODEL = os.getenv("AI_MODEL") or "openai"
 

@@ -1,4 +1,4 @@
-﻿# 🌸 Velocity Japanese - Automated Daily Video Generator & Social Media Publisher
+# 🌸 Velocity Japanese - Automated Daily Video Generator & Social Media Publisher
 
 Automated video production and publishing engine for **Velocity Japanese** ([velocityjapanese.com](https://velocityjapanese.com)).
 
@@ -76,6 +76,7 @@ python main.py --topic "Ordering at Tokyo Ramen Shops"
 ## 🔑 GitHub Actions Secrets Setup
 
 To enable automated daily publishing on GitHub Actions, add these repository secrets:
-- `POLLINATIONS_API_KEY`: Your Pollinations AI Key (`sk_K98...`)
-- `META_ACCESS_TOKEN`: Long-lived Meta User Access Token
+- `POLLINATIONS_API_KEY`: Your Pollinations AI API Key
+- `FB_PAGE_ACCESS_TOKEN`: Velocity Japanese Page Access Token (recommended)
+- `META_ACCESS_TOKEN`: Long-lived Meta User Access Token (fallback)
 - `FB_PAGE_ID`: `1048385991689324` (Velocity Japanese)
