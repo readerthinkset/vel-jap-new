@@ -2,7 +2,8 @@ name: Velocity Japanese - Daily Auto Video & Publisher
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Runs daily at 06:00 UTC (15:00 JST Tokyo time)
+    - cron: '0 4 * * *'   # 1st daily post: 04:00 UTC (13:00 JST / 21:00 PDT)
+    - cron: '0 16 * * *'  # 2nd daily post: 16:00 UTC (01:00 JST / 09:00 PDT)
   workflow_dispatch:     # Allows manual 1-click trigger in GitHub Actions UI
 
 permissions:
