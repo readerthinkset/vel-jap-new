@@ -33,7 +33,8 @@ from config import (
     WEBSITE_URL,
     TAGLINE,
     CTA_TEXT,
-    FOOTER_TAG
+    FOOTER_TAG,
+    POLLINATIONS_API_KEY
 )
 
 # Ensure UTF-8 output
@@ -123,8 +124,12 @@ def fetch_scenario_background(prompt: str, cache_path: Path, width: int = VERTIC
     fetch_h = 1280 if width < height else 720
     url = f"https://image.pollinations.ai/prompt/{encoded}?width={fetch_w}&height={fetch_h}&nologo=true"
     
+    headers = {"User-Agent": "VelocityJapaneseBot/1.0"}
+    if POLLINATIONS_API_KEY:
+        headers["Authorization"] = f"Bearer {POLLINATIONS_API_KEY}"
+        
     try:
-        r = requests.get(url, timeout=25)
+        r = requests.get(url, headers=headers, timeout=25)
         if r.status_code == 200:
             cache_path.parent.mkdir(parents=True, exist_ok=True)
             with open(cache_path, "wb") as f:
