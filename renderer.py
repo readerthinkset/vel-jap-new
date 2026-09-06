@@ -34,7 +34,8 @@ from config import (
     TAGLINE,
     CTA_TEXT,
     FOOTER_TAG,
-    POLLINATIONS_API_KEY
+    POLLINATIONS_API_KEY,
+    IMAGE_MODEL
 )
 
 # Ensure UTF-8 output
@@ -122,7 +123,7 @@ def fetch_scenario_background(prompt: str, cache_path: Path, width: int = VERTIC
     # Fetch 720x1280 and scale up to 1080x1920
     fetch_w = 720 if width < height else 1280
     fetch_h = 1280 if width < height else 720
-    url = f"https://image.pollinations.ai/prompt/{encoded}?width={fetch_w}&height={fetch_h}&nologo=true"
+    url = f"https://image.pollinations.ai/prompt/{encoded}?width={fetch_w}&height={fetch_h}&nologo=true&model={IMAGE_MODEL}"
     
     headers = {"User-Agent": "VelocityJapaneseBot/1.0"}
     if POLLINATIONS_API_KEY:

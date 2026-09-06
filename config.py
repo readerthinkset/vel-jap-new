@@ -31,6 +31,7 @@ FOOTER_TAG = "@VelocityJapanese"
 POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY")
 POLLINATIONS_ENDPOINT = "https://gen.pollinations.ai/v1/chat/completions"
 AI_MODEL = os.getenv("AI_MODEL") or "openai"
+IMAGE_MODEL = os.getenv("IMAGE_MODEL") or "flux"
 
 # Audio Voices (edge-tts)
 VOICE_JA_FEMALE = "ja-JP-NanamiNeural"  # Clear, natural female Japanese
