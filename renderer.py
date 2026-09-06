@@ -1,4 +1,4 @@
-﻿"""
+"""
 Velocity Japanese - Visual Card & Graphic Renderer (V3 - Scenario Art & Website Branding)
 Renders high-contrast, visually stunning Japanese infographic cards with backdrop artwork.
 """
@@ -269,197 +269,345 @@ def render_item_frame(
     width: int = VERTICAL_WIDTH,
     height: int = VERTICAL_HEIGHT,
     progress: float = 0.0,
-    bg_img: Optional[Image.Image] = None
+    bg_img: Optional[Image.Image] = None,
+    category: Optional[str] = None
 ) -> Image.Image:
     """
-    Render flashcard with massive, clear typography and prominent example sentence.
-    Zero left/right cropping guaranteed.
+    Render high-retention Japanese flashcard with hero scenario artwork,
+    crisp Kanji typography, furigana readings, and structured example sentence.
     """
     is_vertical = height > width
-    img = create_base_canvas(width, height, bg_img)
-    draw = ImageDraw.Draw(img)
     
-    draw_header(img, draw, width, is_vertical=is_vertical)
-    
-    card_mx = 45 if is_vertical else 140
-    card_top = 155 if is_vertical else 120
-    card_bot = height - 135 if is_vertical else height - 95
-    
-    # Outer Main Card (Semi-transparent dark glass)
-    draw.rounded_rectangle([(card_mx, card_top), (width - card_mx, card_bot)], radius=24, fill=(18, 24, 38), outline=CARD_BORDER, width=2)
-    
-    # 1. Top Card Bar: Counter Badge & Category/Element
-    top_bar_y = card_top + 36
-    counter_str = f"WORD {index:02d} / {total:02d}"
-    draw.rounded_rectangle([(card_mx + 25, top_bar_y - 18), (card_mx + 185, top_bar_y + 18)], radius=12, fill=ACCENT_RED)
-    f_badge = get_font(18, bold=True)
-    draw.text((card_mx + 105, top_bar_y), counter_str, fill=WHITE, font=f_badge, anchor="mm")
-    
-    element_text = item.get("element", "")
-    if element_text:
-        f_elem = get_japanese_font(22, bold=True)
-        draw.text((width - card_mx - 35, top_bar_y), element_text, fill=ACCENT_GOLD, font=f_elem, anchor="rm")
+    # 1. Base Canvas with subtle ambient blur of the artwork
+    canvas = Image.new("RGB", (width, height), (10, 12, 20))
+    if bg_img:
+        backdrop = bg_img.resize((width, height), Image.Resampling.LANCZOS)
+        backdrop_blurred = backdrop.filter(ImageFilter.GaussianBlur(radius=25))
+        backdrop_dim = ImageEnhance.Brightness(backdrop_blurred).enhance(0.35)
+        canvas.paste(backdrop_dim, (0, 0))
         
-    div1_y = card_top + 72
-    draw.line([(card_mx + 20, div1_y), (width - card_mx - 20, div1_y)], fill=DARK_LINE, width=2)
-    
-    # 2. Main Kanji Character (EXTRA LARGE & CRISP)
-    kanji_text = item.get("kanji", "")
-    hiragana_text = item.get("hiragana", "")
-    romaji_text = item.get("romaji", "")
-    english_text = item.get("english", "")
-    
-    k_len = len(kanji_text)
-    if k_len <= 2:
-        k_size = 160 if is_vertical else 110
-    elif k_len <= 4:
-        k_size = 130 if is_vertical else 90
-    elif k_len <= 7:
-        k_size = 95 if is_vertical else 70
-    else:
-        k_size = 72 if is_vertical else 54
+    # Top and bottom dark vignettes for header/footer readability
+    vignette = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    vdraw = ImageDraw.Draw(vignette)
+    for y in range(160):
+        alpha = int(220 * (1 - y / 160))
+        vdraw.line([(0, y), (width, y)], fill=(8, 10, 16, alpha))
+    for y in range(height - 140, height):
+        alpha = int(240 * ((y - (height - 140)) / 140))
+        vdraw.line([(0, y), (width, y)], fill=(8, 10, 16, alpha))
+    canvas.paste(vignette, (0, 0), vignette)
+
+    draw = ImageDraw.Draw(canvas)
+    draw_header(canvas, draw, width, is_vertical=is_vertical)
+
+    cat_label = (category or item.get("category") or item.get("element") or "JAPANESE").upper()
+
+    if is_vertical:
+        # === VERTICAL 9:16 (Shorts / Reels / TikTok) ===
+        art_mx = 45
+        art_top = 135
+        art_h = 520
+        art_w = width - (art_mx * 2)
+        art_bot = art_top + art_h
         
-    f_kanji = get_japanese_font(k_size, bold=True)
-    kanji_y = card_top + (215 if is_vertical else 155)
-    
-    # Kanji Shadow & Main Text
-    draw.text((width // 2 + 3, kanji_y + 4), kanji_text, fill=(8, 12, 18), font=f_kanji, anchor="mm")
-    draw.text((width // 2, kanji_y), kanji_text, fill=WHITE, font=f_kanji, anchor="mm")
-    
-    # 3. Hiragana / Furigana Reading
-    if hiragana_text and hiragana_text != kanji_text:
-        f_hira = get_japanese_font(44 if is_vertical else 32, bold=True)
-        hira_y = kanji_y + (k_size // 2) + 38
+        # 1. Hero Artwork Display
+        if bg_img:
+            bw, bh = bg_img.size
+            target_ratio = art_w / art_h
+            current_ratio = bw / bh
+            if current_ratio > target_ratio:
+                new_w = int(bh * target_ratio)
+                crop_x = (bw - new_w) // 2
+                cropped_art = bg_img.crop((crop_x, 0, crop_x + new_w, bh))
+            else:
+                new_h = int(bw / target_ratio)
+                crop_y = max(0, min(bh - new_h, int((bh - new_h) * 0.4)))
+                cropped_art = bg_img.crop((0, crop_y, bw, crop_y + new_h))
+                
+            cropped_art = cropped_art.resize((art_w, art_h), Image.Resampling.LANCZOS)
+            
+            mask = Image.new("L", (art_w, art_h), 0)
+            mdraw = ImageDraw.Draw(mask)
+            mdraw.rounded_rectangle([(0, 0), (art_w, art_h)], radius=26, fill=255)
+            canvas.paste(cropped_art, (art_mx, art_top), mask)
+            
+            # Subtle gradient overlay
+            art_overlay = Image.new("RGBA", (art_w, art_h), (0, 0, 0, 0))
+            adraw = ImageDraw.Draw(art_overlay)
+            for y in range(art_h - 120, art_h):
+                a = int(180 * ((y - (art_h - 120)) / 120))
+                adraw.line([(0, y), (art_w, y)], fill=(10, 14, 24, a))
+            for y in range(0, 70):
+                a = int(130 * (1 - y / 70))
+                adraw.line([(0, y), (art_w, y)], fill=(10, 14, 24, a))
+            canvas.paste(art_overlay, (art_mx, art_top), art_overlay)
+            
+            draw.rounded_rectangle([(art_mx, art_top), (width - art_mx, art_bot)], radius=26, outline=(255, 75, 100), width=3)
+            
+        # Category Tag Pill (Top Left)
+        f_badge_cat = get_font(18, bold=True)
+        c_bbox = draw.textbbox((0, 0), cat_label, font=f_badge_cat)
+        cw = max(160, (c_bbox[2] - c_bbox[0]) + 36)
+        draw.rounded_rectangle([(art_mx + 20, art_top + 20), (art_mx + 20 + cw, art_top + 60)], radius=14, fill=(12, 16, 26, 230), outline=(70, 180, 255), width=2)
+        draw.text((art_mx + 20 + cw // 2, art_top + 40), cat_label, fill=ACCENT_CYAN, font=f_badge_cat, anchor="mm")
+        
+        # Counter Badge Pill (Top Right)
+        counter_str = f"WORD {index:02d} / {total:02d}"
+        f_badge_cnt = get_font(18, bold=True)
+        cnt_w = 170
+        draw.rounded_rectangle([(width - art_mx - 20 - cnt_w, art_top + 20), (width - art_mx - 20, art_top + 60)], radius=14, fill=(255, 60, 85, 230))
+        draw.text((width - art_mx - 20 - cnt_w // 2, art_top + 40), counter_str, fill=WHITE, font=f_badge_cnt, anchor="mm")
+
+        # 2. Vocabulary Card (Middle Section)
+        card_mx = 45
+        card_top = 680
+        card_h = 510
+        card_bot = card_top + card_h
+        
+        glass_card = Image.new("RGBA", (width - card_mx * 2, card_h), (16, 22, 34, 235))
+        gdraw = ImageDraw.Draw(glass_card)
+        gdraw.rounded_rectangle([(0, 0), (width - card_mx * 2, card_h)], radius=26, outline=(65, 80, 110), width=2)
+        canvas.paste(glass_card, (card_mx, card_top), glass_card)
+        draw.line([(card_mx + 80, card_top + 2), (width - card_mx - 80, card_top + 2)], fill=ACCENT_RED, width=3)
+        
+        kanji_text = item.get("kanji", "")
+        hiragana_text = item.get("hiragana", "")
+        romaji_text = item.get("romaji", "")
+        english_text = item.get("english", "").upper()
+        
+        k_len = len(kanji_text)
+        k_size = 150 if k_len <= 2 else (120 if k_len <= 4 else 90)
+        f_kanji = get_japanese_font(k_size, bold=True)
+        kanji_y = card_top + 120
+        
+        # Kanji Glow Shadow
+        for dx, dy in [(-2, 0), (2, 0), (0, -2), (0, 2), (-3, 3), (3, 3)]:
+            draw.text((width // 2 + dx, kanji_y + dy), kanji_text, fill=(255, 60, 85, 100), font=f_kanji, anchor="mm")
+        draw.text((width // 2, kanji_y), kanji_text, fill=WHITE, font=f_kanji, anchor="mm")
+        
+        f_hira = get_japanese_font(46, bold=True)
+        hira_y = kanji_y + (k_size // 2) + 40
         draw.text((width // 2, hira_y), f"【 {hiragana_text} 】", fill=ACCENT_SAKURA, font=f_hira, anchor="mm")
-        romaji_y = hira_y + 54
-    else:
-        romaji_y = kanji_y + (k_size // 2) + 38
         
-    # 4. Romaji Pronunciation
-    if romaji_text:
-        f_romaji = get_font(36 if is_vertical else 26, italic=True)
-        draw.text((width // 2, romaji_y), romaji_text, fill=TEXT_MUTED, font=f_romaji, anchor="mm")
-        eng_pill_top = romaji_y + 46
-    else:
-        eng_pill_top = romaji_y + 24
+        f_rom = get_font(34, italic=True)
+        rom_y = hira_y + 52
+        draw.text((width // 2, rom_y), romaji_text, fill=TEXT_MUTED, font=f_rom, anchor="mm")
         
-    # 5. English Translation Badge
-    f_eng = get_font(48 if is_vertical else 36, bold=True)
-    eng_bbox = draw.textbbox((0, 0), english_text, font=f_eng)
-    eng_w = max(420, (eng_bbox[2] - eng_bbox[0]) + 90)
-    eng_h = 86 if is_vertical else 64
-    eng_x1 = width // 2 - eng_w // 2
-    eng_y1 = eng_pill_top + 10
-    
-    draw.rounded_rectangle([(eng_x1, eng_y1), (eng_x1 + eng_w, eng_y1 + eng_h)], radius=20, fill=(30, 38, 56), outline=ACCENT_GOLD, width=3)
-    draw.text((width // 2, eng_y1 + eng_h // 2), english_text, fill=ACCENT_GOLD, font=f_eng, anchor="mm")
-    
-    # 6. Example Sentence Box (PROMINENT, NO OVERFLOW)
-    example_ja = item.get("example_ja", "")
-    example_romaji = item.get("example_romaji", "")
-    example_en = item.get("example_en", "")
-    
-    if example_ja:
-        ex_box_y = eng_y1 + eng_h + (45 if is_vertical else 30)
-        ex_box_h = card_bot - ex_box_y - 25
+        f_eng = get_font(44, bold=True)
+        eng_bbox = draw.textbbox((0, 0), english_text, font=f_eng)
+        eng_w = max(440, (eng_bbox[2] - eng_bbox[0]) + 100)
+        eng_h = 76
+        eng_x1 = width // 2 - eng_w // 2
+        eng_y1 = rom_y + 36
+        draw.rounded_rectangle([(eng_x1 - 2, eng_y1 - 2), (eng_x1 + eng_w + 2, eng_y1 + eng_h + 2)], radius=20, fill=(255, 204, 0, 60))
+        draw.rounded_rectangle([(eng_x1, eng_y1), (eng_x1 + eng_w, eng_y1 + eng_h)], radius=18, fill=(28, 22, 10), outline=ACCENT_GOLD, width=3)
+        draw.text((width // 2, eng_y1 + eng_h // 2), english_text, fill=ACCENT_GOLD, font=f_eng, anchor="mm")
+
+        # 3. Practical Example Sentence Card (Bottom Section)
+        ex_top = 1215
+        ex_h = 565
+        glass_ex = Image.new("RGBA", (width - card_mx * 2, ex_h), (12, 17, 27, 240))
+        gex_draw = ImageDraw.Draw(glass_ex)
+        gex_draw.rounded_rectangle([(0, 0), (width - card_mx * 2, ex_h)], radius=26, outline=(55, 70, 100), width=2)
+        canvas.paste(glass_ex, (card_mx, ex_top), glass_ex)
         
-        # Deep glass container
-        draw.rounded_rectangle([(card_mx + 20, ex_box_y), (width - card_mx - 20, ex_box_y + ex_box_h)], radius=22, fill=(12, 16, 26), outline=(55, 68, 92), width=2)
+        tag_str = "例文 • PRACTICAL EXAMPLE"
+        f_tag = get_japanese_font(18, bold=True)
+        t_bbox = draw.textbbox((0, 0), tag_str, font=f_tag)
+        t_w = (t_bbox[2] - t_bbox[0]) + 36
+        draw.rounded_rectangle([(card_mx + 25, ex_top + 20), (card_mx + 25 + t_w, ex_top + 62)], radius=14, fill=(22, 32, 48), outline=(70, 180, 255), width=1)
+        draw.text((card_mx + 25 + t_w // 2, ex_top + 41), tag_str, fill=ACCENT_CYAN, font=f_tag, anchor="mm")
         
-        # Example Tag Pill
-        f_ex_tag = get_japanese_font(20, bold=True)
-        draw.rounded_rectangle([(card_mx + 45, ex_box_y + 20), (card_mx + 225, ex_box_y + 60)], radius=14, fill=(35, 46, 68))
-        draw.text((card_mx + 135, ex_box_y + 40), "例文 • EXAMPLE", fill=ACCENT_CYAN, font=f_ex_tag, anchor="mm")
+        max_w = width - (card_mx + 45) * 2
+        example_ja = item.get("example_ja", "")
+        example_romaji = item.get("example_romaji", "")
+        example_en = item.get("example_en", "")
         
-        # Safe usable width inside example box (ensures generous 90px left/right margins)
-        safe_box_w = width - (card_mx + 20) * 2 - 80
+        f_ex_ja = get_japanese_font(48, bold=True)
+        ja_lines = wrap_japanese_text(draw, example_ja, f_ex_ja, max_w=max_w)
         
-        f_ex_ja = get_japanese_font(52 if is_vertical else 36, bold=True)
-        ja_lines = wrap_japanese_text(draw, example_ja, f_ex_ja, max_w=safe_box_w)
+        f_ex_rom = get_font(32, italic=True)
+        rom_lines = wrap_english_text(draw, example_romaji, f_ex_rom, max_w=max_w) if example_romaji else []
         
-        f_ex_rom = get_font(36 if is_vertical else 26, italic=True)
-        rom_lines = wrap_english_text(draw, example_romaji, f_ex_rom, max_w=safe_box_w) if example_romaji else []
+        f_ex_en = get_font(38, bold=True)
+        en_lines = wrap_english_text(draw, f'"{example_en}"', f_ex_en, max_w=max_w) if example_en else []
         
-        f_ex_en = get_font(42 if is_vertical else 30, bold=True)
-        en_lines = wrap_english_text(draw, f'"{example_en}"', f_ex_en, max_w=safe_box_w) if example_en else []
+        total_text_h = (len(ja_lines) * 64) + (len(rom_lines) * 44) + (len(en_lines) * 52) + 60
+        start_y = ex_top + 80 + max(20, (ex_h - 100 - total_text_h) // 2)
         
-        line_h_ja = 70 if is_vertical else 48
-        line_h_rom = 50 if is_vertical else 34
-        line_h_en = 56 if is_vertical else 40
-        gap = 30 if is_vertical else 18
-        
-        curr_y = ex_box_y + (130 if is_vertical else 85)
-        
-        # Render Japanese Example
+        curr_y = start_y
         for jl in ja_lines:
             draw.text((width // 2, curr_y), jl, fill=WHITE, font=f_ex_ja, anchor="mm")
-            curr_y += line_h_ja
-            
-        # Render Romaji Example
-        if rom_lines:
-            curr_y += gap - (line_h_ja // 2) + (line_h_rom // 2)
-            for rl in rom_lines:
-                draw.text((width // 2, curr_y), rl, fill=TEXT_MUTED, font=f_ex_rom, anchor="mm")
-                curr_y += line_h_rom
-                
-        # Render English Translation
-        if en_lines:
-            curr_y += gap - (line_h_rom // 2) + (line_h_en // 2)
-            for el in en_lines:
-                draw.text((width // 2, curr_y), el, fill=TEXT_EXAMPLE_EN, font=f_ex_en, anchor="mm")
-                curr_y += line_h_en
-    
-    draw_footer(draw, width, height, progress=progress, is_vertical=is_vertical)
-    return img
+            curr_y += 64
+        curr_y += 12
+        for rl in rom_lines:
+            draw.text((width // 2, curr_y), rl, fill=TEXT_MUTED, font=f_ex_rom, anchor="mm")
+            curr_y += 44
+        curr_y += 16
+        for el in en_lines:
+            draw.text((width // 2, curr_y), el, fill=TEXT_EXAMPLE_EN, font=f_ex_en, anchor="mm")
+            curr_y += 52
 
-def render_outro_frame(title: str, width: int = VERTICAL_WIDTH, height: int = VERTICAL_HEIGHT, progress: float = 1.0, bg_img: Optional[Image.Image] = None) -> Image.Image:
-    """Render the concluding CTA card with official website URL."""
-    is_vertical = height > width
-    img = create_base_canvas(width, height, bg_img)
-    draw = ImageDraw.Draw(img)
-    
-    draw_header(img, draw, width, is_vertical=is_vertical)
-    
-    card_mx = 50 if is_vertical else 180
-    card_top = 160 if is_vertical else 120
-    card_bot = height - 140 if is_vertical else height - 100
-    
-    draw.rounded_rectangle([(card_mx, card_top), (width - card_mx, card_bot)], radius=24, fill=(18, 24, 38), outline=CARD_BORDER, width=2)
-    
-    f_cta_main = get_font(56 if is_vertical else 42, bold=True)
-    f_cta_sub = get_font(30 if is_vertical else 22, bold=False)
-    f_ja_bye = get_japanese_font(68 if is_vertical else 50, bold=True)
-    
-    center_box_y = card_top + (card_bot - card_top) // 2
-    
-    draw.text((width // 2, center_box_y - 280), "Great Job!", fill=ACCENT_GOLD, font=f_cta_main, anchor="mm")
-    draw.text((width // 2, center_box_y - 180), "お疲れ様でした！", fill=WHITE, font=f_ja_bye, anchor="mm")
-    draw.text((width // 2, center_box_y - 90), "You completed today's lesson!", fill=TEXT_MUTED, font=f_cta_sub, anchor="mm")
-    
-    # Follow & Website Box
-    box_y = center_box_y + 10
-    box_h = 270 if is_vertical else 180
-    draw.rounded_rectangle([(card_mx + 30, box_y), (width - card_mx - 30, box_y + box_h)], radius=24, fill=(12, 16, 26), outline=ACCENT_RED, width=3)
-    
-    f_brand_big = get_font(42 if is_vertical else 32, bold=True)
-    f_site_url = get_font(34 if is_vertical else 24, bold=True)
-    f_sub_gold = get_font(28 if is_vertical else 20, bold=False)
-    f_bye = get_japanese_font(30 if is_vertical else 22, bold=True)
-    
-    draw.text((width // 2, box_y + 50), "Follow Velocity Japanese", fill=WHITE, font=f_brand_big, anchor="mm")
-    # Website Link Pill
-    draw.rounded_rectangle([(width // 2 - 250, box_y + 88), (width // 2 + 250, box_y + 144)], radius=14, fill=ACCENT_RED)
-    draw.text((width // 2, box_y + 116), WEBSITE_URL, fill=WHITE, font=f_site_url, anchor="mm")
-    
-    draw.text((width // 2, box_y + 175), "Free Japanese Lessons & PDFs", fill=ACCENT_GOLD, font=f_sub_gold, anchor="mm")
-    draw.text((width // 2, box_y + 225), "また明日！ • See you tomorrow!", fill=TEXT_MUTED, font=f_bye, anchor="mm")
-    
+    else:
+        # === HORIZONTAL 16:9 (YouTube Desktop / Standard) ===
+        # Split screen: Left = Artwork Hero, Right = Vocab & Example Cards
+        left_w = int(width * 0.44)
+        right_w = width - left_w - 90
+        art_top = 120
+        art_h = height - 210
+        
+        if bg_img:
+            bw, bh = bg_img.size
+            crop_art = bg_img.resize((left_w, art_h), Image.Resampling.LANCZOS)
+            mask = Image.new("L", (left_w, art_h), 0)
+            mdraw = ImageDraw.Draw(mask)
+            mdraw.rounded_rectangle([(0, 0), (left_w, art_h)], radius=24, fill=255)
+            canvas.paste(crop_art, (45, art_top), mask)
+            draw.rounded_rectangle([(45, art_top), (45 + left_w, art_top + art_h)], radius=24, outline=(255, 75, 100), width=3)
+            
+        # Left side badge
+        f_badge_cnt = get_font(20, bold=True)
+        draw.rounded_rectangle([(65, art_top + 20), (240, art_top + 64)], radius=14, fill=(255, 60, 85, 230))
+        draw.text((152, art_top + 42), f"WORD {index:02d} / {total:02d}", fill=WHITE, font=f_badge_cnt, anchor="mm")
+        
+        # Right Side Vocab Card (Top)
+        rc_x = 45 + left_w + 30
+        vc_top = art_top
+        vc_h = int(art_h * 0.48)
+        draw.rounded_rectangle([(rc_x, vc_top), (rc_x + right_w, vc_top + vc_h)], radius=22, fill=(16, 22, 34, 235), outline=(65, 80, 110), width=2)
+        
+        kanji_text = item.get("kanji", "")
+        hiragana_text = item.get("hiragana", "")
+        english_text = item.get("english", "").upper()
+        
+        f_kanji = get_japanese_font(100, bold=True)
+        f_hira = get_japanese_font(36, bold=True)
+        f_eng = get_font(34, bold=True)
+        
+        mid_x = rc_x + right_w // 2
+        draw.text((mid_x, vc_top + 70), kanji_text, fill=WHITE, font=f_kanji, anchor="mm")
+        draw.text((mid_x, vc_top + 135), f"【 {hiragana_text} 】", fill=ACCENT_SAKURA, font=f_hira, anchor="mm")
+        draw.rounded_rectangle([(mid_x - 180, vc_top + 160), (mid_x + 180, vc_top + 210)], radius=14, fill=(28, 22, 10), outline=ACCENT_GOLD, width=2)
+        draw.text((mid_x, vc_top + 185), english_text, fill=ACCENT_GOLD, font=f_eng, anchor="mm")
+        
+        # Right Side Example Card (Bottom)
+        ec_top = vc_top + vc_h + 20
+        ec_h = art_h - vc_h - 20
+        draw.rounded_rectangle([(rc_x, ec_top), (rc_x + right_w, ec_top + ec_h)], radius=22, fill=(12, 17, 27, 240), outline=(55, 70, 100), width=2)
+        
+        example_ja = item.get("example_ja", "")
+        example_en = item.get("example_en", "")
+        f_ex_ja = get_japanese_font(34, bold=True)
+        f_ex_en = get_font(28, bold=True)
+        
+        draw.text((mid_x, ec_top + 55), example_ja, fill=WHITE, font=f_ex_ja, anchor="mm")
+        draw.text((mid_x, ec_top + 115), f'"{example_en}"', fill=TEXT_EXAMPLE_EN, font=f_ex_en, anchor="mm")
+
     draw_footer(draw, width, height, progress=progress, is_vertical=is_vertical)
-    return img
+    return canvas
+
+def render_outro_frame(
+    title: str,
+    width: int = VERTICAL_WIDTH,
+    height: int = VERTICAL_HEIGHT,
+    progress: float = 1.0,
+    bg_img: Optional[Image.Image] = None
+) -> Image.Image:
+    """Render the concluding CTA card with celebratory artwork and website sync."""
+    is_vertical = height > width
+    
+    canvas = Image.new("RGB", (width, height), (10, 12, 20))
+    if bg_img:
+        backdrop = bg_img.resize((width, height), Image.Resampling.LANCZOS)
+        backdrop_blurred = backdrop.filter(ImageFilter.GaussianBlur(radius=25))
+        backdrop_dim = ImageEnhance.Brightness(backdrop_blurred).enhance(0.35)
+        canvas.paste(backdrop_dim, (0, 0))
+        
+    vignette = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    vdraw = ImageDraw.Draw(vignette)
+    for y in range(160):
+        alpha = int(220 * (1 - y / 160))
+        vdraw.line([(0, y), (width, y)], fill=(8, 10, 16, alpha))
+    for y in range(height - 140, height):
+        alpha = int(240 * ((y - (height - 140)) / 140))
+        vdraw.line([(0, y), (width, y)], fill=(8, 10, 16, alpha))
+    canvas.paste(vignette, (0, 0), vignette)
+
+    draw = ImageDraw.Draw(canvas)
+    draw_header(canvas, draw, width, is_vertical=is_vertical)
+
+    art_mx = 45 if is_vertical else 140
+    art_top = 135 if is_vertical else 120
+    art_h = 500 if is_vertical else 380
+    art_w = width - (art_mx * 2)
+    art_bot = art_top + art_h
+
+    # 1. Hero Artwork Display with Celebratory Badge
+    if bg_img:
+        bw, bh = bg_img.size
+        target_ratio = art_w / art_h
+        current_ratio = bw / bh
+        if current_ratio > target_ratio:
+            new_w = int(bh * target_ratio)
+            crop_x = (bw - new_w) // 2
+            cropped_art = bg_img.crop((crop_x, 0, crop_x + new_w, bh))
+        else:
+            new_h = int(bw / target_ratio)
+            crop_y = max(0, min(bh - new_h, int((bh - new_h) * 0.4)))
+            cropped_art = bg_img.crop((0, crop_y, bw, crop_y + new_h))
+            
+        cropped_art = cropped_art.resize((art_w, art_h), Image.Resampling.LANCZOS)
+        mask = Image.new("L", (art_w, art_h), 0)
+        mdraw = ImageDraw.Draw(mask)
+        mdraw.rounded_rectangle([(0, 0), (art_w, art_h)], radius=26, fill=255)
+        canvas.paste(cropped_art, (art_mx, art_top), mask)
+        draw.rounded_rectangle([(art_mx, art_top), (width - art_mx, art_bot)], radius=26, outline=ACCENT_GOLD, width=3)
+        
+    # Congratulations Banner Pill
+    f_badge = get_font(20, bold=True)
+    draw.rounded_rectangle([(width // 2 - 160, art_top + 20), (width // 2 + 160, art_top + 64)], radius=14, fill=(255, 60, 85, 230))
+    draw.text((width // 2, art_top + 42), "LESSON COMPLETE 🎉", fill=WHITE, font=f_badge, anchor="mm")
+
+    # 2. Main Outro Card
+    card_top = art_bot + 35
+    card_h = height - card_top - 140
+    glass_card = Image.new("RGBA", (width - art_mx * 2, card_h), (16, 22, 34, 235))
+    gdraw = ImageDraw.Draw(glass_card)
+    gdraw.rounded_rectangle([(0, 0), (width - art_mx * 2, card_h)], radius=26, outline=(65, 80, 110), width=2)
+    canvas.paste(glass_card, (art_mx, card_top), glass_card)
+
+    f_cta_main = get_font(54 if is_vertical else 42, bold=True)
+    f_ja_bye = get_japanese_font(64 if is_vertical else 48, bold=True)
+    f_sub = get_font(30 if is_vertical else 24, bold=False)
+
+    draw.text((width // 2, card_top + 80), "Great Job!", fill=ACCENT_GOLD, font=f_cta_main, anchor="mm")
+    draw.text((width // 2, card_top + 165), "お疲れ様でした！", fill=WHITE, font=f_ja_bye, anchor="mm")
+    draw.text((width // 2, card_top + 245), "You completed today's lesson!", fill=TEXT_MUTED, font=f_sub, anchor="mm")
+
+    # Website Link Box
+    box_y = card_top + 310
+    box_h = 240 if is_vertical else 180
+    draw.rounded_rectangle([(art_mx + 35, box_y), (width - art_mx - 35, box_y + box_h)], radius=22, fill=(12, 16, 26), outline=ACCENT_RED, width=3)
+    
+    f_brand_big = get_font(38 if is_vertical else 30, bold=True)
+    f_site_url = get_font(32 if is_vertical else 24, bold=True)
+    f_sub_gold = get_font(26 if is_vertical else 20, bold=False)
+    f_bye = get_japanese_font(28 if is_vertical else 22, bold=True)
+
+    draw.text((width // 2, box_y + 45), "Follow Velocity Japanese", fill=WHITE, font=f_brand_big, anchor="mm")
+    draw.rounded_rectangle([(width // 2 - 250, box_y + 82), (width // 2 + 250, box_y + 138)], radius=14, fill=ACCENT_RED)
+    draw.text((width // 2, box_y + 110), WEBSITE_URL, fill=WHITE, font=f_site_url, anchor="mm")
+    draw.text((width // 2, box_y + 165), "Free Japanese Lessons & PDFs", fill=ACCENT_GOLD, font=f_sub_gold, anchor="mm")
+    draw.text((width // 2, box_y + 208), "また明日！ • See you tomorrow!", fill=TEXT_MUTED, font=f_bye, anchor="mm")
+
+    draw_footer(draw, width, height, progress=progress, is_vertical=is_vertical)
+    return canvas
 
 def render_thumbnail(lesson: dict, width: int = VERTICAL_WIDTH, height: int = VERTICAL_HEIGHT, bg_img: Optional[Image.Image] = None) -> Image.Image:
     """Render eye-catching video thumbnail."""
     items = lesson.get("items", [])
+    cat = lesson.get("category", "Japanese")
     if items:
-        return render_item_frame(items[0], 1, len(items), width, height, progress=0.0, bg_img=bg_img)
+        return render_item_frame(items[0], 1, len(items), width, height, progress=0.0, bg_img=bg_img, category=cat)
     return render_outro_frame(lesson.get("title", "Japanese Lesson"), width, height, progress=0.0, bg_img=bg_img)
+

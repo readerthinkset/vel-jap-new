@@ -1,4 +1,4 @@
-﻿"""
+"""
 Velocity Japanese - Video Builder & Assembler (V3 - Scenario Art & Website Sync)
 Combines rendered scene cards and audio tracks into professional MP4 videos using FFmpeg.
 """
@@ -37,24 +37,50 @@ if sys.platform == "win32":
     except Exception:
         pass
 
-def assemble_scene_video(frame_img_path: Path, audio_path: Path, output_path: Path, fps: int = DEFAULT_FPS) -> Path:
-    """Combine a single image frame and its audio into an MP4 video clip."""
+def assemble_scene_video(frame_img_path: Path, audio_path: Path, output_path: Path, fps: int = DEFAULT_FPS, is_vertical: bool = True) -> Path:
+    """Combine a single image frame and its audio into an MP4 video clip with subtle cinematic motion."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    w = VERTICAL_WIDTH if is_vertical else HORIZONTAL_WIDTH
+    h = VERTICAL_HEIGHT if is_vertical else HORIZONTAL_HEIGHT
+    
+    # Subtle Ken Burns zoom effect (1.00 -> 1.04)
+    sw = int(w * 1.08)
+    sh = int(h * 1.08)
+    vf = f"scale={sw}x{sh},zoompan=z='min(zoom+0.0005,1.04)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={w}x{h}:fps={fps}"
+    
     cmd = [
         "ffmpeg", "-y",
         "-loop", "1",
-        "-framerate", str(fps),
         "-i", str(frame_img_path),
         "-i", str(audio_path),
+        "-vf", vf,
         "-c:v", "libx264",
-        "-tune", "stillimage",
+        "-preset", "veryfast",
         "-c:a", "aac",
         "-b:a", "192k",
         "-pix_fmt", "yuv420p",
         "-shortest",
         str(output_path)
     ]
-    subprocess.run(cmd, capture_output=True, check=True)
+    try:
+        subprocess.run(cmd, capture_output=True, check=True)
+    except Exception:
+        # Fallback to still image if complex filter has an issue on any environment
+        cmd_fallback = [
+            "ffmpeg", "-y",
+            "-loop", "1",
+            "-framerate", str(fps),
+            "-i", str(frame_img_path),
+            "-i", str(audio_path),
+            "-c:v", "libx264",
+            "-tune", "stillimage",
+            "-c:a", "aac",
+            "-b:a", "192k",
+            "-pix_fmt", "yuv420p",
+            "-shortest",
+            str(output_path)
+        ]
+        subprocess.run(cmd_fallback, capture_output=True, check=True)
     return output_path
 
 def build_full_video(
@@ -103,7 +129,8 @@ def build_full_video(
                 width=width,
                 height=height,
                 progress=progress,
-                bg_img=bg_img
+                bg_img=bg_img,
+                category=lesson.get("category")
             )
         elif scene_type == "outro":
             img = render_outro_frame(
@@ -121,11 +148,12 @@ def build_full_video(
                 width=width,
                 height=height,
                 progress=0.0,
-                bg_img=bg_img
+                bg_img=bg_img,
+                category=lesson.get("category")
             )
             
         img.save(frame_path, quality=96)
-        assemble_scene_video(frame_path, scene["audio_path"], clip_path)
+        assemble_scene_video(frame_path, scene["audio_path"], clip_path, is_vertical=is_vertical)
         scene_clip_paths.append(clip_path)
         
         elapsed_time += dur
