@@ -103,7 +103,36 @@
       "title": "JLPT N5 Must-Know Action Verbs in 30 Seconds",
       "category": "JLPT N5 & Kanji",
       "date": "2026-09-06 10:49:50"
+    },
+    {
+      "seed_topic": "Japanese Mascot (Yuru-chara) Culture Words",
+      "title": "ゆるキャラ文化語彙3選！",
+      "category": "Japanese Lesson",
+      "kanji": [
+        "ゆるキャラ",
+        "ゆるい",
+        "ご当地"
+      ],
+      "date": "2026-09-07 01:54:36"
     }
   ],
-  "last_updated": "2026-09-06 10:49:50"
+  "last_updated": "2026-09-07 01:54:36",
+  "used_seeds": [
+    "japanese mascot (yuru-chara) culture words",
+    "instant reactions in japanese! 3 must-know words",
+    "ラーメン注文！今日から使える3フレーズ",
+    "ゆるキャラ文化語彙3選！",
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "must-know jlpt n5 action verbs",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "tokyo subway in 30 seconds: 3 must-know phrases",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
+    "hit the spot: body parts for health (fast japanese!)"
+  ],
+  "all_taught_words": [
+    "ゆるキャラ",
+    "ゆるい",
+    "ご当地"
+  ]
 }

@@ -181,49 +181,110 @@ CURATED_TOPICS = [
     }
 ]
 
-# Categorized Massive Topic Bank for Forever-Run Automation
+# Categorized Massive Topic Bank for Forever-Run Automation (100+ Curated Topics)
 CATEGORIZED_TOPICS = {
-    "JLPT N5 & Kanji": [
+    "JLPT N5 & Core Kanji": [
         ("Must-Know JLPT N5 Action Verbs", "traditional japanese house tatami room morning anime art"),
         ("Core JLPT N5 Kanji: Nature & Elements", "kyoto bamboo forest green serene aesthetic anime art"),
         ("Core JLPT N5 Kanji: People & Relationships", "japanese family park picnic cherry blossoms anime art"),
         ("Core JLPT N5 Kanji: Time & Calendar", "japanese antique clock traditional room warm light anime art"),
-        ("Core JLPT N5 Kanji: Directions & Locations", "tokyo street crossing signposts sunset anime art")
+        ("Core JLPT N5 Kanji: Directions & Locations", "tokyo street crossing signposts sunset anime art"),
+        ("Core JLPT N5 Adjectives for Everyday Objects", "japanese traditional living room tea set sunny day anime art"),
+        ("Must-Know Japanese Opposites (Big/Small, Hot/Cold)", "kyoto traditional wooden street warm and cool tones anime art"),
+        ("Essential Japanese Movement Verbs (Go, Come, Return)", "tokyo commuter railway station sunny morning anime art"),
+        ("Expressing Ability with Potential Verbs in Japanese", "japanese high school rooftop blue sky clouds anime art"),
+        ("Japanese Numbers, Counters and Quantities", "japanese market stall cute goods organized aesthetic anime art"),
+        ("Basic Japanese Colors in Daily Life", "traditional japanese painting pigments colorful palette anime art"),
+        ("Days, Months, and Counting Time in Japanese", "tokyo desk calendar sakura blossom window view anime art"),
+        ("Essential Japanese Question Particles and Words", "tokyo university library wooden tables warm lamps anime art")
     ],
-    "Food & Dining": [
+    "Food & Dining Across Japan": [
         ("Ordering at a Japanese Ramen Restaurant", "cozy japanese ramen bar shop counter steam delicious anime art"),
         ("Essential Japanese Izakaya Phrases", "tokyo izakaya lanterns glowing cozy night atmosphere anime art"),
         ("Must-Know Japanese Street Food", "osaka dotonbori street food stalls festival lights anime art"),
         ("Words for Flavors & Tastes in Japan", "japanese matcha tea sweets traditional cafe aesthetic anime art"),
         ("Convenience Store (Konbini) Japanese", "japanese 7-eleven lawson illuminated night street anime art"),
-        ("Ordering Coffee at a Tokyo Cafe", "modern tokyo omotesando cafe wooden interior warm latte anime art")
+        ("Ordering Coffee at a Tokyo Cafe", "modern tokyo omotesando cafe wooden interior warm latte anime art"),
+        ("Sushi Restaurant Dining Etiquette & Ordering", "elegant ginza sushi bar wooden counter master chef anime art"),
+        ("Japanese Bakery Delights (Melonpan & Shokupan)", "cozy tokyo bakery morning golden fresh bread display anime art"),
+        ("Japanese Supermarket Shopping & Food Labels", "organized tokyo supermarket fresh bento grocery anime art"),
+        ("Dining at a Japanese Curry House", "steaming japanese katsu curry booth warm diner anime art"),
+        ("Traditional Japanese Tea Ceremony Vocabulary", "zen tea room tatami tatami garden green matcha bowl anime art"),
+        ("Japanese Yakitori & Skewer Bar Phrases", "smoky tokyo yakitori alley red paper lanterns anime art"),
+        ("Japanese Table Manners & Meal Etiquette Phrases", "traditional japanese dining table lacquer bowls steam anime art")
     ],
-    "Tokyo Travel & Transit": [
+    "Tokyo & Regional Travel & Transit": [
         ("Tokyo Train & Subway Essential Phrases", "tokyo shinjuku train platform sunset sky aesthetic anime art"),
         ("Asking for Directions in Tokyo", "tokyo shibuya crossing rainy night neon reflections anime art"),
         ("Airport & Hotel Check-in Phrases", "haneda airport modern terminal glass window airplane sunrise anime art"),
         ("Shopping in Akihabara & Tokyo", "akihabara electric town anime shops colorful lights anime art"),
         ("Taking a Taxi and Bus in Japan", "tokyo city night taxi street lights bokeh aesthetic anime art"),
-        ("Buying Tickets & Asking for Prices", "japanese train ticket vending machine clean aesthetic anime art")
+        ("Buying Tickets & Asking for Prices", "japanese train ticket vending machine clean aesthetic anime art"),
+        ("Riding the Shinkansen Bullet Train", "shinkansen bullet train passing mount fuji clear morning anime art"),
+        ("Staying at a Traditional Japanese Ryokan Inn", "hot spring ryokan wooden bath sliding shoji screens anime art"),
+        ("Navigating Japan's IC Cards (Suica & Pasmo)", "tokyo subway turnstile ticket gate commuters anime art"),
+        ("Visiting Ancient Temples and Shrines in Kyoto", "red fushimi inari torii gates path morning mist anime art"),
+        ("Sightseeing in Historic Asakusa and Sensoji", "asakusa sensoji temple thunder gate giant lantern anime art"),
+        ("Handling Lost Property (Wasuremono) in Japan", "tokyo station lost and found clean customer desk anime art"),
+        ("Emergency and Helpful Travel Phrases", "tokyo neighborhood police koban warm light night anime art")
     ],
     "Everyday Life & Routines": [
         ("Morning Routine Verbs in Japanese", "bright japanese bedroom morning sunlight balcony plants anime art"),
         ("Evening & Night Routine Japanese", "cozy japanese living room evening warm lamp tea anime art"),
         ("Japanese Weather & Four Seasons", "mount fuji snowy mountain winter wonderland anime aesthetic art"),
         ("Health & Body Parts in Japanese", "peaceful japanese zen garden cherry tree aesthetic anime art"),
-        ("Describing Clothes and Fashion", "tokyo harajuku stylish fashion boutique street anime art")
+        ("Describing Clothes and Fashion", "tokyo harajuku stylish fashion boutique street anime art"),
+        ("Household Chores and Cleaning in Japanese", "bright japanese kitchen tidy organized sunshine anime art"),
+        ("Visiting a Japanese Pharmacy & Medicine", "bright tokyo drugstore cosmetic pharmacy shelves anime art"),
+        ("Japanese Post Office & Mailing Letters", "japanese red mailbox post office neighborhood street anime art"),
+        ("Cooking and Kitchen Utensils in Japanese", "japanese home kitchen wooden cutting board miso soup anime art"),
+        ("Daily Fitness & Sports Vocabulary", "japanese riverside running trail joggers sunset anime art"),
+        ("Sleeping and Waking Up Expressions", "japanese futon tatami room gentle moonlight calm anime art"),
+        ("Home & Apartment Living Vocabulary", "cozy japanese apartment balcony overlooking city sunset anime art")
     ],
-    "Conversations & Expressions": [
+    "Conversations, Reactions & Natural Nuances": [
         ("Common Japanese Reaction Words", "japanese friends talking laughing rooftop sunset anime art"),
         ("Expressions of Gratitude & Apology", "traditional japanese bow greeting polite tatami room anime art"),
         ("How to Express Likes and Dislikes", "japanese anime cute room hobbies books music anime art"),
         ("Japanese Question Words (5Ws & 1H)", "tokyo library bookshelf warm lighting study aesthetic anime art"),
-        ("Natural Fillers & Conversation Starters", "tokyo evening riverside walking path lanterns anime art")
+        ("Natural Fillers & Conversation Starters", "tokyo evening riverside walking path lanterns anime art"),
+        ("Giving and Receiving Compliments in Japanese", "cheerful japanese friends cafe chat smiling warm anime art"),
+        ("Agreeing and Disagreeing Politely in Japanese", "japanese cozy meeting room window soft daylight anime art"),
+        ("Expressing Surprise and Amazement", "tokyo fireworks festival amazed friends looking up anime art"),
+        ("Saying Goodbye and Goodnight in Different Ways", "tokyo train station farewell wave dusk twilight anime art"),
+        ("How to Ask for Help or Favors in Japanese", "friendly japanese neighborhood walkway daytime anime art"),
+        ("Casual Japanese Slang for Close Friends", "tokyo youth hangout arcade game neon colorful anime art")
     ],
-    "Culture & Anime": [
+    "Anime, Manga & Japanese Pop Culture": [
+        ("Anime Slang Every Fan Should Know", "japanese manga workshop desk drawing anime art"),
+        ("Cute Japanese Animal Vocabulary", "nara deer park temple morning sun peaceful anime art"),
+        ("Gacha, Arcades & Claw Machine Phrases", "tokyo akihabara claw machine arcade colorful neon anime art"),
+        ("Manga and Comic Sound Effects (Onomatopoeia)", "artistic manga studio ink bottles manuscript paper anime art"),
+        ("Idol & J-Pop Concert Culture Phrases", "japanese concert arena glow sticks colorful light ocean anime art"),
+        ("Cosplay & Convention Terminology in Japan", "tokyo big sight convention hall lively crowd anime art"),
+        ("Karaoke Singing and Booking in Tokyo", "cozy private karaoke room neon disco mic screen anime art"),
+        ("Video Game and RPG Vocabulary in Japanese", "gamer setup cozy dark room glowing keyboard screens anime art"),
+        ("Japanese Mascot (Yuru-chara) Culture Words", "cute japanese mascot character festival stage sunny anime art")
+    ],
+    "Four Seasons, Nature & Festivals": [
         ("Japanese Festival (Matsuri) Words", "japanese summer festival fireworks yukata lanterns anime art"),
         ("Cherry Blossom (Sakura) Season Words", "cherry blossom petals falling river meguro tokyo anime art"),
-        ("Anime Slang Every Fan Should Know", "japanese manga workshop desk drawing anime art"),
-        ("Cute Japanese Animal Vocabulary", "nara deer park temple morning sun peaceful anime art")
+        ("Autumn Foliage (Momijigari) Japanese", "kyoto golden maple leaves red autumn temple garden anime art"),
+        ("Winter Snow and Hot Springs (Onsen) in Japan", "hokkaido snowy outdoor onsen steam pine trees anime art"),
+        ("Summer Tanabata Star Festival Phrases", "bamboo branches colorful paper wishes starry night anime art"),
+        ("New Year Celebrations (Oshogatsu) in Japan", "traditional japanese new year shrine visit sunrise anime art"),
+        ("Japanese Rain & Umbrella Season (Tsuyu)", "tokyo rainy street colorful umbrellas reflections anime art"),
+        ("Summer Vacation (Natsuyasumi) Countryside Words", "countryside japanese railway crossing summer clouds sky anime art"),
+        ("Moon Viewing Festival (Tsukimi) Words", "full moon night pampas grass dango skewers veranda anime art")
+    ],
+    "Emotions, Feelings & Social Courtesy": [
+        ("Expressing Joy and Happiness in Japanese", "japanese sunny park green grass laughing smiling anime art"),
+        ("Expressing Tiredness, Relief and Relaxation", "peaceful japanese engawa porch breezy afternoon tea anime art"),
+        ("Words for Encouragement (Ganbatte & More)", "japanese sports club track sunrise energetic anime art"),
+        ("Handling Difficult Situations with Calm (Shouganai)", "quiet tokyo street evening calm peaceful breeze anime art"),
+        ("Polite Japanese Business Greetings (Keigo Basics)", "modern tokyo office skyscraper glass windows suit anime art"),
+        ("Giving Gifts and Souvenirs (Omiyage) in Japan", "beautiful japanese gift box wrapping cloth furoshiki anime art"),
+        ("Expressing Hunger and Thirst Naturally", "tokyo bustling food market aroma steam appetizing anime art")
     ]
 }
+

@@ -284,9 +284,12 @@ def draw_footer(draw: ImageDraw.ImageDraw, width: int, height: int, progress: fl
     if fill_w > 0:
         draw.rectangle([(0, height - bar_height), (fill_w, height)], fill=ACCENT_RED)
 
+NO_LINE_START = set("、。，．・：；？！ヽヾゝゞ々ー）〕］｝〉》」』】’”?!)]},:;")
+
 def wrap_japanese_text(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max_w: int) -> List[str]:
     """
-    Wrap Japanese character-by-character so no text is EVER cropped on the left or right edges!
+    Wrap Japanese character-by-character with Kinsoku Shori (禁則処理)
+    to guarantee punctuation never begins a line alone and no text is cropped.
     """
     if not text:
         return []
@@ -298,12 +301,19 @@ def wrap_japanese_text(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.Fre
         if (bbox[2] - bbox[0]) <= max_w:
             cur_line = test
         else:
-            if cur_line:
-                lines.append(cur_line)
-            cur_line = ch
+            # If current character is punctuation prohibited at line start,
+            # pull the previous character down with it so it never sits alone.
+            if ch in NO_LINE_START and len(cur_line) > 1:
+                lines.append(cur_line[:-1])
+                cur_line = cur_line[-1] + ch
+            else:
+                if cur_line:
+                    lines.append(cur_line)
+                cur_line = ch
     if cur_line:
         lines.append(cur_line)
     return lines
+
 
 def wrap_english_text(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFont, max_w: int) -> List[str]:
     """Wrap English text word-by-word safely."""
