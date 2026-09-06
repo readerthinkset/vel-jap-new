@@ -39,6 +39,7 @@ jobs:
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
           AI_MODEL: ${{ secrets.AI_MODEL || 'openai' }}
+          IMAGE_MODEL: ${{ secrets.IMAGE_MODEL || 'flux' }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
