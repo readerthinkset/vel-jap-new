@@ -114,25 +114,41 @@
         "ご当地"
       ],
       "date": "2026-09-07 01:54:36"
+    },
+    {
+      "seed_topic": "Airport & Hotel Check-in Phrases",
+      "title": "空港からホテルまで即使える日本語3フレーズ",
+      "category": "Tokyo & Regional Travel & Transit",
+      "kanji": [
+        "チェックイン",
+        "パスポート",
+        "身分証明書"
+      ],
+      "date": "2026-09-06 20:29:11"
     }
   ],
-  "last_updated": "2026-09-07 01:54:36",
+  "last_updated": "2026-09-06 20:29:11",
   "used_seeds": [
+    "tokyo subway in 30 seconds: 3 must-know phrases",
     "japanese mascot (yuru-chara) culture words",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
     "instant reactions in japanese! 3 must-know words",
-    "ラーメン注文！今日から使える3フレーズ",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "airport & hotel check-in phrases",
     "ゆるキャラ文化語彙3選！",
     "jlpt n5 action verbs (3 must-knows)⚡️",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "must-know jlpt n5 action verbs",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "tokyo subway in 30 seconds: 3 must-know phrases",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "hit the spot: body parts for health (fast japanese!)"
+    "ラーメン注文！今日から使える3フレーズ",
+    "hit the spot: body parts for health (fast japanese!)",
+    "空港からホテルまで即使える日本語3フレーズ",
+    "must-know jlpt n5 action verbs"
   ],
   "all_taught_words": [
     "ゆるキャラ",
     "ゆるい",
-    "ご当地"
+    "ご当地",
+    "チェックイン",
+    "パスポート",
+    "身分証明書"
   ]
 }
