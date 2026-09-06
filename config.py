@@ -30,7 +30,7 @@ FOOTER_TAG = "@VelocityJapanese"
 # AI Configuration (Pollinations)
 POLLINATIONS_API_KEY = os.getenv("POLLINATIONS_API_KEY")
 POLLINATIONS_ENDPOINT = "https://gen.pollinations.ai/v1/chat/completions"
-AI_MODEL = os.getenv("AI_MODEL") or "openai"
+AI_MODEL = os.getenv("AI_MODEL") or "gemini-fast"
 IMAGE_MODEL = os.getenv("IMAGE_MODEL") or "flux"
 
 # Audio Voices (edge-tts)

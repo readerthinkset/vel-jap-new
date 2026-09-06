@@ -38,7 +38,7 @@ jobs:
       - name: Generate & Publish Daily Japanese Short
         env:
           POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
-          AI_MODEL: ${{ secrets.AI_MODEL || 'openai' }}
+          AI_MODEL: ${{ secrets.AI_MODEL || 'gemini-fast' }}
           IMAGE_MODEL: ${{ secrets.IMAGE_MODEL || 'flux' }}
           FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}

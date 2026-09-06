@@ -231,13 +231,13 @@ Return ONLY strictly valid raw JSON format matching this exact schema (no markdo
     if POLLINATIONS_API_KEY:
         headers["Authorization"] = f"Bearer {POLLINATIONS_API_KEY}"
 
-    # Try primary model then fallback models
-    models_to_try = []
+    # Try primary model then fallback models (gemini-fast prioritized)
+    models_to_try = ["gemini-fast", "openai"]
     if AI_MODEL and AI_MODEL.strip():
-        models_to_try.append(AI_MODEL.strip())
-    for m in ["openai", "gemini-fast"]:
-        if m not in models_to_try:
-            models_to_try.append(m)
+        m = AI_MODEL.strip()
+        if m in models_to_try:
+            models_to_try.remove(m)
+        models_to_try.insert(0, m)
 
     for model_name in models_to_try:
         try:
@@ -245,7 +245,7 @@ Return ONLY strictly valid raw JSON format matching this exact schema (no markdo
             payload = {
                 "model": model_name,
                 "messages": [
-                    {"role": "system", "content": "You are a professional Japanese language educator. You output ONLY strictly valid JSON for Japanese lessons."},
+                    {"role": "system", "content": "You are a professional Japanese educator. You output ONLY strictly valid JSON for Japanese lessons."},
                     {"role": "user", "content": prompt}
                 ],
                 "temperature": 0.7
@@ -264,7 +264,27 @@ Return ONLY strictly valid raw JSON format matching this exact schema (no markdo
             elif "```" in raw_content:
                 raw_content = raw_content.split("```")[1].split("```")[0].strip()
                 
-            lesson = json.loads(raw_content)
+            lesson = None
+            try:
+                lesson = json.loads(raw_content)
+            except Exception as parse_err:
+                print(f"[ContentGen] Direct JSON parse failed ({parse_err}), attempting regex item recovery for {model_name}...")
+                obj_matches = re.findall(r'\{[^{}]*"(?:kanji|Kanji)"[^{}]*\}', raw_content, re.DOTALL)
+                if obj_matches:
+                    recovered_items = []
+                    for om in obj_matches:
+                        try:
+                            recovered_items.append(json.loads(om))
+                        except Exception:
+                            continue
+                    if recovered_items:
+                        lesson = {
+                            "title": seed_topic,
+                            "category": category,
+                            "art_prompt": art_prompt,
+                            "items": recovered_items
+                        }
+                        print(f"[ContentGen] Successfully recovered {len(recovered_items)} items via regex!")
             
             if isinstance(lesson, dict) and "items" in lesson and len(lesson["items"]) > 0:
                 cleaned_items = []
