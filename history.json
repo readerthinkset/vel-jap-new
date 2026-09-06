@@ -125,23 +125,36 @@
         "身分証明書"
       ],
       "date": "2026-09-06 20:29:11"
+    },
+    {
+      "seed_topic": "Video Game and RPG Vocabulary in Japanese",
+      "title": "RPGで即使える！ゲーム用語3選",
+      "category": "Anime, Manga & Japanese Pop Culture",
+      "kanji": [
+        "レベル",
+        "経験値",
+        "スキル"
+      ],
+      "date": "2026-09-06 21:50:21"
     }
   ],
-  "last_updated": "2026-09-06 20:29:11",
+  "last_updated": "2026-09-06 21:50:21",
   "used_seeds": [
     "tokyo subway in 30 seconds: 3 must-know phrases",
-    "japanese mascot (yuru-chara) culture words",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "instant reactions in japanese! 3 must-know words",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "airport & hotel check-in phrases",
+    "must-know jlpt n5 action verbs",
     "ゆるキャラ文化語彙3選！",
-    "jlpt n5 action verbs (3 must-knows)⚡️",
-    "ラーメン注文！今日から使える3フレーズ",
-    "hit the spot: body parts for health (fast japanese!)",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
     "空港からホテルまで即使える日本語3フレーズ",
-    "must-know jlpt n5 action verbs"
+    "hit the spot: body parts for health (fast japanese!)",
+    "airport & hotel check-in phrases",
+    "ラーメン注文！今日から使える3フレーズ",
+    "video game and rpg vocabulary in japanese",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "rpgで即使える！ゲーム用語3選",
+    "japanese mascot (yuru-chara) culture words",
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
+    "instant reactions in japanese! 3 must-know words"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -149,6 +162,9 @@
     "ご当地",
     "チェックイン",
     "パスポート",
-    "身分証明書"
+    "身分証明書",
+    "レベル",
+    "経験値",
+    "スキル"
   ]
 }
