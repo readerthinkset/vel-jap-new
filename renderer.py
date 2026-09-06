@@ -5,6 +5,7 @@ Renders high-contrast, visually stunning Japanese infographic cards with backdro
 import math
 import os
 import sys
+import re
 import urllib.parse
 from pathlib import Path
 from typing import Tuple, List, Optional
@@ -46,29 +47,84 @@ if sys.platform == "win32":
     except Exception:
         pass
 
+def sanitize_display_text(text: str, is_japanese: bool = False) -> str:
+    """
+    Clean and normalize text to prevent unrenderable tofu rectangles (missing glyphs) or mojibake.
+    Strips raw emojis (which standard TTF fonts cannot render) and normalizes CJK/fullwidth punctuation in Latin text.
+    """
+    if not text:
+        return ""
+    
+    # 1. Strip supplementary emojis and pictographs (which trigger empty rectangle boxes '□')
+    text = re.sub(r'[\U00010000-\U0010ffff]', '', text)
+    text = re.sub(r'[\u2600-\u26ff\u2700-\u27bf\u2300-\u23ff]', '', text)
+
+    if not is_japanese:
+        # 2. For Romaji and English, map fullwidth Japanese punctuation to standard ASCII
+        trans = {
+            '！': '!',
+            '？': '?',
+            '、': ', ',
+            '。': '. ',
+            '・': ' ',
+            '〜': '~',
+            '～': '~',
+            '「': '"',
+            '」': '"',
+            '『': '"',
+            '』': '"',
+            '（': '(',
+            '）': ')',
+            '［': '[',
+            '］': ']',
+            '　': ' ',
+            '：': ': ',
+            '；': '; ',
+            '―': '-',
+            'ー': '-'
+        }
+        for k, v in trans.items():
+            text = text.replace(k, v)
+            
+        # Clean double punctuation artifacts and AI glitches (e.g. 'eQ' for 'えっ')
+        text = re.sub(r'\b([a-zA-Z]+)Q\b', r'\1!', text)
+        text = re.sub(r'\b([a-zA-Z]+)Q([!?]+)', r'\1\2', text)
+        text = re.sub(r'[!]{2,}', '!', text)
+        text = re.sub(r'[?]{2,}', '?', text)
+        # Ensure proper space after punctuation when followed by letters
+        text = re.sub(r'([!?,;:])([a-zA-Z])', r'\1 \2', text)
+        
+    # Collapse multiple whitespace
+    text = re.sub(r'[ \t]+', ' ', text).strip()
+    return text
+
 def get_font(size: int, bold: bool = False, italic: bool = False) -> ImageFont.FreeTypeFont:
-    """Load Latin / English font."""
+    """Load Latin / English font with NotoSansJP fallback to prevent missing glyphs."""
     candidates = []
     if italic and bold:
         candidates.extend([
             FONTS_DIR / "DejaVuSans-BoldOblique.ttf",
+            FONTS_DIR / "NotoSansJP-Bold.ttf",
             "C:/Windows/Fonts/segoeuiz.ttf",
             "C:/Windows/Fonts/arialbi.ttf"
         ])
     elif italic:
         candidates.extend([
             FONTS_DIR / "DejaVuSans-Oblique.ttf",
+            FONTS_DIR / "NotoSansJP-Regular.ttf",
             "C:/Windows/Fonts/segoeuii.ttf",
             "C:/Windows/Fonts/ariali.ttf"
         ])
     elif bold:
         candidates.extend([
+            FONTS_DIR / "NotoSansJP-Bold.ttf",
             FONTS_DIR / "DejaVuSans-Bold.ttf",
             "C:/Windows/Fonts/segoeuib.ttf",
             "C:/Windows/Fonts/arialbd.ttf"
         ])
     else:
         candidates.extend([
+            FONTS_DIR / "NotoSansJP-Regular.ttf",
             FONTS_DIR / "DejaVuSans.ttf",
             "C:/Windows/Fonts/segoeui.ttf",
             "C:/Windows/Fonts/arial.ttf"
@@ -376,10 +432,10 @@ def render_item_frame(
         canvas.paste(glass_card, (card_mx, card_top), glass_card)
         draw.line([(card_mx + 80, card_top + 2), (width - card_mx - 80, card_top + 2)], fill=ACCENT_RED, width=3)
         
-        kanji_text = item.get("kanji", "")
-        hiragana_text = item.get("hiragana", "")
-        romaji_text = item.get("romaji", "")
-        english_text = item.get("english", "").upper()
+        kanji_text = sanitize_display_text(item.get("kanji", ""), is_japanese=True)
+        hiragana_text = sanitize_display_text(item.get("hiragana", ""), is_japanese=True)
+        romaji_text = sanitize_display_text(item.get("romaji", ""), is_japanese=False)
+        english_text = sanitize_display_text(item.get("english", ""), is_japanese=False).upper()
         
         k_len = len(kanji_text)
         k_size = 150 if k_len <= 2 else (120 if k_len <= 4 else 90)
@@ -425,9 +481,9 @@ def render_item_frame(
         draw.text((card_mx + 25 + t_w // 2, ex_top + 41), tag_str, fill=ACCENT_CYAN, font=f_tag, anchor="mm")
         
         max_w = width - (card_mx + 45) * 2
-        example_ja = item.get("example_ja", "")
-        example_romaji = item.get("example_romaji", "")
-        example_en = item.get("example_en", "")
+        example_ja = sanitize_display_text(item.get("example_ja", ""), is_japanese=True)
+        example_romaji = sanitize_display_text(item.get("example_romaji", ""), is_japanese=False)
+        example_en = sanitize_display_text(item.get("example_en", ""), is_japanese=False)
         
         f_ex_ja = get_japanese_font(48, bold=True)
         ja_lines = wrap_japanese_text(draw, example_ja, f_ex_ja, max_w=max_w)
@@ -482,9 +538,9 @@ def render_item_frame(
         vc_h = int(art_h * 0.48)
         draw.rounded_rectangle([(rc_x, vc_top), (rc_x + right_w, vc_top + vc_h)], radius=22, fill=(16, 22, 34, 235), outline=(65, 80, 110), width=2)
         
-        kanji_text = item.get("kanji", "")
-        hiragana_text = item.get("hiragana", "")
-        english_text = item.get("english", "").upper()
+        kanji_text = sanitize_display_text(item.get("kanji", ""), is_japanese=True)
+        hiragana_text = sanitize_display_text(item.get("hiragana", ""), is_japanese=True)
+        english_text = sanitize_display_text(item.get("english", ""), is_japanese=False).upper()
         
         f_kanji = get_japanese_font(100, bold=True)
         f_hira = get_japanese_font(36, bold=True)
@@ -501,8 +557,8 @@ def render_item_frame(
         ec_h = art_h - vc_h - 20
         draw.rounded_rectangle([(rc_x, ec_top), (rc_x + right_w, ec_top + ec_h)], radius=22, fill=(12, 17, 27, 240), outline=(55, 70, 100), width=2)
         
-        example_ja = item.get("example_ja", "")
-        example_en = item.get("example_en", "")
+        example_ja = sanitize_display_text(item.get("example_ja", ""), is_japanese=True)
+        example_en = sanitize_display_text(item.get("example_en", ""), is_japanese=False)
         f_ex_ja = get_japanese_font(34, bold=True)
         f_ex_en = get_font(28, bold=True)
         
@@ -572,7 +628,7 @@ def render_outro_frame(
     # Congratulations Banner Pill
     f_badge = get_font(20, bold=True)
     draw.rounded_rectangle([(width // 2 - 160, art_top + 20), (width // 2 + 160, art_top + 64)], radius=14, fill=(255, 60, 85, 230))
-    draw.text((width // 2, art_top + 42), "LESSON COMPLETE 🎉", fill=WHITE, font=f_badge, anchor="mm")
+    draw.text((width // 2, art_top + 42), "★ LESSON COMPLETE ★", fill=WHITE, font=f_badge, anchor="mm")
 
     # 2. Main Outro Card
     card_top = art_bot + 35

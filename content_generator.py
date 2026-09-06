@@ -1,4 +1,4 @@
-﻿"""
+"""
 Velocity Japanese - Content & Lesson Generator (V3 - Category Diversity & Scenario Art)
 Generates unique Japanese lessons daily across 10 categories using Pollinations AI with history tracking.
 """
@@ -19,11 +19,28 @@ from config import (
     DEFAULT_ITEM_COUNT
 )
 
-def clean_text(text: str) -> str:
-    """Clean and sanitize text string."""
+def clean_text(text: str, is_romaji: bool = False, is_japanese: bool = False) -> str:
+    """Clean and sanitize text string, preventing emoji artifacts or broken glyphs."""
     if not text:
         return ""
     text = re.sub(r'[\r\n]+', ' ', text)
+    # Remove supplementary emojis and symbols that cause tofu rectangle boxes
+    text = re.sub(r'[\U00010000-\U0010ffff]', '', text)
+    text = re.sub(r'[\u2600-\u26ff\u2700-\u27bf\u2300-\u23ff]', '', text)
+    
+    if is_romaji:
+        # Fullwidth CJK punctuation to clean ASCII
+        trans = {
+            '！': '!', '？': '?', '、': ', ', '。': '. ', '・': ' ',
+            '〜': '~', '～': '~', '「': '"', '」': '"', '『': '"', '』': '"',
+            '（': '(', '）': ')', '［': '[', '］': ']', '　': ' '
+        }
+        for k, v in trans.items():
+            text = text.replace(k, v)
+        text = re.sub(r'\b([a-zA-Z]+)Q\b', r'\1!', text)
+        text = re.sub(r'\b([a-zA-Z]+)Q([!?]+)', r'\1\2', text)
+        text = re.sub(r'([!?,;:])([a-zA-Z])', r'\1 \2', text)
+        
     text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
@@ -90,20 +107,22 @@ Create a high-retention 3-item Japanese vocabulary/Kanji lesson for YouTube Shor
 Target Topic: "{topic}"
 Count: exactly {item_count} items.
 
-CRITICAL PRONUNCIATION RULE:
+CRITICAL PRONUNCIATION & TYPOGRAPHY RULES:
 - For 'hiragana', provide the EXACT phonetic reading in pure Hiragana (e.g. 'あたま' for 頭, 'げつようび' for 月曜日, 'みず' for 水, 'たべる' for 食べる). This is used for Text-to-Speech pronunciation.
+- For 'romaji' and 'example_romaji', use ONLY standard Latin letters and ASCII punctuation (!, ?, .). NEVER use Japanese fullwidth punctuation (like ！？ or 「」) in Romaji.
+- Do NOT include emojis in any text fields (kanji, romaji, english, examples).
 
 Requirements:
-1. Provide a punchy beginner/intermediate title.
+1. Provide a punchy beginner/intermediate title (no emojis).
 2. For each item ({item_count} total):
    - kanji: Japanese word/phrase in Kanji + Kana
    - hiragana: The EXACT phonetic Hiragana reading (crucial for TTS!)
-   - romaji: English pronunciation transliteration
+   - romaji: English pronunciation transliteration (clean Latin letters only)
    - english: Clear English meaning (1-3 words)
    - element: Short tag/category (e.g. "Food", "Action", "Travel", "Time")
    - example_ja: Simple, natural Japanese example sentence using the word
-   - example_romaji: Romaji for the example sentence
-   - example_en: English translation for the example sentence
+   - example_romaji: Clean Latin Romaji with ASCII punctuation (!, ?)
+   - example_en: English translation for the example sentence (no emojis)
 
 Return ONLY strictly valid raw JSON format matching this exact schema (no markdown fences, no conversational text):
 {{
@@ -156,13 +175,13 @@ Return ONLY strictly valid raw JSON format matching this exact schema (no markdo
             cleaned_items = []
             for it in lesson["items"]:
                 cleaned_items.append({
-                    "kanji": clean_text(it.get("kanji", "")),
-                    "hiragana": clean_text(it.get("hiragana", "")),
-                    "romaji": clean_text(it.get("romaji", "")),
+                    "kanji": clean_text(it.get("kanji", ""), is_japanese=True),
+                    "hiragana": clean_text(it.get("hiragana", ""), is_japanese=True),
+                    "romaji": clean_text(it.get("romaji", ""), is_romaji=True),
                     "english": clean_text(it.get("english", "")),
                     "element": clean_text(it.get("element", "")),
-                    "example_ja": clean_text(it.get("example_ja", "")),
-                    "example_romaji": clean_text(it.get("example_romaji", "")),
+                    "example_ja": clean_text(it.get("example_ja", ""), is_japanese=True),
+                    "example_romaji": clean_text(it.get("example_romaji", ""), is_romaji=True),
                     "example_en": clean_text(it.get("example_en", "")),
                 })
             lesson["items"] = [it for it in cleaned_items if it["kanji"] and it["english"]][:item_count]
