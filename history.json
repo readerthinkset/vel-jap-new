@@ -136,25 +136,38 @@
         "スキル"
       ],
       "date": "2026-09-06 21:50:21"
+    },
+    {
+      "seed_topic": "Core JLPT N5 Kanji: Nature & Elements",
+      "title": "JLPT N5: Nature Kanji in 15 Seconds",
+      "category": "JLPT N5 & Core Kanji",
+      "kanji": [
+        "森",
+        "川",
+        "天気"
+      ],
+      "date": "2026-09-07 09:05:14"
     }
   ],
-  "last_updated": "2026-09-06 21:50:21",
+  "last_updated": "2026-09-07 09:05:14",
   "used_seeds": [
-    "tokyo subway in 30 seconds: 3 must-know phrases",
-    "must-know jlpt n5 action verbs",
-    "ゆるキャラ文化語彙3選！",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "instant reactions in japanese! 3 must-know words",
     "空港からホテルまで即使える日本語3フレーズ",
     "hit the spot: body parts for health (fast japanese!)",
+    "japanese mascot (yuru-chara) culture words",
+    "rpgで即使える！ゲーム用語3選",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "must-know jlpt n5 action verbs",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
     "airport & hotel check-in phrases",
     "ラーメン注文！今日から使える3フレーズ",
+    "jlpt n5: nature kanji in 15 seconds",
     "video game and rpg vocabulary in japanese",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "rpgで即使える！ゲーム用語3選",
-    "japanese mascot (yuru-chara) culture words",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "ゆるキャラ文化語彙3選！",
     "jlpt n5 action verbs (3 must-knows)⚡️",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "instant reactions in japanese! 3 must-know words"
+    "core jlpt n5 kanji: nature & elements",
+    "tokyo subway in 30 seconds: 3 must-know phrases"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -165,6 +178,9 @@
     "身分証明書",
     "レベル",
     "経験値",
-    "スキル"
+    "スキル",
+    "森",
+    "川",
+    "天気"
   ]
 }
