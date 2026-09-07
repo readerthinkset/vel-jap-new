@@ -147,27 +147,40 @@
         "天気"
       ],
       "date": "2026-09-07 09:05:14"
+    },
+    {
+      "seed_topic": "Japanese Table Manners & Meal Etiquette Phrases",
+      "title": "No More Awkward Meals: Japanese Etiquette Phrases",
+      "category": "Food & Dining Across Japan",
+      "kanji": [
+        "いただきます",
+        "箸をつける",
+        "ごちそうさまでした"
+      ],
+      "date": "2026-09-07 19:33:14"
     }
   ],
-  "last_updated": "2026-09-07 09:05:14",
+  "last_updated": "2026-09-07 19:33:14",
   "used_seeds": [
-    "instant reactions in japanese! 3 must-know words",
-    "空港からホテルまで即使える日本語3フレーズ",
-    "hit the spot: body parts for health (fast japanese!)",
-    "japanese mascot (yuru-chara) culture words",
-    "rpgで即使える！ゲーム用語3選",
-    "jlpt n5 must-know action verbs in 30 seconds",
+    "no more awkward meals: japanese etiquette phrases",
     "must-know jlpt n5 action verbs",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "airport & hotel check-in phrases",
     "ラーメン注文！今日から使える3フレーズ",
-    "jlpt n5: nature kanji in 15 seconds",
+    "japanese table manners & meal etiquette phrases",
     "video game and rpg vocabulary in japanese",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "ゆるキャラ文化語彙3選！",
+    "tokyo subway in 30 seconds: 3 must-know phrases",
     "jlpt n5 action verbs (3 must-knows)⚡️",
+    "japanese mascot (yuru-chara) culture words",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
+    "空港からホテルまで即使える日本語3フレーズ",
+    "instant reactions in japanese! 3 must-know words",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "ゆるキャラ文化語彙3選！",
+    "hit the spot: body parts for health (fast japanese!)",
+    "airport & hotel check-in phrases",
     "core jlpt n5 kanji: nature & elements",
-    "tokyo subway in 30 seconds: 3 must-know phrases"
+    "rpgで即使える！ゲーム用語3選",
+    "jlpt n5: nature kanji in 15 seconds"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -181,6 +194,9 @@
     "スキル",
     "森",
     "川",
-    "天気"
+    "天気",
+    "いただきます",
+    "箸をつける",
+    "ごちそうさまでした"
   ]
 }
