@@ -158,29 +158,42 @@
         "ごちそうさまでした"
       ],
       "date": "2026-09-07 19:33:14"
+    },
+    {
+      "seed_topic": "New Year Celebrations (Oshogatsu) in Japan",
+      "title": "お正月の必修語彙3選：年賀状・初詣・門松",
+      "category": "Four Seasons, Nature & Festivals",
+      "kanji": [
+        "年賀状",
+        "初詣",
+        "門松"
+      ],
+      "date": "2026-09-08 08:42:43"
     }
   ],
-  "last_updated": "2026-09-07 19:33:14",
+  "last_updated": "2026-09-08 08:42:43",
   "used_seeds": [
-    "no more awkward meals: japanese etiquette phrases",
-    "must-know jlpt n5 action verbs",
     "ラーメン注文！今日から使える3フレーズ",
-    "japanese table manners & meal etiquette phrases",
     "video game and rpg vocabulary in japanese",
-    "tokyo subway in 30 seconds: 3 must-know phrases",
-    "jlpt n5 action verbs (3 must-knows)⚡️",
-    "japanese mascot (yuru-chara) culture words",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "空港からホテルまで即使える日本語3フレーズ",
-    "instant reactions in japanese! 3 must-know words",
     "jlpt n5 must-know action verbs in 30 seconds",
-    "ゆるキャラ文化語彙3選！",
-    "hit the spot: body parts for health (fast japanese!)",
-    "airport & hotel check-in phrases",
     "core jlpt n5 kanji: nature & elements",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
+    "must-know jlpt n5 action verbs",
+    "お正月の必修語彙3選：年賀状・初詣・門松",
+    "hit the spot: body parts for health (fast japanese!)",
+    "japanese mascot (yuru-chara) culture words",
+    "ゆるキャラ文化語彙3選！",
+    "japanese table manners & meal etiquette phrases",
+    "new year celebrations (oshogatsu) in japan",
+    "空港からホテルまで即使える日本語3フレーズ",
     "rpgで即使える！ゲーム用語3選",
-    "jlpt n5: nature kanji in 15 seconds"
+    "no more awkward meals: japanese etiquette phrases",
+    "airport & hotel check-in phrases",
+    "jlpt n5: nature kanji in 15 seconds",
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "tokyo subway in 30 seconds: 3 must-know phrases",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
+    "instant reactions in japanese! 3 must-know words"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -197,6 +210,9 @@
     "天気",
     "いただきます",
     "箸をつける",
-    "ごちそうさまでした"
+    "ごちそうさまでした",
+    "年賀状",
+    "初詣",
+    "門松"
   ]
 }
