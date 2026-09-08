@@ -169,31 +169,44 @@
         "門松"
       ],
       "date": "2026-09-08 08:42:43"
+    },
+    {
+      "seed_topic": "Days, Months, and Counting Time in Japanese",
+      "title": "日本の曜日と月の言い方 これだけ",
+      "category": "JLPT N5 & Core Kanji",
+      "kanji": [
+        "月曜日",
+        "三月",
+        "一日"
+      ],
+      "date": "2026-09-08 19:12:48"
     }
   ],
-  "last_updated": "2026-09-08 08:42:43",
+  "last_updated": "2026-09-08 19:12:48",
   "used_seeds": [
-    "ラーメン注文！今日から使える3フレーズ",
-    "video game and rpg vocabulary in japanese",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "core jlpt n5 kanji: nature & elements",
     "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "must-know jlpt n5 action verbs",
-    "お正月の必修語彙3選：年賀状・初詣・門松",
-    "hit the spot: body parts for health (fast japanese!)",
-    "japanese mascot (yuru-chara) culture words",
-    "ゆるキャラ文化語彙3選！",
     "japanese table manners & meal etiquette phrases",
+    "ラーメン注文！今日から使える3フレーズ",
+    "japanese mascot (yuru-chara) culture words",
+    "jlpt n5 must-know action verbs in 30 seconds",
     "new year celebrations (oshogatsu) in japan",
-    "空港からホテルまで即使える日本語3フレーズ",
+    "video game and rpg vocabulary in japanese",
     "rpgで即使える！ゲーム用語3選",
+    "instant reactions in japanese! 3 must-know words",
+    "日本の曜日と月の言い方 これだけ",
     "no more awkward meals: japanese etiquette phrases",
-    "airport & hotel check-in phrases",
-    "jlpt n5: nature kanji in 15 seconds",
-    "jlpt n5 action verbs (3 must-knows)⚡️",
-    "tokyo subway in 30 seconds: 3 must-know phrases",
+    "days, months, and counting time in japanese",
+    "ゆるキャラ文化語彙3選！",
     "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "instant reactions in japanese! 3 must-know words"
+    "hit the spot: body parts for health (fast japanese!)",
+    "core jlpt n5 kanji: nature & elements",
+    "tokyo subway in 30 seconds: 3 must-know phrases",
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "jlpt n5: nature kanji in 15 seconds",
+    "空港からホテルまで即使える日本語3フレーズ",
+    "must-know jlpt n5 action verbs",
+    "airport & hotel check-in phrases",
+    "お正月の必修語彙3選：年賀状・初詣・門松"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -213,6 +226,9 @@
     "ごちそうさまでした",
     "年賀状",
     "初詣",
-    "門松"
+    "門松",
+    "月曜日",
+    "三月",
+    "一日"
   ]
 }
