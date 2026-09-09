@@ -180,33 +180,46 @@
         "一日"
       ],
       "date": "2026-09-08 19:12:48"
+    },
+    {
+      "seed_topic": "Asking for Directions in Tokyo",
+      "title": "Tokyo Directions Fast: 3 Key Phrases",
+      "category": "Tokyo & Regional Travel & Transit",
+      "kanji": [
+        "どこですか",
+        "まっすぐ",
+        "右に曲がる"
+      ],
+      "date": "2026-09-09 08:48:04"
     }
   ],
-  "last_updated": "2026-09-08 19:12:48",
+  "last_updated": "2026-09-09 08:48:04",
   "used_seeds": [
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "japanese table manners & meal etiquette phrases",
-    "ラーメン注文！今日から使える3フレーズ",
-    "japanese mascot (yuru-chara) culture words",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "new year celebrations (oshogatsu) in japan",
-    "video game and rpg vocabulary in japanese",
-    "rpgで即使える！ゲーム用語3選",
-    "instant reactions in japanese! 3 must-know words",
     "日本の曜日と月の言い方 これだけ",
-    "no more awkward meals: japanese etiquette phrases",
-    "days, months, and counting time in japanese",
-    "ゆるキャラ文化語彙3選！",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし",
-    "hit the spot: body parts for health (fast japanese!)",
     "core jlpt n5 kanji: nature & elements",
+    "new year celebrations (oshogatsu) in japan",
     "tokyo subway in 30 seconds: 3 must-know phrases",
-    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "japanese mascot (yuru-chara) culture words",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
     "jlpt n5: nature kanji in 15 seconds",
-    "空港からホテルまで即使える日本語3フレーズ",
-    "must-know jlpt n5 action verbs",
+    "japanese table manners & meal etiquette phrases",
+    "お正月の必修語彙3選：年賀状・初詣・門松",
+    "tokyo directions fast: 3 key phrases",
+    "hit the spot: body parts for health (fast japanese!)",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "no more awkward meals: japanese etiquette phrases",
+    "asking for directions in tokyo",
+    "instant reactions in japanese! 3 must-know words",
+    "ゆるキャラ文化語彙3選！",
+    "video game and rpg vocabulary in japanese",
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
     "airport & hotel check-in phrases",
-    "お正月の必修語彙3選：年賀状・初詣・門松"
+    "rpgで即使える！ゲーム用語3選",
+    "空港からホテルまで即使える日本語3フレーズ",
+    "days, months, and counting time in japanese",
+    "must-know jlpt n5 action verbs",
+    "ラーメン注文！今日から使える3フレーズ"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -229,6 +242,9 @@
     "門松",
     "月曜日",
     "三月",
-    "一日"
+    "一日",
+    "どこですか",
+    "まっすぐ",
+    "右に曲がる"
   ]
 }
