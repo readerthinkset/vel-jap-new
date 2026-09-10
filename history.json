@@ -202,37 +202,50 @@
         "休やすみ"
       ],
       "date": "2026-09-09 19:01:09"
+    },
+    {
+      "seed_topic": "Core JLPT N5 Kanji: Directions & Locations",
+      "title": "JLPT N5 Directions & Places: 3 Core Kanji You Need",
+      "category": "JLPT N5 & Core Kanji",
+      "kanji": [
+        "右",
+        "左",
+        "上"
+      ],
+      "date": "2026-09-10 08:45:39"
     }
   ],
-  "last_updated": "2026-09-09 19:01:09",
+  "last_updated": "2026-09-10 08:45:39",
   "used_seeds": [
-    "jlpt n5: nature kanji in 15 seconds",
-    "hit the spot: body parts for health (fast japanese!)",
-    "jlpt n5 action verbs (3 must-knows)⚡️",
-    "no more awkward meals: japanese etiquette phrases",
-    "core jlpt n5 kanji: nature & elements",
-    "japanese table manners & meal etiquette phrases",
-    "jlpt n5 kanji: 時・日・休みで時間と予定を言おう",
-    "morning routine verbs ⚡ 起きて！の次はコレ！",
-    "days, months, and counting time in japanese",
-    "お正月の必修語彙3選：年賀状・初詣・門松",
-    "must-know jlpt n5 action verbs",
-    "video game and rpg vocabulary in japanese",
-    "instant reactions in japanese! 3 must-know words",
-    "rpgで即使える！ゲーム用語3選",
-    "new year celebrations (oshogatsu) in japan",
-    "ラーメン注文！今日から使える3フレーズ",
-    "tokyo directions fast: 3 key phrases",
-    "asking for directions in tokyo",
-    "japanese mascot (yuru-chara) culture words",
-    "空港からホテルまで即使える日本語3フレーズ",
-    "jlpt n5 must-know action verbs in 30 seconds",
-    "日本の曜日と月の言い方 これだけ",
     "tokyo subway in 30 seconds: 3 must-know phrases",
-    "airport & hotel check-in phrases",
+    "days, months, and counting time in japanese",
+    "tokyo directions fast: 3 key phrases",
+    "rpgで即使える！ゲーム用語3選",
+    "morning routine verbs ⚡ 起きて！の次はコレ！",
     "core jlpt n5 kanji: time & calendar",
     "ゆるキャラ文化語彙3選！",
-    "matsuri 魔法ワード3選！屋台・花火・おみこし"
+    "jlpt n5 action verbs (3 must-knows)⚡️",
+    "asking for directions in tokyo",
+    "japanese mascot (yuru-chara) culture words",
+    "jlpt n5: nature kanji in 15 seconds",
+    "jlpt n5 must-know action verbs in 30 seconds",
+    "core jlpt n5 kanji: directions & locations",
+    "日本の曜日と月の言い方 これだけ",
+    "matsuri 魔法ワード3選！屋台・花火・おみこし",
+    "no more awkward meals: japanese etiquette phrases",
+    "japanese table manners & meal etiquette phrases",
+    "airport & hotel check-in phrases",
+    "must-know jlpt n5 action verbs",
+    "jlpt n5 kanji: 時・日・休みで時間と予定を言おう",
+    "video game and rpg vocabulary in japanese",
+    "hit the spot: body parts for health (fast japanese!)",
+    "ラーメン注文！今日から使える3フレーズ",
+    "instant reactions in japanese! 3 must-know words",
+    "new year celebrations (oshogatsu) in japan",
+    "空港からホテルまで即使える日本語3フレーズ",
+    "jlpt n5 directions & places: 3 core kanji you need",
+    "core jlpt n5 kanji: nature & elements",
+    "お正月の必修語彙3選：年賀状・初詣・門松"
   ],
   "all_taught_words": [
     "ゆるキャラ",
@@ -261,6 +274,9 @@
     "右に曲がる",
     "時じ間かん",
     "日ひ",
-    "休やすみ"
+    "休やすみ",
+    "右",
+    "左",
+    "上"
   ]
 }
