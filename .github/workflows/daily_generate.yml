@@ -1,9 +1,9 @@
 name: Velocity Japanese - Daily Auto Video & Publisher
 
 on:
-  schedule:
-    - cron: '23 4 * * *'   # 1st daily post: 04:00 UTC (13:00 JST / 21:00 PDT)
-    - cron: '23 16 * * *'  # 2nd daily post: 16:00 UTC (01:00 JST / 09:00 PDT)
+  # schedule:
+  #   - cron: '23 4 * * *'   # 1st daily post: 04:00 UTC (13:00 JST / 21:00 PDT)
+  #   - cron: '23 16 * * *'  # 2nd daily post: 16:00 UTC (01:00 JST / 09:00 PDT)
   workflow_dispatch:     # Allows manual 1-click trigger in GitHub Actions UI
 
 permissions:
@@ -38,30 +38,26 @@ jobs:
 
       - name: Generate & Publish Daily Japanese Short
         env:
-          POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
-          AI_MODEL: ${{ secrets.AI_MODEL || 'gemini-fast' }}
-          IMAGE_MODEL: ${{ secrets.IMAGE_MODEL || 'flux' }}
-          FB_PAGE_ACCESS_TOKEN: ${{ secrets.FB_PAGE_ACCESS_TOKEN }}
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          TIKTOK_SESSION_ID: ${{ secrets.TIKTOK_SESSION_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
           FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
-          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID || '1048385991689324' }}
+          FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: |
-          python main.py --auto --publish
+          python automation.py
 
-      - name: Commit and Push History
+      - name: Commit Updated Progress & History
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add history.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated daily lesson history update [skip ci]" && git push origin master)
-
-      - name: Upload Video Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: velocity-japanese-${{ github.run_number }}
-          path: |
-            output/*/VelocityJapanese_Short.mp4
-            output/*/thumbnail.jpg
-            output/*/description.txt
-            output/*/metadata.json
-          retention-days: 14
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add progress.json history.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update progress tracker [skip ci]"
+          git push
