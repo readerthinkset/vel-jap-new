@@ -231,8 +231,8 @@ Return ONLY strictly valid raw JSON format matching this exact schema (no markdo
     if POLLINATIONS_API_KEY:
         headers["Authorization"] = f"Bearer {POLLINATIONS_API_KEY}"
 
-    # Try primary model then fallback models (gemini-fast prioritized)
-    models_to_try = ["gemini-fast", "openai"]
+    # Try primary model then fallback models (openai/gpt-5.4-nano prioritized)
+    models_to_try = ["openai/gpt-5.4-nano", "openai"]
     if AI_MODEL and AI_MODEL.strip():
         m = AI_MODEL.strip()
         if m in models_to_try:
