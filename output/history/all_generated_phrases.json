@@ -1490,7 +1490,42 @@
       "transliteration": "",
       "category": "Vocabulary",
       "generated_at": "2026-10-11 19:52:29"
+    },
+    {
+      "english": "I’m okay, really. Just tired.",
+      "japanese": "だいじょうぶ、ほんとに、ちょっと疲れた。",
+      "transliteration": "daijoubu, honto ni, chotto tsukareta.",
+      "category": "Balance",
+      "generated_at": "2026-11-10T08:22:27.591692"
+    },
+    {
+      "english": "Today feels busy, but I’ll manage.",
+      "japanese": "今日は忙しいけど、なんとかなるよ。",
+      "transliteration": "kyou wa isogashii kedo, nantoka naru yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-10T08:22:27.591704"
+    },
+    {
+      "english": "Take your time, I’m not rushing.",
+      "japanese": "ゆっくりでいいよ、急いでないから。",
+      "transliteration": "yukkuri de ii yo, isoide nai kara.",
+      "category": "Balance",
+      "generated_at": "2026-11-10T08:22:27.591706"
+    },
+    {
+      "english": "Thanks, that helped a lot.",
+      "japanese": "ありがとう、すごく助かったよ。",
+      "transliteration": "arigatou, sugoku tasukatta yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-10T08:22:27.591709"
+    },
+    {
+      "english": "Sorry, I forgot. My bad.",
+      "japanese": "ごめん、忘れてた。ほんとに。",
+      "transliteration": "gomen, wasureterta. honto ni.",
+      "category": "Balance",
+      "generated_at": "2026-11-10T08:22:27.591710"
     }
   ],
-  "last_updated": null
+  "last_updated": "2026-11-10T08:22:27.591712"
 }
