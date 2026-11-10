@@ -1525,7 +1525,42 @@
       "transliteration": "gomen, wasureterta. honto ni.",
       "category": "Balance",
       "generated_at": "2026-11-10T08:22:27.591710"
+    },
+    {
+      "english": "I like watching baseball games, a lot.",
+      "japanese": "野球の試合を見るのが好きだよ。",
+      "transliteration": "yakyuu no shiai o miru no ga suki dayo",
+      "category": "Sports",
+      "generated_at": "2026-11-10T19:15:15.326862"
+    },
+    {
+      "english": "Let’s go for a run after work, okay?",
+      "japanese": "仕事のあと走ろう、いい？",
+      "transliteration": "shigoto no ato hashirou, ii?",
+      "category": "Sports",
+      "generated_at": "2026-11-10T19:15:15.326873"
+    },
+    {
+      "english": "I’m trying to improve my tennis serve.",
+      "japanese": "テニスのサーブを上手くなりたい。",
+      "transliteration": "tenisu no saabu o umaku naritai",
+      "category": "Sports",
+      "generated_at": "2026-11-10T19:15:15.326875"
+    },
+    {
+      "english": "That goal was amazing, honestly!",
+      "japanese": "あのゴールはすごかった、まじで！",
+      "transliteration": "ano gooru wa sugokatta, maji de!",
+      "category": "Sports",
+      "generated_at": "2026-11-10T19:15:15.326876"
+    },
+    {
+      "english": "I hit the ball too hard today.",
+      "japanese": "今日はボールを強く打ちすぎた。",
+      "transliteration": "kyou wa booru o tsuyoku uchisugita",
+      "category": "Sports",
+      "generated_at": "2026-11-10T19:15:15.326878"
     }
   ],
-  "last_updated": "2026-11-10T08:22:27.591712"
+  "last_updated": "2026-11-10T19:15:15.326879"
 }
