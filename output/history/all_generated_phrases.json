@@ -1595,7 +1595,42 @@
       "transliteration": "Yamete, ame ni narisou.",
       "category": "Weather",
       "generated_at": "2026-11-10T20:40:55.790228"
+    },
+    {
+      "english": "Take one slow breath, right now.",
+      "japanese": "いま、ゆっくり息を一つ。",
+      "transliteration": "ima, yukkuri iki o hitotsu.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-10T22:13:30.672644"
+    },
+    {
+      "english": "Let your shoulders soften, gently.",
+      "japanese": "肩の力を、やさしく抜いて。",
+      "transliteration": "kata no chikara o, yasashiku nuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-10T22:13:30.672658"
+    },
+    {
+      "english": "Feel your feet on the ground.",
+      "japanese": "足の裏を、地面に感じて。",
+      "transliteration": "ashi no ura o, jimen ni kanjite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-10T22:13:30.672660"
+    },
+    {
+      "english": "Notice sounds around you, calmly.",
+      "japanese": "周りの音に、静かに気づいて。",
+      "transliteration": "mawari no oto ni, shizuka ni kizuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-10T22:13:30.672661"
+    },
+    {
+      "english": "Inhale peace, exhale tension.",
+      "japanese": "深く吸って、緊張を吐いて。",
+      "transliteration": "fukaku suwatte, kinchō o haite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-10T22:13:30.672662"
     }
   ],
-  "last_updated": "2026-11-10T20:40:55.790230"
+  "last_updated": "2026-11-10T22:13:30.672665"
 }
