@@ -1630,7 +1630,42 @@
       "transliteration": "fukaku suwatte, kinchō o haite.",
       "category": "Mindfulness",
       "generated_at": "2026-11-10T22:13:30.672662"
+    },
+    {
+      "english": "Where is the nearest convenience store?",
+      "japanese": "いちばん近いコンビニはどこですか。",
+      "transliteration": "ichiban chikai konbini wa doko desu ka",
+      "category": "Shopping",
+      "generated_at": "2026-11-11T00:20:17.257296"
+    },
+    {
+      "english": "Do you have this in a smaller size?",
+      "japanese": "これ、もう少し小さいのありますか。",
+      "transliteration": "kore, mou sukoshi chiisai no arimasu ka",
+      "category": "Shopping",
+      "generated_at": "2026-11-11T00:20:17.257311"
+    },
+    {
+      "english": "Can I try this on, please?",
+      "japanese": "これ、試着してもいいですか。",
+      "transliteration": "kore, shichaku shite mo ii desu ka",
+      "category": "Shopping",
+      "generated_at": "2026-11-11T00:20:17.257312"
+    },
+    {
+      "english": "How much is this? Is it on sale?",
+      "japanese": "これはいくらですか、セールですか。",
+      "transliteration": "kore wa ikura desu ka, se-ru desu ka",
+      "category": "Shopping",
+      "generated_at": "2026-11-11T00:20:17.257313"
+    },
+    {
+      "english": "I’ll take it, how do I pay?",
+      "japanese": "買います、どうやって支払いますか。",
+      "transliteration": "kaimasu, dou yatte shiharai masu ka",
+      "category": "Shopping",
+      "generated_at": "2026-11-11T00:20:17.257315"
     }
   ],
-  "last_updated": "2026-11-10T22:13:30.672665"
+  "last_updated": "2026-11-11T00:20:17.257316"
 }
