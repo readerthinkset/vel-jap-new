@@ -1735,7 +1735,42 @@
       "transliteration": "Shinkokyū shite, mata hajimeyou.",
       "category": "Perseverance",
       "generated_at": "2026-11-11T19:11:30.903579"
+    },
+    {
+      "english": "I’ll wait, one moment, okay?",
+      "japanese": "待ってて、ね、ちょっとだけ。",
+      "transliteration": "matte te, ne, chotto dake.",
+      "category": "Patience",
+      "generated_at": "2026-11-11T21:01:40.759284"
+    },
+    {
+      "english": "Please wait a little, I’m almost ready.",
+      "japanese": "もう少し待って、すぐ行くから。",
+      "transliteration": "mō sukoshi matte, sugu iku kara.",
+      "category": "Patience",
+      "generated_at": "2026-11-11T21:01:40.759297"
+    },
+    {
+      "english": "No rush, take your time.",
+      "japanese": "急がなくていいよ、ゆっくりで。",
+      "transliteration": "isoganakute ii yo, yukkuri de.",
+      "category": "Patience",
+      "generated_at": "2026-11-11T21:01:40.759298"
+    },
+    {
+      "english": "It’s okay, we’ll try again later.",
+      "japanese": "大丈夫、またあとでやろう。",
+      "transliteration": "daijōbu, mata ato de yarō.",
+      "category": "Patience",
+      "generated_at": "2026-11-11T21:01:40.759299"
+    },
+    {
+      "english": "Just breathe, everything will work out.",
+      "japanese": "深呼吸して、きっとうまくいくよ。",
+      "transliteration": "shinkokyū shite, kitto umaku iku yo.",
+      "category": "Patience",
+      "generated_at": "2026-11-11T21:01:40.759300"
     }
   ],
-  "last_updated": "2026-11-11T19:11:30.903581"
+  "last_updated": "2026-11-11T21:01:40.759302"
 }
