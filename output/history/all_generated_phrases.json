@@ -1910,7 +1910,42 @@
       "transliteration": "matte, juu-ni-ji da yo",
       "category": "Numbers",
       "generated_at": "2026-11-12T19:28:53.473205"
+    },
+    {
+      "english": "Happy holidays, have a great break.",
+      "japanese": "楽しいホリデーを、いい休暇を。",
+      "transliteration": "Tanoshii horidē o, ii kyūka o.",
+      "category": "Holidays",
+      "generated_at": "2026-11-12T21:16:51.179403"
+    },
+    {
+      "english": "Merry Christmas, I hope you’re warm.",
+      "japanese": "メリークリスマス、あったかく過ごしてね。",
+      "transliteration": "Merii kurisumasu, attakaku sugoshite ne.",
+      "category": "Holidays",
+      "generated_at": "2026-11-12T21:16:51.179417"
+    },
+    {
+      "english": "Season’s greetings, let’s meet soon.",
+      "japanese": "ごきげんよう、また近いうちにね。",
+      "transliteration": "Gokigenyō, mata chikai uchi ni ne.",
+      "category": "Holidays",
+      "generated_at": "2026-11-12T21:16:51.179419"
+    },
+    {
+      "english": "Happy New Year, wishing you health.",
+      "japanese": "新年おめでとう、健康でいてね。",
+      "transliteration": "Shinnen omedetō, kenkō de ite ne.",
+      "category": "Holidays",
+      "generated_at": "2026-11-12T21:16:51.179420"
+    },
+    {
+      "english": "Enjoy the holidays, take care.",
+      "japanese": "ホリデーを楽しんでね、気をつけて。",
+      "transliteration": "Horidē o tanoshinde ne, ki o tsukete.",
+      "category": "Holidays",
+      "generated_at": "2026-11-12T21:16:51.179421"
     }
   ],
-  "last_updated": "2026-11-12T19:28:53.473207"
+  "last_updated": "2026-11-12T21:16:51.179422"
 }
