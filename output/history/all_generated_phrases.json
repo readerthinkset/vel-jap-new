@@ -1805,7 +1805,42 @@
       "transliteration": "Tsukarete temo, itte miyō.",
       "category": "Motivation",
       "generated_at": "2026-11-11T23:23:32.992659"
+    },
+    {
+      "english": "I checked my bank balance today, just now.",
+      "japanese": "さっき口座残高を確認したよ。",
+      "transliteration": "sakki kōza zandaka o kakunin shita yo.",
+      "category": "Finance",
+      "generated_at": "2026-11-12T01:45:26.958923"
+    },
+    {
+      "english": "How much is the monthly fee, exactly?",
+      "japanese": "月額料金はいくらですか、正確に。",
+      "transliteration": "getsugaku ryōkin wa ikura desu ka, seikaku ni.",
+      "category": "Finance",
+      "generated_at": "2026-11-12T01:45:26.958936"
+    },
+    {
+      "english": "I transferred money to my savings.",
+      "japanese": "貯金にお金を振り込んだよ。",
+      "transliteration": "chokin ni okane o furikonde ita yo.",
+      "category": "Finance",
+      "generated_at": "2026-11-12T01:45:26.958937"
+    },
+    {
+      "english": "Please cancel my subscription, I beg you.",
+      "japanese": "サブスクを解約して,お願いします。",
+      "transliteration": "sabusuku o kaik yaku shite, onega i shimasu.",
+      "category": "Finance",
+      "generated_at": "2026-11-12T01:45:26.958939"
+    },
+    {
+      "english": "My card payment went through smoothly.",
+      "japanese": "カード決済、すんなり通ったよ。",
+      "transliteration": "kādo kessai, sun'nari totta yo.",
+      "category": "Finance",
+      "generated_at": "2026-11-12T01:45:26.958940"
     }
   ],
-  "last_updated": "2026-11-11T23:23:32.992661"
+  "last_updated": "2026-11-12T01:45:26.958941"
 }
