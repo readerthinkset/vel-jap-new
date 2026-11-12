@@ -1945,7 +1945,42 @@
       "transliteration": "Horidē o tanoshinde ne, ki o tsukete.",
       "category": "Holidays",
       "generated_at": "2026-11-12T21:16:51.179421"
+    },
+    {
+      "english": "Help me, please. I need assistance.",
+      "japanese": "助けてください、助けが必要です。",
+      "transliteration": "tasukete kudasai, tasuke ga hitsuyō desu.",
+      "category": "Emergency",
+      "generated_at": "2026-11-12T22:39:04.093069"
+    },
+    {
+      "english": "Stop! Somebody call an ambulance now!",
+      "japanese": "止まって！誰か、今すぐ救急車を呼んで！",
+      "transliteration": "tomatte! dareka, ima sugu kyūkyūsha o yonde!",
+      "category": "Emergency",
+      "generated_at": "2026-11-12T22:39:04.093080"
+    },
+    {
+      "english": "I’m lost. Please help me find home.",
+      "japanese": "迷子です、家まで案内してください。",
+      "transliteration": "maigo desu, ie made annai shite kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-12T22:39:04.093082"
+    },
+    {
+      "english": "Is everyone okay? Any injuries?",
+      "japanese": "みんな大丈夫？けがはありますか。",
+      "transliteration": "min’na daijōbu? kega wa arimasu ka.",
+      "category": "Emergency",
+      "generated_at": "2026-11-12T22:39:04.093083"
+    },
+    {
+      "english": "My chest hurts. Please call a doctor.",
+      "japanese": "胸が痛いです、医者を呼んでください。",
+      "transliteration": "mune ga itai desu, iasha o yonde kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-12T22:39:04.093085"
     }
   ],
-  "last_updated": "2026-11-12T21:16:51.179422"
+  "last_updated": "2026-11-12T22:39:04.093087"
 }
