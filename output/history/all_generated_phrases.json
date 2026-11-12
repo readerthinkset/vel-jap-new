@@ -1840,7 +1840,42 @@
       "transliteration": "kādo kessai, sun'nari totta yo.",
       "category": "Finance",
       "generated_at": "2026-11-12T01:45:26.958940"
+    },
+    {
+      "english": "You’ve got this, keep going.",
+      "japanese": "大丈夫、続けてね。",
+      "transliteration": "daijōbu, tsuzukete ne",
+      "category": "Success",
+      "generated_at": "2026-11-12T06:57:56.038011"
+    },
+    {
+      "english": "Nice work, that’s a win.",
+      "japanese": "いいね、勝ったよ。",
+      "transliteration": "ii ne, katta yo",
+      "category": "Success",
+      "generated_at": "2026-11-12T06:57:56.038022"
+    },
+    {
+      "english": "Great job, you nailed it!",
+      "japanese": "すごい、うまくできたね。",
+      "transliteration": "sugoi, umaku dekita ne",
+      "category": "Success",
+      "generated_at": "2026-11-12T06:57:56.038024"
+    },
+    {
+      "english": "I’m proud of you, seriously.",
+      "japanese": "本当にすごいね、誇りだよ。",
+      "transliteration": "hontō ni sugoi ne, hokori da yo",
+      "category": "Success",
+      "generated_at": "2026-11-12T06:57:56.038026"
+    },
+    {
+      "english": "Take a breath, you can do it.",
+      "japanese": "深呼吸して、できるよ。",
+      "transliteration": "shinkokyū shite, dekiru yo",
+      "category": "Success",
+      "generated_at": "2026-11-12T06:57:56.038027"
     }
   ],
-  "last_updated": "2026-11-12T01:45:26.958941"
+  "last_updated": "2026-11-12T06:57:56.038029"
 }
