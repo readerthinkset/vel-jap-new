@@ -2015,7 +2015,42 @@
       "transliteration": "Anata ga ite kurete, honto ni shiawase.",
       "category": "Happiness",
       "generated_at": "2026-11-13T00:49:36.205594"
+    },
+    {
+      "english": "Thanks for being my friend, always.",
+      "japanese": "いつも友だちでいてくれてありがとう。",
+      "transliteration": "Itsumo tomodachi de ite kurete arigatou.",
+      "category": "Friendship",
+      "generated_at": "2026-11-13T06:19:58.366038"
+    },
+    {
+      "english": "I’m lucky to have you.",
+      "japanese": "あなたに出会えてよかった。",
+      "transliteration": "Anata ni deaete yokatta.",
+      "category": "Friendship",
+      "generated_at": "2026-11-13T06:19:58.366050"
+    },
+    {
+      "english": "Let’s hang out this weekend.",
+      "japanese": "今週末、会おうね。",
+      "transliteration": "Kongeshumatsu, aou ne.",
+      "category": "Friendship",
+      "generated_at": "2026-11-13T06:19:58.366052"
+    },
+    {
+      "english": "You can always count on me.",
+      "japanese": "いつでも私を頼ってね。",
+      "transliteration": "Itsudemo watashi o tayotte ne.",
+      "category": "Friendship",
+      "generated_at": "2026-11-13T06:19:58.366054"
+    },
+    {
+      "english": "Your smile makes me happy.",
+      "japanese": "あなたの笑顔に元気もらうよ。",
+      "transliteration": "Anata no egao ni genki mora u yo.",
+      "category": "Friendship",
+      "generated_at": "2026-11-13T06:19:58.366055"
     }
   ],
-  "last_updated": "2026-11-13T00:49:36.205596"
+  "last_updated": "2026-11-13T06:19:58.366057"
 }
