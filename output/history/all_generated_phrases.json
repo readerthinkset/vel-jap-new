@@ -2120,7 +2120,42 @@
       "transliteration": "ii kanji da yo. ganbatte",
       "category": "Kindness",
       "generated_at": "2026-11-13T20:44:02.656945"
+    },
+    {
+      "english": "What time is it now, please?",
+      "japanese": "今、何時ですか？",
+      "transliteration": "Ima, nanji desu ka?",
+      "category": "Time",
+      "generated_at": "2026-11-13T22:26:02.398829"
+    },
+    {
+      "english": "It's 7 o'clock exactly, right?",
+      "japanese": "ちょうど7時だよね？",
+      "transliteration": "Choudo shichi-ji da yo ne?",
+      "category": "Time",
+      "generated_at": "2026-11-13T22:26:02.398841"
+    },
+    {
+      "english": "My train leaves at 8.",
+      "japanese": "電車は8時に出ます。",
+      "transliteration": "Densha wa hachiji ni demasu.",
+      "category": "Time",
+      "generated_at": "2026-11-13T22:26:02.398843"
+    },
+    {
+      "english": "I’ll meet you at 5.",
+      "japanese": "5時に会おう。",
+      "transliteration": "Go-ji ni aou.",
+      "category": "Time",
+      "generated_at": "2026-11-13T22:26:02.398844"
+    },
+    {
+      "english": "Sorry, I’m late, again!",
+      "japanese": "ごめん、また遅れた！",
+      "transliteration": "Gomen, mata okureta!",
+      "category": "Time",
+      "generated_at": "2026-11-13T22:26:02.398846"
     }
   ],
-  "last_updated": "2026-11-13T20:44:02.656947"
+  "last_updated": "2026-11-13T22:26:02.398848"
 }
