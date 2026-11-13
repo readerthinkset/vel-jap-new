@@ -2050,7 +2050,42 @@
       "transliteration": "Anata no egao ni genki mora u yo.",
       "category": "Friendship",
       "generated_at": "2026-11-13T06:19:58.366055"
+    },
+    {
+      "english": "Where is the nearest train station?",
+      "japanese": "いちばん近い駅はどこですか。",
+      "transliteration": "ichiban chikai eki wa doko desu ka",
+      "category": "Travel",
+      "generated_at": "2026-11-13T19:07:31.690262"
+    },
+    {
+      "english": "I need a ticket to Shinjuku.",
+      "japanese": "新宿までの切符をください。",
+      "transliteration": "Shinjuku made no kippu o kudasai",
+      "category": "Travel",
+      "generated_at": "2026-11-13T19:07:31.690273"
+    },
+    {
+      "english": "How much is this, please?",
+      "japanese": "これはいくらですか。",
+      "transliteration": "kore wa ikura desu ka",
+      "category": "Travel",
+      "generated_at": "2026-11-13T19:07:31.690275"
+    },
+    {
+      "english": "Is there a restroom nearby?",
+      "japanese": "近くにトイレはありますか。",
+      "transliteration": "chikaku ni toire wa arimasu ka",
+      "category": "Travel",
+      "generated_at": "2026-11-13T19:07:31.690276"
+    },
+    {
+      "english": "Do you accept credit cards?",
+      "japanese": "クレジットカードは使えますか。",
+      "transliteration": "kurejitto kaado wa tsukaemasu ka",
+      "category": "Travel",
+      "generated_at": "2026-11-13T19:07:31.690278"
     }
   ],
-  "last_updated": "2026-11-13T06:19:58.366057"
+  "last_updated": "2026-11-13T19:07:31.690280"
 }
