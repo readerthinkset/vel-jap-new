@@ -2085,7 +2085,42 @@
       "transliteration": "kurejitto kaado wa tsukaemasu ka",
       "category": "Travel",
       "generated_at": "2026-11-13T19:07:31.690278"
+    },
+    {
+      "english": "Thank you, you made my day.",
+      "japanese": "ありがとう、うれしかったよ。",
+      "transliteration": "arigatō, ureshikatta yo",
+      "category": "Kindness",
+      "generated_at": "2026-11-13T20:44:02.656929"
+    },
+    {
+      "english": "Sorry, I didn’t mean to bother you.",
+      "japanese": "ごめんね、迷惑をかけたくなかった。",
+      "transliteration": "gomen ne, meiwaku o kaketakunakatta",
+      "category": "Kindness",
+      "generated_at": "2026-11-13T20:44:02.656941"
+    },
+    {
+      "english": "Please take your time, no rush.",
+      "japanese": "ゆっくりで大丈夫だよ。急がなくていい。",
+      "transliteration": "yukkuri de daijōbu da yo. isoganakute ii",
+      "category": "Kindness",
+      "generated_at": "2026-11-13T20:44:02.656942"
+    },
+    {
+      "english": "That was kind of you.",
+      "japanese": "やさしいね。ありがとう。",
+      "transliteration": "yasashii ne. arigatō",
+      "category": "Kindness",
+      "generated_at": "2026-11-13T20:44:02.656944"
+    },
+    {
+      "english": "You’re doing great, keep going!",
+      "japanese": "いい感じだよ。がんばって。",
+      "transliteration": "ii kanji da yo. ganbatte",
+      "category": "Kindness",
+      "generated_at": "2026-11-13T20:44:02.656945"
     }
   ],
-  "last_updated": "2026-11-13T19:07:31.690280"
+  "last_updated": "2026-11-13T20:44:02.656947"
 }
