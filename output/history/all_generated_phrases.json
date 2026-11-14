@@ -2155,7 +2155,42 @@
       "transliteration": "Gomen, mata okureta!",
       "category": "Time",
       "generated_at": "2026-11-13T22:26:02.398846"
+    },
+    {
+      "english": "I’m heading to the office now, okay?",
+      "japanese": "いま会社に向かっています、いいですか。",
+      "transliteration": "ima kaisha ni mukatte imasu, ii desu ka.",
+      "category": "Work",
+      "generated_at": "2026-11-14T00:34:38.553606"
+    },
+    {
+      "english": "Can you send me that file, please?",
+      "japanese": "そのファイル送ってもらえますか、お願いします。",
+      "transliteration": "sono fairu okutte moraemasu ka, onegaishimasu.",
+      "category": "Work",
+      "generated_at": "2026-11-14T00:34:38.553619"
+    },
+    {
+      "english": "I’ll be late today, sorry.",
+      "japanese": "今日は遅れます、ごめんなさい。",
+      "transliteration": "kyou wa okuremasu, gomennasai.",
+      "category": "Work",
+      "generated_at": "2026-11-14T00:34:38.553620"
+    },
+    {
+      "english": "Let’s wrap it up quickly, please.",
+      "japanese": "早めに終わらせましょう、お願いします。",
+      "transliteration": "hayame ni owarasemashou, onegaishimasu.",
+      "category": "Work",
+      "generated_at": "2026-11-14T00:34:38.553621"
+    },
+    {
+      "english": "Please check the schedule one more time.",
+      "japanese": "予定をもう一度確認してください。",
+      "transliteration": "yotei o mou ichido kakunin shite kudasai.",
+      "category": "Work",
+      "generated_at": "2026-11-14T00:34:38.553622"
     }
   ],
-  "last_updated": "2026-11-13T22:26:02.398848"
+  "last_updated": "2026-11-14T00:34:38.553624"
 }
