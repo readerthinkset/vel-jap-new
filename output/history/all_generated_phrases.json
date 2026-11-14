@@ -2225,7 +2225,42 @@
       "transliteration": "fuku o kite, soto ni deru.",
       "category": "Daily Routine",
       "generated_at": "2026-11-14T06:00:44.803069"
+    },
+    {
+      "english": "I can do this, step by step.",
+      "japanese": "できるよ、ひとつずつ進もう。",
+      "transliteration": "dekiru yo, hitotsu zutsu susumou.",
+      "category": "Courage",
+      "generated_at": "2026-11-14T17:36:59.542804"
+    },
+    {
+      "english": "Hey, don’t back down today.",
+      "japanese": "ねえ、今日は引かないで。",
+      "transliteration": "nee, kyou wa hika naide.",
+      "category": "Courage",
+      "generated_at": "2026-11-14T17:36:59.542814"
+    },
+    {
+      "english": "Even if I’m scared, I’ll try.",
+      "japanese": "怖くても、やってみる。",
+      "transliteration": "kowakute mo, yattemiru.",
+      "category": "Courage",
+      "generated_at": "2026-11-14T17:36:59.542816"
+    },
+    {
+      "english": "Take a breath, then speak up.",
+      "japanese": "深呼吸して、思い切って言おう。",
+      "transliteration": "shinkokyuu shite, omoikitte iou.",
+      "category": "Courage",
+      "generated_at": "2026-11-14T17:36:59.542820"
+    },
+    {
+      "english": "I’m nervous, but I’m going anyway.",
+      "japanese": "緊張するけど、行くよ。",
+      "transliteration": "kinchou suru kedo, iku yo.",
+      "category": "Courage",
+      "generated_at": "2026-11-14T17:36:59.542822"
     }
   ],
-  "last_updated": "2026-11-14T06:00:44.803071"
+  "last_updated": "2026-11-14T17:36:59.542824"
 }
