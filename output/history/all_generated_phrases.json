@@ -2190,7 +2190,42 @@
       "transliteration": "yotei o mou ichido kakunin shite kudasai.",
       "category": "Work",
       "generated_at": "2026-11-14T00:34:38.553622"
+    },
+    {
+      "english": "I wake up, then I check my phone.",
+      "japanese": "起きたら、まずスマホを見る。",
+      "transliteration": "okitara, mā sumaho o miru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-14T06:00:44.803034"
+    },
+    {
+      "english": "I brush my teeth, slowly and carefully.",
+      "japanese": "歯を磨く、ゆっくり丁寧に。",
+      "transliteration": "ha o miru, yukkuri teinei ni.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-14T06:00:44.803064"
+    },
+    {
+      "english": "I wash my face with cool water.",
+      "japanese": "冷たい水で顔を洗う。",
+      "transliteration": "tsumetai mizu de kao o arau.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-14T06:00:44.803066"
+    },
+    {
+      "english": "I take a quick shower before work.",
+      "japanese": "仕事前に、さっとシャワーを浴びる。",
+      "transliteration": "shigoto mae ni, satto shawā o abiru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-14T06:00:44.803068"
+    },
+    {
+      "english": "I get dressed, and head out.",
+      "japanese": "服を着て、外に出る。",
+      "transliteration": "fuku o kite, soto ni deru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-14T06:00:44.803069"
     }
   ],
-  "last_updated": "2026-11-14T00:34:38.553624"
+  "last_updated": "2026-11-14T06:00:44.803071"
 }
