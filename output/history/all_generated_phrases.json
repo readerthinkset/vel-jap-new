@@ -2295,7 +2295,42 @@
       "transliteration": "Usagi ga niwa ni pyon to haitte kita.",
       "category": "Animals",
       "generated_at": "2026-11-14T18:55:29.859167"
+    },
+    {
+      "english": "Hi, do you have a table for two?",
+      "japanese": "すみません、2人席はありますか？",
+      "transliteration": "sumimasen, futari seki wa arimasu ka?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:12:36.498335"
+    },
+    {
+      "english": "We're ready to order now, please.",
+      "japanese": "注文してもいいですか。",
+      "transliteration": "chūmon shite mo ii desu ka?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:12:36.498348"
+    },
+    {
+      "english": "Can I see the menu, please?",
+      "japanese": "メニューを見せてもらえますか？",
+      "transliteration": "menyū o misete moraemasu ka?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:12:36.498349"
+    },
+    {
+      "english": "Do you have vegetarian options?",
+      "japanese": "ベジタリアンのメニューはありますか？",
+      "transliteration": "bejitarian no menyū wa arimasu ka?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:12:36.498351"
+    },
+    {
+      "english": "No spicy food for me, please.",
+      "japanese": "辛いのはなしでお願いします。",
+      "transliteration": "karai no wa nashi de onegaishimasu.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:12:36.498352"
     }
   ],
-  "last_updated": "2026-11-14T18:55:29.859169"
+  "last_updated": "2026-11-14T21:12:36.498353"
 }
