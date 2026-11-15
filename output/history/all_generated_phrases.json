@@ -2365,7 +2365,42 @@
       "transliteration": "kinchou shitemo, wara te mite",
       "category": "Inner Peace",
       "generated_at": "2026-11-14T23:30:39.464610"
+    },
+    {
+      "english": "I feel happy right now,",
+      "japanese": "いま、うれしい気持ちです。",
+      "transliteration": "ima, ureshii kimochi desu.",
+      "category": "Feelings",
+      "generated_at": "2026-11-15T06:04:45.753764"
+    },
+    {
+      "english": "I'm feeling calm,",
+      "japanese": "落ち着いています。",
+      "transliteration": "ochitsuiteimasu.",
+      "category": "Feelings",
+      "generated_at": "2026-11-15T06:04:45.753777"
+    },
+    {
+      "english": "I feel nervous today,",
+      "japanese": "今日は緊張しています。",
+      "transliteration": "kyou wa kinchou shiteimasu.",
+      "category": "Feelings",
+      "generated_at": "2026-11-15T06:04:45.753779"
+    },
+    {
+      "english": "I'm a little worried,",
+      "japanese": "少し心配です。",
+      "transliteration": "sukoshi shinpai desu.",
+      "category": "Feelings",
+      "generated_at": "2026-11-15T06:04:45.753780"
+    },
+    {
+      "english": "I feel excited,",
+      "japanese": "ワクワクしています。",
+      "transliteration": "waku waku shiteimasu.",
+      "category": "Feelings",
+      "generated_at": "2026-11-15T06:04:45.753782"
     }
   ],
-  "last_updated": "2026-11-14T23:30:39.464612"
+  "last_updated": "2026-11-15T06:04:45.753784"
 }
