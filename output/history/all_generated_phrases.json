@@ -2505,7 +2505,42 @@
       "transliteration": "junban ni narabimashou",
       "category": "Culture",
       "generated_at": "2026-11-15T21:32:43.669798"
+    },
+    {
+      "english": "It’s hot today, isn’t it?",
+      "japanese": "今日は暑いですね。",
+      "transliteration": "Kyou wa atsui desu ne.",
+      "category": "Weather",
+      "generated_at": "2026-11-15T23:39:49.931554"
+    },
+    {
+      "english": "The wind is getting stronger, wow.",
+      "japanese": "風が強くなってきたね。",
+      "transliteration": "Kaze ga tsuyoku natte kita ne.",
+      "category": "Weather",
+      "generated_at": "2026-11-15T23:39:49.931567"
+    },
+    {
+      "english": "Clouds are moving fast overhead.",
+      "japanese": "上の雲がすごく流れてるよ。",
+      "transliteration": "Ue no kumo ga sugoku nagare teru yo.",
+      "category": "Weather",
+      "generated_at": "2026-11-15T23:39:49.931569"
+    },
+    {
+      "english": "I think it will snow tonight.",
+      "japanese": "今夜、雪が降りそうだよ。",
+      "transliteration": "Kon'ya, yuki ga furi-sou da yo.",
+      "category": "Weather",
+      "generated_at": "2026-11-15T23:39:49.931571"
+    },
+    {
+      "english": "It’s getting colder, be careful.",
+      "japanese": "だんだん寒くなってきたよ。",
+      "transliteration": "Dandan samuku natte kita yo.",
+      "category": "Weather",
+      "generated_at": "2026-11-15T23:39:49.931573"
     }
   ],
-  "last_updated": "2026-11-15T21:32:43.669800"
+  "last_updated": "2026-11-15T23:39:49.931575"
 }
