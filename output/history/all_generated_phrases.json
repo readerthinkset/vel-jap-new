@@ -2400,7 +2400,42 @@
       "transliteration": "waku waku shiteimasu.",
       "category": "Feelings",
       "generated_at": "2026-11-15T06:04:45.753782"
+    },
+    {
+      "english": "I’m trying my best, today too.",
+      "japanese": "きょうも、できるだけ頑張るよ。",
+      "transliteration": "kyou mo, dekiru dake ganbaru yo",
+      "category": "Growth",
+      "generated_at": "2026-11-15T18:25:56.216772"
+    },
+    {
+      "english": "Sorry, I’ll be a little late.",
+      "japanese": "ごめんね、少し遅れるよ。",
+      "transliteration": "gomen ne, sukoshi okureru yo",
+      "category": "Growth",
+      "generated_at": "2026-11-15T18:25:56.216785"
+    },
+    {
+      "english": "Thanks for waiting, I appreciate it.",
+      "japanese": "待ってくれてありがとう、助かるよ。",
+      "transliteration": "matte kurete arigatou, tasukaru yo",
+      "category": "Growth",
+      "generated_at": "2026-11-15T18:25:56.216786"
+    },
+    {
+      "english": "I’m hungry, I want something quick.",
+      "japanese": "お腹すいた、早く食べたい。",
+      "transliteration": "onaka suita, hayaku tabetai",
+      "category": "Growth",
+      "generated_at": "2026-11-15T18:25:56.216787"
+    },
+    {
+      "english": "Let’s go together, it’s easier.",
+      "japanese": "一緒に行こう、楽だよ。",
+      "transliteration": "issho ni ikou, rakuda yo",
+      "category": "Growth",
+      "generated_at": "2026-11-15T18:25:56.216788"
     }
   ],
-  "last_updated": "2026-11-15T06:04:45.753784"
+  "last_updated": "2026-11-15T18:25:56.216789"
 }
