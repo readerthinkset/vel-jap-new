@@ -2470,7 +2470,42 @@
       "transliteration": "Ane wa sugoku yasashii.",
       "category": "Family Terms",
       "generated_at": "2026-11-15T19:30:47.709728"
+    },
+    {
+      "english": "When you enter, say hello first.",
+      "japanese": "入ったら、まずこんにちはと言ってね。",
+      "transliteration": "haittara, mazu konnichiwa tte ne",
+      "category": "Culture",
+      "generated_at": "2026-11-15T21:32:43.669780"
+    },
+    {
+      "english": "Shoes off, please, at the entrance.",
+      "japanese": "玄関で靴を脱いでください。",
+      "transliteration": "genkan de kutsu o nuide kudasai",
+      "category": "Culture",
+      "generated_at": "2026-11-15T21:32:43.669792"
+    },
+    {
+      "english": "We eat quietly on the train.",
+      "japanese": "電車では静かに食べます。",
+      "transliteration": "densha dewa shizuka ni tabemasu",
+      "category": "Culture",
+      "generated_at": "2026-11-15T21:32:43.669796"
+    },
+    {
+      "english": "Please keep your voice low.",
+      "japanese": "声は小さめにしてね。",
+      "transliteration": "koe wa chiisame ni shite ne",
+      "category": "Culture",
+      "generated_at": "2026-11-15T21:32:43.669797"
+    },
+    {
+      "english": "Let's line up, one by one.",
+      "japanese": "順番に並びましょう。",
+      "transliteration": "junban ni narabimashou",
+      "category": "Culture",
+      "generated_at": "2026-11-15T21:32:43.669798"
     }
   ],
-  "last_updated": "2026-11-15T19:30:47.709729"
+  "last_updated": "2026-11-15T21:32:43.669800"
 }
