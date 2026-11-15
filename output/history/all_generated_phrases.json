@@ -2435,7 +2435,42 @@
       "transliteration": "issho ni ikou, rakuda yo",
       "category": "Growth",
       "generated_at": "2026-11-15T18:25:56.216788"
+    },
+    {
+      "english": "Mom, can you call me later?",
+      "japanese": "お母さん、あとで電話してね。",
+      "transliteration": "Okaasan, ato de denwa shite ne.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-15T19:30:47.709699"
+    },
+    {
+      "english": "Dad, I’m home now.",
+      "japanese": "お父さん、ただいま。",
+      "transliteration": "Otōsan, tadaima.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-15T19:30:47.709725"
+    },
+    {
+      "english": "Can I borrow your phone, Mom?",
+      "japanese": "お母さん、その電話借りていい？",
+      "transliteration": "Okaasan, sono denwa karite ii?",
+      "category": "Family Terms",
+      "generated_at": "2026-11-15T19:30:47.709726"
+    },
+    {
+      "english": "Dad, I need help with homework.",
+      "japanese": "お父さん、宿題手伝って。",
+      "transliteration": "Otōsan, shukudai tetsudatte.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-15T19:30:47.709727"
+    },
+    {
+      "english": "My older sister is really kind.",
+      "japanese": "姉はすごくやさしい。",
+      "transliteration": "Ane wa sugoku yasashii.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-15T19:30:47.709728"
     }
   ],
-  "last_updated": "2026-11-15T18:25:56.216789"
+  "last_updated": "2026-11-15T19:30:47.709729"
 }
