@@ -2540,7 +2540,42 @@
       "transliteration": "Dandan samuku natte kita yo.",
       "category": "Weather",
       "generated_at": "2026-11-15T23:39:49.931573"
+    },
+    {
+      "english": "Go straight, then turn left.",
+      "japanese": "まっすぐ行って、左に曲がってください。",
+      "transliteration": "massugu itte, hidari ni magatte kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-16T06:03:34.984375"
+    },
+    {
+      "english": "Turn right at the next corner.",
+      "japanese": "次の角を右に曲がってください。",
+      "transliteration": "tsugi no kado o migi ni magatte kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-16T06:03:34.984388"
+    },
+    {
+      "english": "Walk two blocks, then stop.",
+      "japanese": "二つ先まで歩いて、そこで止まって。",
+      "transliteration": "futatsu saki made aruite, soko de tomatte.",
+      "category": "Directions",
+      "generated_at": "2026-11-16T06:03:34.984390"
+    },
+    {
+      "english": "The station is down the street.",
+      "japanese": "駅は通りの先です。",
+      "transliteration": "eki wa dori no saki desu.",
+      "category": "Directions",
+      "generated_at": "2026-11-16T06:03:34.984394"
+    },
+    {
+      "english": "Please follow me, it's this way.",
+      "japanese": "こっちです、私についてきてください。",
+      "transliteration": "kocchi desu, watashi ni tsuite kite kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-16T06:03:34.984396"
     }
   ],
-  "last_updated": "2026-11-15T23:39:49.931575"
+  "last_updated": "2026-11-16T06:03:34.984398"
 }
