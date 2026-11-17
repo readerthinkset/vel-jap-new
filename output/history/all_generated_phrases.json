@@ -2750,7 +2750,42 @@
       "transliteration": "Arigatou, ima wa kimochi ga rakuda yo.",
       "category": "Gratitude",
       "generated_at": "2026-11-17T07:41:28.159875"
+    },
+    {
+      "english": "My boyfriend is really kind, today.",
+      "japanese": "うちの彼氏はすごく優しい、今日。",
+      "transliteration": "uchi no kareshi wa sugoku yasashii, kyou.",
+      "category": "Relationships",
+      "generated_at": "2026-11-17T20:24:50.703133"
+    },
+    {
+      "english": "My girlfriend texted me, late.",
+      "japanese": "彼女が遅くにメールしてくれた。",
+      "transliteration": "kanojo ga osoku ni meeru shite kureta.",
+      "category": "Relationships",
+      "generated_at": "2026-11-17T20:24:50.703143"
+    },
+    {
+      "english": "We argue, but we make up.",
+      "japanese": "私たちは言い合うけど、仲直りする。",
+      "transliteration": "watashitachi wa ii a u kedo, naka naori suru.",
+      "category": "Relationships",
+      "generated_at": "2026-11-17T20:24:50.703145"
+    },
+    {
+      "english": "I miss you so much, right now.",
+      "japanese": "いま、すごく会いたい。",
+      "transliteration": "ima, sugoku aitai.",
+      "category": "Relationships",
+      "generated_at": "2026-11-17T20:24:50.703147"
+    },
+    {
+      "english": "I love you, and I mean it.",
+      "japanese": "愛してる、ちゃんと本気だよ。",
+      "transliteration": "aishiteru, chanto honki da yo.",
+      "category": "Relationships",
+      "generated_at": "2026-11-17T20:24:50.703148"
     }
   ],
-  "last_updated": "2026-11-17T07:41:28.159876"
+  "last_updated": "2026-11-17T20:24:50.703152"
 }
