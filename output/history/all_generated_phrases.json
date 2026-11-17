@@ -2645,7 +2645,42 @@
       "transliteration": "sono rinku, mou ichido okutte",
       "category": "Technology",
       "generated_at": "2026-11-16T23:09:06.547816"
+    },
+    {
+      "english": "I play basketball on weekends.",
+      "japanese": "週末にバスケをします。",
+      "transliteration": "shuumatsu ni basuke o shimasu",
+      "category": "Sports",
+      "generated_at": "2026-11-17T00:42:46.527021"
+    },
+    {
+      "english": "I’m learning how to swim better.",
+      "japanese": "泳ぎをもっと上手になりたいです。",
+      "transliteration": "oyogi o motto joozu ni naritai desu",
+      "category": "Sports",
+      "generated_at": "2026-11-17T00:42:46.527034"
+    },
+    {
+      "english": "My knee hurts after soccer.",
+      "japanese": "サッカーのあと膝が痛い。",
+      "transliteration": "sakkaa no ato hiza ga itai",
+      "category": "Sports",
+      "generated_at": "2026-11-17T00:42:46.527036"
+    },
+    {
+      "english": "We have practice at six.",
+      "japanese": "練習は6時です。",
+      "transliteration": "renshuu wa roku-ji desu",
+      "category": "Sports",
+      "generated_at": "2026-11-17T00:42:46.527037"
+    },
+    {
+      "english": "That referee call shocked me.",
+      "japanese": "あの審判の判定に驚いた。",
+      "transliteration": "ano shinpan no hantei ni odoroita",
+      "category": "Sports",
+      "generated_at": "2026-11-17T00:42:46.527038"
     }
   ],
-  "last_updated": "2026-11-16T23:09:06.547817"
+  "last_updated": "2026-11-17T00:42:46.527039"
 }
