@@ -2680,7 +2680,42 @@
       "transliteration": "ano shinpan no hantei ni odoroita",
       "category": "Sports",
       "generated_at": "2026-11-17T00:42:46.527038"
+    },
+    {
+      "english": "I need clean socks, today.",
+      "japanese": "きれいな靴下が必要です、今日。",
+      "transliteration": "kirei na kutsushita ga hitsuyō desu, kyō.",
+      "category": "Clothes",
+      "generated_at": "2026-11-17T02:43:19.119155"
+    },
+    {
+      "english": "Where are my shoes, please?",
+      "japanese": "私の靴はどこですか、お願いします。",
+      "transliteration": "watashi no kutsu wa doko desu ka, onegaishimasu.",
+      "category": "Clothes",
+      "generated_at": "2026-11-17T02:43:19.119168"
+    },
+    {
+      "english": "This jacket fits me well.",
+      "japanese": "このジャケット、私にぴったりです。",
+      "transliteration": "kono jaketto, watashi ni pitta-ri desu.",
+      "category": "Clothes",
+      "generated_at": "2026-11-17T02:43:19.119170"
+    },
+    {
+      "english": "I spilled coffee on my shirt.",
+      "japanese": "シャツにコーヒーをこぼしました。",
+      "transliteration": "shatsu ni kōhī o koboshimashita.",
+      "category": "Clothes",
+      "generated_at": "2026-11-17T02:43:19.119171"
+    },
+    {
+      "english": "Do you have this in black?",
+      "japanese": "これ、黒もありますか。",
+      "transliteration": "kore, kuro mo arimasu ka.",
+      "category": "Clothes",
+      "generated_at": "2026-11-17T02:43:19.119172"
     }
   ],
-  "last_updated": "2026-11-17T00:42:46.527039"
+  "last_updated": "2026-11-17T02:43:19.119174"
 }
