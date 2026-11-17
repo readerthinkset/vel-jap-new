@@ -2785,7 +2785,42 @@
       "transliteration": "aishiteru, chanto honki da yo.",
       "category": "Relationships",
       "generated_at": "2026-11-17T20:24:50.703148"
+    },
+    {
+      "english": "I like you, more than words can say.",
+      "japanese": "言葉以上に、あなたが好き。",
+      "transliteration": "Kotoba ijou ni, anata ga suki.",
+      "category": "Love",
+      "generated_at": "2026-11-17T21:59:04.817009"
+    },
+    {
+      "english": "I miss you, so much today.",
+      "japanese": "今日は、すごくあなたが恋しい。",
+      "transliteration": "Kyou wa, sugoku anata ga koishii.",
+      "category": "Love",
+      "generated_at": "2026-11-17T21:59:04.817023"
+    },
+    {
+      "english": "Can I hold your hand, please?",
+      "japanese": "手をつないでいい？",
+      "transliteration": "Te o tsunaide ii?",
+      "category": "Love",
+      "generated_at": "2026-11-17T21:59:04.817024"
+    },
+    {
+      "english": "Your smile makes my heart calm.",
+      "japanese": "あなたの笑顔で心が落ち着く。",
+      "transliteration": "Anata no egao de kokoro ga ochitsuku.",
+      "category": "Love",
+      "generated_at": "2026-11-17T21:59:04.817026"
+    },
+    {
+      "english": "I want to be with you tonight.",
+      "japanese": "今夜は、あなたと一緒にいたい。",
+      "transliteration": "Kon'ya wa, anata to issho ni itai.",
+      "category": "Love",
+      "generated_at": "2026-11-17T21:59:04.817027"
     }
   ],
-  "last_updated": "2026-11-17T20:24:50.703152"
+  "last_updated": "2026-11-17T21:59:04.817029"
 }
