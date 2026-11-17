@@ -2715,7 +2715,42 @@
       "transliteration": "kore, kuro mo arimasu ka.",
       "category": "Clothes",
       "generated_at": "2026-11-17T02:43:19.119172"
+    },
+    {
+      "english": "Thank you for helping me today, really.",
+      "japanese": "今日助けてくれて、本当にありがとう。",
+      "transliteration": "Kyou tasukete kurete, hontou ni arigatou.",
+      "category": "Gratitude",
+      "generated_at": "2026-11-17T07:41:28.159856"
+    },
+    {
+      "english": "I really appreciate your kindness, thank you.",
+      "japanese": "親切にしてくれて、ありがとう。",
+      "transliteration": "Shinsetsu ni shite kurete, arigatou.",
+      "category": "Gratitude",
+      "generated_at": "2026-11-17T07:41:28.159870"
+    },
+    {
+      "english": "Thanks for listening, it means a lot.",
+      "japanese": "聞いてくれて、すごく嬉しい。",
+      "transliteration": "Kikite kurete, sugoku ureshii.",
+      "category": "Gratitude",
+      "generated_at": "2026-11-17T07:41:28.159872"
+    },
+    {
+      "english": "Thanks for your time, I’m grateful.",
+      "japanese": "時間をくれてありがとう、とても助かりました。",
+      "transliteration": "Jikan o kurete arigatou, totemo tasukarimashita.",
+      "category": "Gratitude",
+      "generated_at": "2026-11-17T07:41:28.159873"
+    },
+    {
+      "english": "Thank you, I feel better now.",
+      "japanese": "ありがとう、今は気持ちが楽だよ。",
+      "transliteration": "Arigatou, ima wa kimochi ga rakuda yo.",
+      "category": "Gratitude",
+      "generated_at": "2026-11-17T07:41:28.159875"
     }
   ],
-  "last_updated": "2026-11-17T02:43:19.119174"
+  "last_updated": "2026-11-17T07:41:28.159876"
 }
