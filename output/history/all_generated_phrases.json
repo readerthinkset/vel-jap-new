@@ -2820,7 +2820,42 @@
       "transliteration": "Kon'ya wa, anata to issho ni itai.",
       "category": "Love",
       "generated_at": "2026-11-17T21:59:04.817027"
+    },
+    {
+      "english": "Right now, soften your jaw, slowly.",
+      "japanese": "いま、ゆっくり、あごの力を抜いて。",
+      "transliteration": "Ima, yukkuri, ago no chikara o nuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-17T23:57:53.898727"
+    },
+    {
+      "english": "Breathe in quietly, and smile.",
+      "japanese": "そっと息を吸って、笑ってみて。",
+      "transliteration": "Sotto iki o sutte, waratte mite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-17T23:57:53.898741"
+    },
+    {
+      "english": "Feel your back straighten, gently.",
+      "japanese": "背中をそっとまっすぐにして。",
+      "transliteration": "Senaa o sotto massugu ni shite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-17T23:57:53.898743"
+    },
+    {
+      "english": "Let your hands rest, comfortably.",
+      "japanese": "手をゆったり休ませて。",
+      "transliteration": "Te o yuttari yasumasete.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-17T23:57:53.898743"
+    },
+    {
+      "english": "Notice your breath, no need to change.",
+      "japanese": "呼吸を見つめて、変えなくていい。",
+      "transliteration": "Kokyū o mitsumete, kaenakute ii.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-17T23:57:53.898744"
     }
   ],
-  "last_updated": "2026-11-17T21:59:04.817029"
+  "last_updated": "2026-11-17T23:57:53.898746"
 }
