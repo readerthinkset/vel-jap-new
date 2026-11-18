@@ -2925,7 +2925,42 @@
       "transliteration": "Nani ga attemo, mata yatte miru.",
       "category": "Hope",
       "generated_at": "2026-11-18T07:03:38.950320"
+    },
+    {
+      "english": "Sorry, I need a few minutes.",
+      "japanese": "すみません、あと少しだけ待ってください。",
+      "transliteration": "Sumimasen, ato sukoshi dake matte kudasai.",
+      "category": "Patience",
+      "generated_at": "2026-11-18T19:53:25.987767"
+    },
+    {
+      "english": "Hold on, let me check that.",
+      "japanese": "ちょっと待って、確認しますね。",
+      "transliteration": "Chotto matte, kakunin shimasu ne.",
+      "category": "Patience",
+      "generated_at": "2026-11-18T19:53:25.987781"
+    },
+    {
+      "english": "Please wait, I’m getting dressed.",
+      "japanese": "お待たせします、今着替えています。",
+      "transliteration": "Omatase shimasu, ima kikaeteimasu.",
+      "category": "Patience",
+      "generated_at": "2026-11-18T19:53:25.987782"
+    },
+    {
+      "english": "Thanks, I’ll be ready soon.",
+      "japanese": "ありがとう、もうすぐ準備できるよ。",
+      "transliteration": "Arigatou, mousugu junbi dekiru yo.",
+      "category": "Patience",
+      "generated_at": "2026-11-18T19:53:25.987783"
+    },
+    {
+      "english": "Wait a bit, I’m on my way.",
+      "japanese": "少し待って、もう向かっています。",
+      "transliteration": "Sukoshi matte, mou mukatteimasu.",
+      "category": "Patience",
+      "generated_at": "2026-11-18T19:53:25.987783"
     }
   ],
-  "last_updated": "2026-11-18T07:03:38.950336"
+  "last_updated": "2026-11-18T19:53:25.987785"
 }
