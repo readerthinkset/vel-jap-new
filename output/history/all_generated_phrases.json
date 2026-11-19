@@ -3135,7 +3135,42 @@
       "transliteration": "yuuyake ga orenji iro ni natte, attakai.",
       "category": "Colors",
       "generated_at": "2026-11-19T19:53:33.293096"
+    },
+    {
+      "english": "Call 110, now! Emergency situation.",
+      "japanese": "110番に電話してください、今すぐ。",
+      "transliteration": "Hyakutoban ni denwa shite kudasai, ima sugu.",
+      "category": "Emergency",
+      "generated_at": "2026-11-19T21:57:04.291378"
+    },
+    {
+      "english": "I need an ambulance, please.",
+      "japanese": "救急車を呼んでください。",
+      "transliteration": "Kyukyūsha o yonde kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-19T21:57:04.291390"
+    },
+    {
+      "english": "Someone is hurt over there!",
+      "japanese": "あそこで誰かがけがをしています。",
+      "transliteration": "Asoko de dareka ga kega o shite imasu.",
+      "category": "Emergency",
+      "generated_at": "2026-11-19T21:57:04.291392"
+    },
+    {
+      "english": "Quick, call for a doctor!",
+      "japanese": "急いで、医者を呼んでください。",
+      "transliteration": "Isoide, isha o yonde kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-19T21:57:04.291393"
+    },
+    {
+      "english": "I can’t breathe, please help!",
+      "japanese": "息ができません、助けてください。",
+      "transliteration": "Iki ga dekimasen, tasukete kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-19T21:57:04.291394"
     }
   ],
-  "last_updated": "2026-11-19T19:53:33.293098"
+  "last_updated": "2026-11-19T21:57:04.291396"
 }
