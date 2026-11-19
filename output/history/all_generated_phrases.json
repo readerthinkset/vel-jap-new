@@ -3170,7 +3170,42 @@
       "transliteration": "Iki ga dekimasen, tasukete kudasai.",
       "category": "Emergency",
       "generated_at": "2026-11-19T21:57:04.291394"
+    },
+    {
+      "english": "I feel strong today, really.",
+      "japanese": "今日は本当に強い気がする。",
+      "transliteration": "Kyou wa hontou ni tsuyoi ki ga suru.",
+      "category": "Strength",
+      "generated_at": "2026-11-19T23:28:04.499238"
+    },
+    {
+      "english": "My legs feel strong, now.",
+      "japanese": "今、足が強く感じる。",
+      "transliteration": "Ima, ashi ga tsuyoku kanjiru.",
+      "category": "Strength",
+      "generated_at": "2026-11-19T23:28:04.499250"
+    },
+    {
+      "english": "I can handle this, no problem.",
+      "japanese": "これなら大丈夫、任せて。",
+      "transliteration": "Kore nara daijoubu, makasete.",
+      "category": "Strength",
+      "generated_at": "2026-11-19T23:28:04.499251"
+    },
+    {
+      "english": "Stay strong, you’ve got this.",
+      "japanese": "大丈夫、強くいよう。",
+      "transliteration": "Daijoubu, tsuyoku iyou.",
+      "category": "Strength",
+      "generated_at": "2026-11-19T23:28:04.499253"
+    },
+    {
+      "english": "I’m getting stronger every day.",
+      "japanese": "毎日少しずつ強くなってる。",
+      "transliteration": "Mainichi sukoshi zutsu tsuyoku natte ru.",
+      "category": "Strength",
+      "generated_at": "2026-11-19T23:28:04.499254"
     }
   ],
-  "last_updated": "2026-11-19T21:57:04.291396"
+  "last_updated": "2026-11-19T23:28:04.499256"
 }
