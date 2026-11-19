@@ -3100,7 +3100,42 @@
       "transliteration": "shippai shite mo, chanto yoku naru",
       "category": "Motivation",
       "generated_at": "2026-11-19T07:04:14.933862"
+    },
+    {
+      "english": "The sky is bright blue today.",
+      "japanese": "きょう、空は青いよ。",
+      "transliteration": "kyou, sora wa aoi yo.",
+      "category": "Colors",
+      "generated_at": "2026-11-19T19:53:33.293080"
+    },
+    {
+      "english": "I love your soft pink scarf.",
+      "japanese": "その淡いピンクのマフラー、かわいい。",
+      "transliteration": "sono awai pink no mafuraa, kawaii.",
+      "category": "Colors",
+      "generated_at": "2026-11-19T19:53:33.293091"
+    },
+    {
+      "english": "Your hair looks black and shiny.",
+      "japanese": "髪が黒くて、つやつやだね。",
+      "transliteration": "kami ga kurokute, tsuya tsuya da ne.",
+      "category": "Colors",
+      "generated_at": "2026-11-19T19:53:33.293093"
+    },
+    {
+      "english": "That car is white, not gray.",
+      "japanese": "あの車は白だよ、グレーじゃない。",
+      "transliteration": "ano kuruma wa shiro da yo, guree janai.",
+      "category": "Colors",
+      "generated_at": "2026-11-19T19:53:33.293094"
+    },
+    {
+      "english": "The sunset turned orange and warm.",
+      "japanese": "夕焼けがオレンジ色になって、あったかい。",
+      "transliteration": "yuuyake ga orenji iro ni natte, attakai.",
+      "category": "Colors",
+      "generated_at": "2026-11-19T19:53:33.293096"
     }
   ],
-  "last_updated": "2026-11-19T07:04:14.933864"
+  "last_updated": "2026-11-19T19:53:33.293098"
 }
