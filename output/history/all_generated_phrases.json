@@ -3030,7 +3030,42 @@
       "transliteration": "reshīto wa moraemasu ka.",
       "category": "Shopping",
       "generated_at": "2026-11-18T23:41:00.214782"
+    },
+    {
+      "english": "I need to view my recent transactions.",
+      "japanese": "最近の取引を確認したいです。",
+      "transliteration": "saikin no torihiki o kakunin shitai desu",
+      "category": "Finance",
+      "generated_at": "2026-11-19T01:35:29.406925"
+    },
+    {
+      "english": "The ATM kept rejecting my card.",
+      "japanese": "ATMでカードが通りませんでした。",
+      "transliteration": "ATM de kaado ga toorimasen deshita",
+      "category": "Finance",
+      "generated_at": "2026-11-19T01:35:29.406938"
+    },
+    {
+      "english": "I’m short on cash right now.",
+      "japanese": "今、現金が足りません。",
+      "transliteration": "ima, genkin ga tarimasen",
+      "category": "Finance",
+      "generated_at": "2026-11-19T01:35:29.406940"
+    },
+    {
+      "english": "Can you check this charge for me?",
+      "japanese": "この請求を調べてもらえますか。",
+      "transliteration": "kono seikyuu o shirabete moraemasu ka",
+      "category": "Finance",
+      "generated_at": "2026-11-19T01:35:29.406942"
+    },
+    {
+      "english": "My payment is pending in the app.",
+      "japanese": "アプリで支払いが保留になっています。",
+      "transliteration": "apur i de shihara i ga ho ryuu ni natte imasu",
+      "category": "Finance",
+      "generated_at": "2026-11-19T01:35:29.406943"
     }
   ],
-  "last_updated": "2026-11-18T23:41:00.214784"
+  "last_updated": "2026-11-19T01:35:29.406945"
 }
