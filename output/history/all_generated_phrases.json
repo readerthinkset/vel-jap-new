@@ -3275,7 +3275,42 @@
       "transliteration": "Shinpai shinaide, watashi ga iru yo.",
       "category": "Balance",
       "generated_at": "2026-11-20T06:56:11.227686"
+    },
+    {
+      "english": "I open my curtains, then breathe outside.",
+      "japanese": "カーテンを開けて、外の空気を吸う。",
+      "transliteration": "kāten o akete, soto no kūki o suu.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-20T19:33:30.818661"
+    },
+    {
+      "english": "I make coffee, and wait quietly.",
+      "japanese": "コーヒーを淹れて、静かに待つ。",
+      "transliteration": "kōhī o irete, shizuka ni matsu.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-20T19:33:30.818675"
+    },
+    {
+      "english": "I eat breakfast while checking the news.",
+      "japanese": "朝ごはんを食べながらニュースを見る。",
+      "transliteration": "asagohan o tabenagara nyūsu o miru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-20T19:33:30.818677"
+    },
+    {
+      "english": "I pack my lunch, quickly.",
+      "japanese": "お弁当を素早く詰める。",
+      "transliteration": "obentō o subayaku tsumӗru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-20T19:33:30.818678"
+    },
+    {
+      "english": "I fill my water bottle up.",
+      "japanese": "マイボトルに水を入れる。",
+      "transliteration": "maibotoru ni mizu o ireru.",
+      "category": "Daily Routine",
+      "generated_at": "2026-11-20T19:33:30.818680"
     }
   ],
-  "last_updated": "2026-11-20T06:56:11.227688"
+  "last_updated": "2026-11-20T19:33:30.818682"
 }
