@@ -3310,7 +3310,42 @@
       "transliteration": "maibotoru ni mizu o ireru.",
       "category": "Daily Routine",
       "generated_at": "2026-11-20T19:33:30.818680"
+    },
+    {
+      "english": "I’m going to study Japanese after dinner.",
+      "japanese": "夕食のあとに日本語を勉強します。",
+      "transliteration": "Yūshoku no ato ni Nihongo o benkyō shimasu.",
+      "category": "Purpose",
+      "generated_at": "2026-11-20T21:39:18.231078"
+    },
+    {
+      "english": "I want to travel, so I’m saving money.",
+      "japanese": "旅行したいから、お金を貯めています。",
+      "transliteration": "Ryokō shitai kara, okane o tameteimasu.",
+      "category": "Purpose",
+      "generated_at": "2026-11-20T21:39:18.231090"
+    },
+    {
+      "english": "Please speak slowly, I’m still learning.",
+      "japanese": "ゆっくり話してください、まだ勉強中です。",
+      "transliteration": "Yukkuri hanashite kudasai, mada benkyōchū desu.",
+      "category": "Purpose",
+      "generated_at": "2026-11-20T21:39:18.231091"
+    },
+    {
+      "english": "I’ll call you when I get home.",
+      "japanese": "家に帰ったら、電話します。",
+      "transliteration": "Ie ni kaettara, denwa shimasu.",
+      "category": "Purpose",
+      "generated_at": "2026-11-20T21:39:18.231092"
+    },
+    {
+      "english": "I came early, so I can sit down.",
+      "japanese": "早く来たので、座れます。",
+      "transliteration": "Hayaku kita node, suwaremasu.",
+      "category": "Purpose",
+      "generated_at": "2026-11-20T21:39:18.231093"
     }
   ],
-  "last_updated": "2026-11-20T19:33:30.818682"
+  "last_updated": "2026-11-20T21:39:18.231095"
 }
