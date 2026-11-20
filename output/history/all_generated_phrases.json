@@ -3240,7 +3240,42 @@
       "transliteration": "Konnichiwa, shigoto wa dou desu ka.",
       "category": "Greetings",
       "generated_at": "2026-11-20T01:32:37.113765"
+    },
+    {
+      "english": "I’m calm now, things are settling.",
+      "japanese": "今は落ち着いてる、落ち着いてきたよ。",
+      "transliteration": "Ima wa ochitsuiteru, ochitsuite kita yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-20T06:56:11.227666"
+    },
+    {
+      "english": "Breathe with me, we’ll be fine.",
+      "japanese": "一緒に深呼吸して、大丈夫だよ。",
+      "transliteration": "Issho ni shinkokyuu shite, daijoubu da yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-20T06:56:11.227680"
+    },
+    {
+      "english": "It’s okay, let’s slow down.",
+      "japanese": "大丈夫、ゆっくりいこう。",
+      "transliteration": "Daijoubu, yukkuri ikou.",
+      "category": "Balance",
+      "generated_at": "2026-11-20T06:56:11.227682"
+    },
+    {
+      "english": "I’ll handle it, one step at a time.",
+      "japanese": "任せて、ひとつずつ進めるよ。",
+      "transliteration": "Makasete, hitotsu zutsu susumeru yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-20T06:56:11.227684"
+    },
+    {
+      "english": "No worries, I’ve got you covered.",
+      "japanese": "心配しないで、私がいるよ。",
+      "transliteration": "Shinpai shinaide, watashi ga iru yo.",
+      "category": "Balance",
+      "generated_at": "2026-11-20T06:56:11.227686"
     }
   ],
-  "last_updated": "2026-11-20T01:32:37.113767"
+  "last_updated": "2026-11-20T06:56:11.227688"
 }
