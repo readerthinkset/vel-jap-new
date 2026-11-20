@@ -3205,7 +3205,42 @@
       "transliteration": "Mainichi sukoshi zutsu tsuyoku natte ru.",
       "category": "Strength",
       "generated_at": "2026-11-19T23:28:04.499254"
+    },
+    {
+      "english": "Hello, how’s it going today?",
+      "japanese": "こんにちは、今日はどうですか。",
+      "transliteration": "Konnichiwa, kyou wa dou desu ka.",
+      "category": "Greetings",
+      "generated_at": "2026-11-20T01:32:37.113747"
+    },
+    {
+      "english": "Hi! Long time, how have you been?",
+      "japanese": "やあ、久しぶりですね。",
+      "transliteration": "Yaa, hisashiburi desu ne.",
+      "category": "Greetings",
+      "generated_at": "2026-11-20T01:32:37.113762"
+    },
+    {
+      "english": "Good morning! Are you doing okay?",
+      "japanese": "おはようございます、元気ですか。",
+      "transliteration": "Ohayou gozaimasu, genki desu ka.",
+      "category": "Greetings",
+      "generated_at": "2026-11-20T01:32:37.113764"
+    },
+    {
+      "english": "Good morning, have a great day.",
+      "japanese": "おはよう、今日もがんばってね。",
+      "transliteration": "Ohayou, kyou mo ganbatte ne.",
+      "category": "Greetings",
+      "generated_at": "2026-11-20T01:32:37.113764"
+    },
+    {
+      "english": "Good afternoon! How’s work going?",
+      "japanese": "こんにちは、仕事はどうですか。",
+      "transliteration": "Konnichiwa, shigoto wa dou desu ka.",
+      "category": "Greetings",
+      "generated_at": "2026-11-20T01:32:37.113765"
     }
   ],
-  "last_updated": "2026-11-19T23:28:04.499256"
+  "last_updated": "2026-11-20T01:32:37.113767"
 }
