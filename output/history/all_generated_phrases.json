@@ -3485,7 +3485,42 @@
       "transliteration": "Shoshinsha ni wa, nani ga osusume desu ka.",
       "category": "Restaurant",
       "generated_at": "2026-11-21T18:38:12.374562"
+    },
+    {
+      "english": "Mom, the laundry is ready.",
+      "japanese": "お母さん、洗濯物ができたよ。",
+      "transliteration": "Okaasan, sentakumono ga dekita yo.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-21T20:20:04.428324"
+    },
+    {
+      "english": "Dad, please look at this photo.",
+      "japanese": "お父さん、これ見てくれる？",
+      "transliteration": "Otōsan, kore mitekureru?",
+      "category": "Family Terms",
+      "generated_at": "2026-11-21T20:20:04.428342"
+    },
+    {
+      "english": "Mom, I’m feeling sick today.",
+      "japanese": "お母さん、今日は体調が悪いよ。",
+      "transliteration": "Okaasan, kyou wa chōshoku ga warui yo.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-21T20:20:04.428343"
+    },
+    {
+      "english": "Dad, can I stay out late?",
+      "japanese": "お父さん、遅くまでいていい？",
+      "transliteration": "Otōsan, osoku made ite ii?",
+      "category": "Family Terms",
+      "generated_at": "2026-11-21T20:20:04.428345"
+    },
+    {
+      "english": "Mom, I bought your favorite tea.",
+      "japanese": "お母さん、お気に入りのお茶買ったよ。",
+      "transliteration": "Okaasan, okiniiri no ocha katta yo.",
+      "category": "Family Terms",
+      "generated_at": "2026-11-21T20:20:04.428346"
     }
   ],
-  "last_updated": "2026-11-21T18:38:12.374564"
+  "last_updated": "2026-11-21T20:20:04.428348"
 }
