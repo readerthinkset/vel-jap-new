@@ -3450,7 +3450,42 @@
       "transliteration": "jibun o hokorashiku omou,",
       "category": "Feelings",
       "generated_at": "2026-11-21T06:51:21.793688"
+    },
+    {
+      "english": "Good evening, is this seat taken?",
+      "japanese": "こんばんは、この席は空いていますか。",
+      "transliteration": "Konbanwa, kono seki wa aiteimasu ka.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T18:38:12.374543"
+    },
+    {
+      "english": "How long is the wait, roughly?",
+      "japanese": "だいたい、待ち時間はどれくらいですか。",
+      "transliteration": "Daitai, machijikan wa dore kurai desu ka.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T18:38:12.374557"
+    },
+    {
+      "english": "May I have some water, please?",
+      "japanese": "お水をいただけますか。",
+      "transliteration": "Omizu o itadakemasu ka.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T18:38:12.374560"
+    },
+    {
+      "english": "Could we have the bill, please?",
+      "japanese": "お会計をお願いできますか。",
+      "transliteration": "Okaikei o onegai dekimasu ka.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T18:38:12.374561"
+    },
+    {
+      "english": "What do you recommend for beginners?",
+      "japanese": "初心者には、何がおすすめですか。",
+      "transliteration": "Shoshinsha ni wa, nani ga osusume desu ka.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T18:38:12.374562"
     }
   ],
-  "last_updated": "2026-11-21T06:51:21.793690"
+  "last_updated": "2026-11-21T18:38:12.374564"
 }
