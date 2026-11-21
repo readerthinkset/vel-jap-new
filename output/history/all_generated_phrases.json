@@ -3520,7 +3520,42 @@
       "transliteration": "Okaasan, okiniiri no ocha katta yo.",
       "category": "Family Terms",
       "generated_at": "2026-11-21T20:20:04.428346"
+    },
+    {
+      "english": "Excuse me, where is the station?",
+      "japanese": "すみません、駅はどこですか。",
+      "transliteration": "sumimasen, eki wa doko desu ka",
+      "category": "Common Expressions",
+      "generated_at": "2026-11-21T22:06:35.615128"
+    },
+    {
+      "english": "Nice to meet you, I’m Ken.",
+      "japanese": "はじめまして、ケンです。",
+      "transliteration": "hajimemashite, Ken desu",
+      "category": "Common Expressions",
+      "generated_at": "2026-11-21T22:06:35.615143"
+    },
+    {
+      "english": "Sorry, I don’t understand.",
+      "japanese": "ごめんなさい、わかりません。",
+      "transliteration": "gomen nasai, wakarimasen",
+      "category": "Common Expressions",
+      "generated_at": "2026-11-21T22:06:35.615144"
+    },
+    {
+      "english": "Please speak a little slower.",
+      "japanese": "もう少しゆっくり話してください。",
+      "transliteration": "mou sukoshi yukkuri hanashite kudasai",
+      "category": "Common Expressions",
+      "generated_at": "2026-11-21T22:06:35.615145"
+    },
+    {
+      "english": "Is this seat taken?",
+      "japanese": "この席、空いてますか。",
+      "transliteration": "kono seki, aitemasu ka",
+      "category": "Common Expressions",
+      "generated_at": "2026-11-21T22:06:35.615148"
     }
   ],
-  "last_updated": "2026-11-21T20:20:04.428348"
+  "last_updated": "2026-11-21T22:06:35.615149"
 }
