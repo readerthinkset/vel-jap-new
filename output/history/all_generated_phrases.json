@@ -3660,7 +3660,42 @@
       "transliteration": "arigatou, kyou wa tsuiteru.",
       "category": "Joy",
       "generated_at": "2026-11-22T18:58:40.337025"
+    },
+    {
+      "english": "A kitten is chasing a string",
+      "japanese": "子猫がひもを追いかけてる",
+      "transliteration": "Koneko ga himo o oikakeru",
+      "category": "Animals",
+      "generated_at": "2026-11-22T20:32:34.353585"
+    },
+    {
+      "english": "The cat just woke up, yawn",
+      "japanese": "猫が起きたばかり、あくび",
+      "transliteration": "Neko ga okita bakari, akubi",
+      "category": "Animals",
+      "generated_at": "2026-11-22T20:32:34.353616"
+    },
+    {
+      "english": "That dog is digging in the yard",
+      "japanese": "あの犬が庭で掘ってる",
+      "transliteration": "Ano inu ga niwa de hotte ru",
+      "category": "Animals",
+      "generated_at": "2026-11-22T20:32:34.353620"
+    },
+    {
+      "english": "My horse seems calm today",
+      "japanese": "私の馬は今日は落ち着いてる",
+      "transliteration": "Watashi no uma wa kyou wa ochitsuiteru",
+      "category": "Animals",
+      "generated_at": "2026-11-22T20:32:34.353623"
+    },
+    {
+      "english": "Look, a cow is grazing",
+      "japanese": "見て、牛が草を食べてる",
+      "transliteration": "Mite, ushi ga kusa o tabeteru",
+      "category": "Animals",
+      "generated_at": "2026-11-22T20:32:34.353626"
     }
   ],
-  "last_updated": "2026-11-22T18:58:40.337027"
+  "last_updated": "2026-11-22T20:32:34.353633"
 }
