@@ -3625,7 +3625,42 @@
       "transliteration": "san-ji ni yoyaku ga arimasu.",
       "category": "Time",
       "generated_at": "2026-11-22T06:24:25.490728"
+    },
+    {
+      "english": "Good morning, today feels great!",
+      "japanese": "おはよう、今日最高だよ。",
+      "transliteration": "ohayou, kyou saikou da yo.",
+      "category": "Joy",
+      "generated_at": "2026-11-22T18:58:40.337009"
+    },
+    {
+      "english": "I’m so happy to see you!",
+      "japanese": "会えてうれしいよ。",
+      "transliteration": "aete ureshii yo.",
+      "category": "Joy",
+      "generated_at": "2026-11-22T18:58:40.337020"
+    },
+    {
+      "english": "That’s awesome, I love it!",
+      "japanese": "すごい、最高だね！",
+      "transliteration": "sugoi, saikou da ne!",
+      "category": "Joy",
+      "generated_at": "2026-11-22T18:58:40.337021"
+    },
+    {
+      "english": "Nice! Let’s celebrate together.",
+      "japanese": "いいね、一緒にお祝いしよう。",
+      "transliteration": "ii ne, issho ni oiwai shiyou.",
+      "category": "Joy",
+      "generated_at": "2026-11-22T18:58:40.337023"
+    },
+    {
+      "english": "Thank you, I feel lucky today.",
+      "japanese": "ありがとう、今日はついてる。",
+      "transliteration": "arigatou, kyou wa tsuiteru.",
+      "category": "Joy",
+      "generated_at": "2026-11-22T18:58:40.337025"
     }
   ],
-  "last_updated": "2026-11-22T06:24:25.490730"
+  "last_updated": "2026-11-22T18:58:40.337027"
 }
