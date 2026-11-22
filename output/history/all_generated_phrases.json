@@ -3590,7 +3590,42 @@
       "transliteration": "Shinpai shinai de, ouen shiteru yo.",
       "category": "Inspiration",
       "generated_at": "2026-11-22T00:00:34.586152"
+    },
+    {
+      "english": "Could you tell me the time, please?",
+      "japanese": "いま何時か、教えてくれませんか。",
+      "transliteration": "ima nanji ka, oshiete kuremasen ka.",
+      "category": "Time",
+      "generated_at": "2026-11-22T06:24:25.490712"
+    },
+    {
+      "english": "What time does it start?",
+      "japanese": "何時に始まりますか。",
+      "transliteration": "nanji ni hajimarimasu ka.",
+      "category": "Time",
+      "generated_at": "2026-11-22T06:24:25.490725"
+    },
+    {
+      "english": "Is it already past six?",
+      "japanese": "もう六時を過ぎていますか。",
+      "transliteration": "mou roku-ji o sugite imasu ka.",
+      "category": "Time",
+      "generated_at": "2026-11-22T06:24:25.490726"
+    },
+    {
+      "english": "The meeting starts at nine.",
+      "japanese": "会議は九時に始まります。",
+      "transliteration": "kaigi wa ku-ji ni hajimarimasu.",
+      "category": "Time",
+      "generated_at": "2026-11-22T06:24:25.490727"
+    },
+    {
+      "english": "I have an appointment at three.",
+      "japanese": "三時に予約があります。",
+      "transliteration": "san-ji ni yoyaku ga arimasu.",
+      "category": "Time",
+      "generated_at": "2026-11-22T06:24:25.490728"
     }
   ],
-  "last_updated": "2026-11-22T00:00:34.586153"
+  "last_updated": "2026-11-22T06:24:25.490730"
 }
