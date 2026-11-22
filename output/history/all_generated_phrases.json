@@ -3695,7 +3695,42 @@
       "transliteration": "Mite, ushi ga kusa o tabeteru",
       "category": "Animals",
       "generated_at": "2026-11-22T20:32:34.353626"
+    },
+    {
+      "english": "Where is my laundry basket?",
+      "japanese": "ランドリーバスケットはどこですか。",
+      "transliteration": "Randori basuketto wa doko desu ka.",
+      "category": "Clothes",
+      "generated_at": "2026-11-22T22:21:51.653623"
+    },
+    {
+      "english": "I can't find my favorite hat.",
+      "japanese": "お気に入りの帽子が見つからない。",
+      "transliteration": "Okiniri no bōshi ga mitsukaranai.",
+      "category": "Clothes",
+      "generated_at": "2026-11-22T22:21:51.653637"
+    },
+    {
+      "english": "My pants are too tight today.",
+      "japanese": "今日、ズボンがきつい。",
+      "transliteration": "Kyou, zubon ga tsurai.",
+      "category": "Clothes",
+      "generated_at": "2026-11-22T22:21:51.653639"
+    },
+    {
+      "english": "Is this sweater warm enough?",
+      "japanese": "このセーター、あったかいですか。",
+      "transliteration": "Kono sētā, attakai desu ka.",
+      "category": "Clothes",
+      "generated_at": "2026-11-22T22:21:51.653640"
+    },
+    {
+      "english": "I think my shirt is inside out.",
+      "japanese": "シャツが裏返しみたい。",
+      "transliteration": "Shatsu ga ura gaeshi mitai.",
+      "category": "Clothes",
+      "generated_at": "2026-11-22T22:21:51.653641"
     }
   ],
-  "last_updated": "2026-11-22T20:32:34.353633"
+  "last_updated": "2026-11-22T22:21:51.653643"
 }
