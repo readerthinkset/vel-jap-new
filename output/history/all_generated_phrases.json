@@ -3730,7 +3730,42 @@
       "transliteration": "Shatsu ga ura gaeshi mitai.",
       "category": "Clothes",
       "generated_at": "2026-11-22T22:21:51.653641"
+    },
+    {
+      "english": "It’s okay, I forgive you.",
+      "japanese": "だいじょうぶ、許します。",
+      "transliteration": "daijōbu, yurushimasu.",
+      "category": "Forgiveness",
+      "generated_at": "2026-11-23T00:33:09.082840"
+    },
+    {
+      "english": "Please forgive me, I was wrong.",
+      "japanese": "ごめんなさい、許してね。",
+      "transliteration": "gomennasai, yurushite ne.",
+      "category": "Forgiveness",
+      "generated_at": "2026-11-23T00:33:09.082853"
+    },
+    {
+      "english": "I forgive you, let’s move on.",
+      "japanese": "許すよ、次に行こう。",
+      "transliteration": "yurusu yo, tsugi ni ikō.",
+      "category": "Forgiveness",
+      "generated_at": "2026-11-23T00:33:09.082856"
+    },
+    {
+      "english": "No hard feelings, I forgive you.",
+      "japanese": "気にしないで、許します。",
+      "transliteration": "ki ni shinaide, yurushimasu.",
+      "category": "Forgiveness",
+      "generated_at": "2026-11-23T00:33:09.082858"
+    },
+    {
+      "english": "I understand, so I forgive you.",
+      "japanese": "わかるよ、だから許す。",
+      "transliteration": "wakaru yo, dakara yurusu.",
+      "category": "Forgiveness",
+      "generated_at": "2026-11-23T00:33:09.082860"
     }
   ],
-  "last_updated": "2026-11-22T22:21:51.653643"
+  "last_updated": "2026-11-23T00:33:09.082862"
 }
