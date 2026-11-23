@@ -3765,7 +3765,42 @@
       "transliteration": "wakaru yo, dakara yurusu.",
       "category": "Forgiveness",
       "generated_at": "2026-11-23T00:33:09.082860"
+    },
+    {
+      "english": "The sun is really strong today.",
+      "japanese": "今日は日差しが強いね。",
+      "transliteration": "Kyou wa hizashi ga tsuyoi ne.",
+      "category": "Weather",
+      "generated_at": "2026-11-23T07:15:57.121661"
+    },
+    {
+      "english": "It’s cloudy again, doesn’t feel nice.",
+      "japanese": "また曇ってるね、気分が良くない。",
+      "transliteration": "Mata kumotteru ne, kibun ga yoku nai.",
+      "category": "Weather",
+      "generated_at": "2026-11-23T07:15:57.121672"
+    },
+    {
+      "english": "A light breeze is coming from the sea.",
+      "japanese": "海から、さわやかな風が吹いてる。",
+      "transliteration": "Umi kara, sawayakana kaze ga fuiteiru.",
+      "category": "Weather",
+      "generated_at": "2026-11-23T07:15:57.121674"
+    },
+    {
+      "english": "The wind is chilly, bring a coat.",
+      "japanese": "風が冷たいから、上着を持って。",
+      "transliteration": "Kaze ga tsumetai kara, uwagi o motte.",
+      "category": "Weather",
+      "generated_at": "2026-11-23T07:15:57.121675"
+    },
+    {
+      "english": "It might drizzle later this afternoon.",
+      "japanese": "午後に少し霧雨かもね。",
+      "transliteration": "Gogo ni sukoshi kirisame kamo ne.",
+      "category": "Weather",
+      "generated_at": "2026-11-23T07:15:57.121677"
     }
   ],
-  "last_updated": "2026-11-23T00:33:09.082862"
+  "last_updated": "2026-11-23T07:15:57.121679"
 }
