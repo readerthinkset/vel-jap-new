@@ -3800,7 +3800,42 @@
       "transliteration": "Gogo ni sukoshi kirisame kamo ne.",
       "category": "Weather",
       "generated_at": "2026-11-23T07:15:57.121677"
+    },
+    {
+      "english": "I’ll go first, even if it’s hard.",
+      "japanese": "大変でも、私が先に行くよ。",
+      "transliteration": "Taihen demo, watashi ga saki ni iku yo.",
+      "category": "Courage",
+      "generated_at": "2026-11-23T23:18:28.423686"
+    },
+    {
+      "english": "I won’t run, I’ll face it.",
+      "japanese": "逃げないで、向き合う。",
+      "transliteration": "Nigenaide, mukiau.",
+      "category": "Courage",
+      "generated_at": "2026-11-23T23:18:28.423699"
+    },
+    {
+      "english": "Today, I choose brave words.",
+      "japanese": "今日は、勇気ある言葉を選ぶ。",
+      "transliteration": "Kyou wa, yuuki aru kotoba o erabu.",
+      "category": "Courage",
+      "generated_at": "2026-11-23T23:18:28.423701"
+    },
+    {
+      "english": "I can handle this, slowly.",
+      "japanese": "ゆっくりでも、これはできる。",
+      "transliteration": "Yukkuri demo, kore wa dekiru.",
+      "category": "Courage",
+      "generated_at": "2026-11-23T23:18:28.423703"
+    },
+    {
+      "english": "No more hiding, I’ll speak up.",
+      "japanese": "もう隠れないで、話す。",
+      "transliteration": "Mou kakurenai de, hanasu.",
+      "category": "Courage",
+      "generated_at": "2026-11-23T23:18:28.423705"
     }
   ],
-  "last_updated": "2026-11-23T07:15:57.121679"
+  "last_updated": "2026-11-23T23:18:28.423707"
 }
