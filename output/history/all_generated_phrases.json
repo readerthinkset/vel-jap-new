@@ -3905,7 +3905,42 @@
       "transliteration": "Kyou mo dareka ni, arigatou.",
       "category": "Self Improvement",
       "generated_at": "2026-11-24T03:37:54.337851"
+    },
+    {
+      "english": "My tooth hurts, can you help?",
+      "japanese": "歯が痛いんです、助けてもらえますか。",
+      "transliteration": "Ha ga itain desu, tasukete moraemasu ka.",
+      "category": "Body Parts",
+      "generated_at": "2026-11-24T04:32:23.009827"
+    },
+    {
+      "english": "My throat feels sore today.",
+      "japanese": "喉が今日すごく痛い。",
+      "transliteration": "Nodo ga kyou sugoku itai.",
+      "category": "Body Parts",
+      "generated_at": "2026-11-24T04:32:23.009840"
+    },
+    {
+      "english": "My nose is runny, sorry.",
+      "japanese": "鼻水が出るんです、すみません。",
+      "transliteration": "Hanamizu ga deru n desu, sumimasen.",
+      "category": "Body Parts",
+      "generated_at": "2026-11-24T04:32:23.009841"
+    },
+    {
+      "english": "My ears feel clogged, I think.",
+      "japanese": "耳が詰まってる感じがする。",
+      "transliteration": "Mimi ga tsumatteru kanji ga suru.",
+      "category": "Body Parts",
+      "generated_at": "2026-11-24T04:32:23.009843"
+    },
+    {
+      "english": "I hurt my wrist, it hurts.",
+      "japanese": "手首をぶつけた、痛い。",
+      "transliteration": "Tekubi o butsuketa, itai.",
+      "category": "Body Parts",
+      "generated_at": "2026-11-24T04:32:23.009844"
     }
   ],
-  "last_updated": "2026-11-24T03:37:54.337853"
+  "last_updated": "2026-11-24T04:32:23.009845"
 }
