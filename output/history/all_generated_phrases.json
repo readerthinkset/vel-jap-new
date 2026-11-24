@@ -3975,7 +3975,42 @@
       "transliteration": "Hidash i ga kao ni attakai.",
       "category": "Nature",
       "generated_at": "2026-11-24T09:38:50.949227"
+    },
+    {
+      "english": "How do I update this app?",
+      "japanese": "このアプリを更新するにはどうしますか。",
+      "transliteration": "Kono apuri o kōshin suru ni wa dō shimasu ka.",
+      "category": "Technology",
+      "generated_at": "2026-11-24T21:53:08.862141"
+    },
+    {
+      "english": "Where is the settings menu?",
+      "japanese": "設定メニューはどこですか。",
+      "transliteration": "Settei menyū wa doko desu ka.",
+      "category": "Technology",
+      "generated_at": "2026-11-24T21:53:08.862151"
+    },
+    {
+      "english": "I need to turn on Bluetooth.",
+      "japanese": "Bluetoothをオンにしたいです。",
+      "transliteration": "Bluetooth o on ni shitai desu.",
+      "category": "Technology",
+      "generated_at": "2026-11-24T21:53:08.862153"
+    },
+    {
+      "english": "My laptop is getting very slow.",
+      "japanese": "ノートパソコンがすごく遅いです。",
+      "transliteration": "Nōto pasokon ga sugoku osoi desu.",
+      "category": "Technology",
+      "generated_at": "2026-11-24T21:53:08.862155"
+    },
+    {
+      "english": "Is the server down today?",
+      "japanese": "今日、サーバーは落ちてますか。",
+      "transliteration": "Kyō, sābā wa ochite masu ka.",
+      "category": "Technology",
+      "generated_at": "2026-11-24T21:53:08.862156"
     }
   ],
-  "last_updated": "2026-11-24T09:38:50.949229"
+  "last_updated": "2026-11-24T21:53:08.862158"
 }
