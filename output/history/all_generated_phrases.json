@@ -3835,7 +3835,42 @@
       "transliteration": "Mou kakurenai de, hanasu.",
       "category": "Courage",
       "generated_at": "2026-11-23T23:18:28.423705"
+    },
+    {
+      "english": "Take a slow breath, exhale slowly.",
+      "japanese": "ゆっくり息を吸って、ゆっくり吐いて。",
+      "transliteration": "yukkuri iki o sutte, yukkuri haite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-24T01:26:32.726963"
+    },
+    {
+      "english": "Relax your eyes, soften your gaze.",
+      "japanese": "目をゆるめて、視線をやわらげて。",
+      "transliteration": "me o yurumete, shisen o yawarangete.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-24T01:26:32.726978"
+    },
+    {
+      "english": "Unclench your hands, let go a bit.",
+      "japanese": "手の力を抜いて、少しゆるめて。",
+      "transliteration": "te no chikara o nuite, sukoshi yurumete.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-24T01:26:32.726980"
+    },
+    {
+      "english": "Notice the rise and fall of breath.",
+      "japanese": "息の上がり下がりに気づいて。",
+      "transliteration": "iki no agari sagari ni kizuite.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-24T01:26:32.726981"
+    },
+    {
+      "english": "Feel your chest gently lift and settle.",
+      "japanese": "胸がふわっと上がって、落ち着く。",
+      "transliteration": "mune ga fu واتto agatte, ochi tsuku.",
+      "category": "Mindfulness",
+      "generated_at": "2026-11-24T01:26:32.726983"
     }
   ],
-  "last_updated": "2026-11-23T23:18:28.423707"
+  "last_updated": "2026-11-24T01:26:32.726986"
 }
