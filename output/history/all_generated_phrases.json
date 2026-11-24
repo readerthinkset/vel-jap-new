@@ -4010,7 +4010,42 @@
       "transliteration": "Kyō, sābā wa ochite masu ka.",
       "category": "Technology",
       "generated_at": "2026-11-24T21:53:08.862156"
+    },
+    {
+      "english": "Please wait here, I’m finishing up.",
+      "japanese": "ここで少し待ってください、今終わるところです。",
+      "transliteration": "koko de sukoshi matte kudasai, ima owaru tokoro desu.",
+      "category": "Patience",
+      "generated_at": "2026-11-24T23:21:13.375693"
+    },
+    {
+      "english": "Hold tight, we’re almost at the door.",
+      "japanese": "もうすぐです、ドアの前で待ってください。",
+      "transliteration": "mou sugu desu, doa no mae de matte kudasai.",
+      "category": "Patience",
+      "generated_at": "2026-11-24T23:21:13.375708"
+    },
+    {
+      "english": "Thanks, I’ll handle it in a minute.",
+      "japanese": "ありがとう、すぐ対応しますね。少し待ってて。",
+      "transliteration": "arigatou, sugu taiou shimasu ne. sukoshi matte te.",
+      "category": "Patience",
+      "generated_at": "2026-11-24T23:21:13.375709"
+    },
+    {
+      "english": "Wait, I need to find my keys.",
+      "japanese": "ちょっと待って、鍵を探させて。",
+      "transliteration": "chotto matte, kagi o sagasete.",
+      "category": "Patience",
+      "generated_at": "2026-11-24T23:21:13.375710"
+    },
+    {
+      "english": "Sorry, please wait. I’m on my way back.",
+      "japanese": "ごめんね、待って。今戻るところ。",
+      "transliteration": "gomen ne, matte. ima modoru tokoro.",
+      "category": "Patience",
+      "generated_at": "2026-11-24T23:21:13.375710"
     }
   ],
-  "last_updated": "2026-11-24T21:53:08.862158"
+  "last_updated": "2026-11-24T23:21:13.375712"
 }
