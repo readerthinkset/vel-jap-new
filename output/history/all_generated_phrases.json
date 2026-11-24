@@ -3940,7 +3940,42 @@
       "transliteration": "Tekubi o butsuketa, itai.",
       "category": "Body Parts",
       "generated_at": "2026-11-24T04:32:23.009844"
+    },
+    {
+      "english": "The wind is cool today, yes.",
+      "japanese": "今日は風が涼しいよ。",
+      "transliteration": "Kyou wa kaze ga suzushii yo.",
+      "category": "Nature",
+      "generated_at": "2026-11-24T09:38:50.949211"
+    },
+    {
+      "english": "Listen, the birds are singing.",
+      "japanese": "聞いて、鳥が鳴いてるよ。",
+      "transliteration": "Kiite, tori ga naiteru yo.",
+      "category": "Nature",
+      "generated_at": "2026-11-24T09:38:50.949222"
+    },
+    {
+      "english": "It might rain soon, be careful.",
+      "japanese": "もうすぐ雨かも、気をつけてね。",
+      "transliteration": "Mou sugu ame kamo, ki o tsukete ne.",
+      "category": "Nature",
+      "generated_at": "2026-11-24T09:38:50.949224"
+    },
+    {
+      "english": "The river looks calm right now.",
+      "japanese": "今、川が静かに見える。",
+      "transliteration": "Ima, kawa ga shizuka ni mieru.",
+      "category": "Nature",
+      "generated_at": "2026-11-24T09:38:50.949226"
+    },
+    {
+      "english": "Sunlight feels warm on my face.",
+      "japanese": "日差しが顔にあったかい。",
+      "transliteration": "Hidash i ga kao ni attakai.",
+      "category": "Nature",
+      "generated_at": "2026-11-24T09:38:50.949227"
     }
   ],
-  "last_updated": "2026-11-24T04:32:23.009845"
+  "last_updated": "2026-11-24T09:38:50.949229"
 }
