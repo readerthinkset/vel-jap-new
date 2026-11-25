@@ -4115,7 +4115,42 @@
       "transliteration": "Anata, sugoku kehairi ga dekiru ne.",
       "category": "Kindness",
       "generated_at": "2026-11-25T03:16:22.588601"
+    },
+    {
+      "english": "Hey there, how are things today?",
+      "japanese": "やあ、今日はどう？",
+      "transliteration": "yaa, kyou wa dou?",
+      "category": "Greetings",
+      "generated_at": "2026-11-25T08:10:10.252284"
+    },
+    {
+      "english": "Hi, nice to see you again!",
+      "japanese": "こんにちは、また会えてうれしいです。",
+      "transliteration": "konnichiwa, mata aete ureshii desu.",
+      "category": "Greetings",
+      "generated_at": "2026-11-25T08:10:10.252301"
+    },
+    {
+      "english": "Hello! What’s new with you?",
+      "japanese": "こんにちは！最近どう？",
+      "transliteration": "konnichiwa! saikin dou?",
+      "category": "Greetings",
+      "generated_at": "2026-11-25T08:10:10.252302"
+    },
+    {
+      "english": "Good to see you, how’s life?",
+      "japanese": "会えてうれしい、元気？",
+      "transliteration": "aete ureshii, genki?",
+      "category": "Greetings",
+      "generated_at": "2026-11-25T08:10:10.252303"
+    },
+    {
+      "english": "Hey! Did you get here okay?",
+      "japanese": "ねえ、大丈夫だった？",
+      "transliteration": "nee, daijoubu datta?",
+      "category": "Greetings",
+      "generated_at": "2026-11-25T08:10:10.252304"
     }
   ],
-  "last_updated": "2026-11-25T03:16:22.588603"
+  "last_updated": "2026-11-25T08:10:10.252306"
 }
