@@ -4045,7 +4045,42 @@
       "transliteration": "gomen ne, matte. ima modoru tokoro.",
       "category": "Patience",
       "generated_at": "2026-11-24T23:21:13.375710"
+    },
+    {
+      "english": "Please call the police, right now.",
+      "japanese": "警察を今すぐ呼んでください。",
+      "transliteration": "Keisatsu o ima sugude yonde kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-25T01:18:41.973834"
+    },
+    {
+      "english": "Fire! Call the fire department, please.",
+      "japanese": "火事です。消防に連絡してください。",
+      "transliteration": "Kaji desu. Shobo ni renraku shite kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-25T01:18:41.973847"
+    },
+    {
+      "english": "I think I swallowed something dangerous.",
+      "japanese": "危ないものを飲み込んだかも。",
+      "transliteration": "Abunai mono o nomikonda kamo.",
+      "category": "Emergency",
+      "generated_at": "2026-11-25T01:18:41.973848"
+    },
+    {
+      "english": "My head is bleeding, quickly.",
+      "japanese": "頭が出血している、早く。",
+      "transliteration": "Atama ga shuketsu shite iru, hayaku.",
+      "category": "Emergency",
+      "generated_at": "2026-11-25T01:18:41.973849"
+    },
+    {
+      "english": "I’m having severe pain, please help.",
+      "japanese": "すごく痛いです、助けてください。",
+      "transliteration": "Sugoku itai desu, tasukete kudasai.",
+      "category": "Emergency",
+      "generated_at": "2026-11-25T01:18:41.973851"
     }
   ],
-  "last_updated": "2026-11-24T23:21:13.375712"
+  "last_updated": "2026-11-25T01:18:41.973852"
 }
