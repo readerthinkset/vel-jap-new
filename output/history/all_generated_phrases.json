@@ -4080,7 +4080,42 @@
       "transliteration": "Sugoku itai desu, tasukete kudasai.",
       "category": "Emergency",
       "generated_at": "2026-11-25T01:18:41.973851"
+    },
+    {
+      "english": "Thanks for helping me today.",
+      "japanese": "きょう手伝ってくれてありがとう。",
+      "transliteration": "Kyou tetsudatte kurete arigatou.",
+      "category": "Kindness",
+      "generated_at": "2026-11-25T03:16:22.588582"
+    },
+    {
+      "english": "I really appreciate your support.",
+      "japanese": "あなたの支えがとてもありがたいです。",
+      "transliteration": "Anata no sasae ga totemo arigatai desu.",
+      "category": "Kindness",
+      "generated_at": "2026-11-25T03:16:22.588596"
+    },
+    {
+      "english": "That note made me smile.",
+      "japanese": "そのメモ、うれしくて笑っちゃった。",
+      "transliteration": "Sono memo, ureshikute wara chatta.",
+      "category": "Kindness",
+      "generated_at": "2026-11-25T03:16:22.588598"
+    },
+    {
+      "english": "You remembered what I needed.",
+      "japanese": "私の必要なものを覚えていてくれたんだね。",
+      "transliteration": "Watashi no hitsuyou na mono wo oboete ite kuretan da ne.",
+      "category": "Kindness",
+      "generated_at": "2026-11-25T03:16:22.588600"
+    },
+    {
+      "english": "You’re so considerate, seriously.",
+      "japanese": "あなた、すごく気配りができるね。",
+      "transliteration": "Anata, sugoku kehairi ga dekiru ne.",
+      "category": "Kindness",
+      "generated_at": "2026-11-25T03:16:22.588601"
     }
   ],
-  "last_updated": "2026-11-25T01:18:41.973852"
+  "last_updated": "2026-11-25T03:16:22.588603"
 }
