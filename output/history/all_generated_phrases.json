@@ -4150,7 +4150,42 @@
       "transliteration": "nee, daijoubu datta?",
       "category": "Greetings",
       "generated_at": "2026-11-25T08:10:10.252304"
+    },
+    {
+      "english": "I love this song, it’s catchy.",
+      "japanese": "この曲、大好き、すごくキャッチー。",
+      "transliteration": "kono kyoku, daisuki, sugoku kyatchii.",
+      "category": "Music",
+      "generated_at": "2026-11-25T20:59:03.627626"
+    },
+    {
+      "english": "That melody is really beautiful.",
+      "japanese": "そのメロディ、すごくきれい。",
+      "transliteration": "sono merodi, sugoku kirei.",
+      "category": "Music",
+      "generated_at": "2026-11-25T20:59:03.627638"
+    },
+    {
+      "english": "Can you play it again, please?",
+      "japanese": "もう一回、かけてくれる？",
+      "transliteration": "mou ikkai, kakete kureru?",
+      "category": "Music",
+      "generated_at": "2026-11-25T20:59:03.627640"
+    },
+    {
+      "english": "I’m humming along right now.",
+      "japanese": "今、口ずさんでる。",
+      "transliteration": "ima, kuchizusanderu.",
+      "category": "Music",
+      "generated_at": "2026-11-25T20:59:03.627641"
+    },
+    {
+      "english": "The beat feels so good.",
+      "japanese": "このビート、気持ちいい。",
+      "transliteration": "kono biito, kimochii.",
+      "category": "Music",
+      "generated_at": "2026-11-25T20:59:03.627642"
     }
   ],
-  "last_updated": "2026-11-25T08:10:10.252306"
+  "last_updated": "2026-11-25T20:59:03.627643"
 }
