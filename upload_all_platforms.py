@@ -160,7 +160,10 @@ def missing_creds(platform: str) -> list[str]:
         page = _env("FACEBOOK_PAGE_ID", "FB_PAGE_ID")
         return [name for name, value in (("FACEBOOK_ACCESS_TOKEN", token), ("FACEBOOK_PAGE_ID", page)) if not value]
     if platform == "instagram":
-        return [] if _env("INSTAGRAM_ACCESS_TOKEN", "IG_ACCESS_TOKEN") else ["INSTAGRAM_ACCESS_TOKEN"]
+        token = _env("INSTAGRAM_ACCESS_TOKEN", "IG_ACCESS_TOKEN", "FACEBOOK_ACCESS_TOKEN", "FB_ACCESS_TOKEN", "FB_PAGE_ACCESS_TOKEN")
+        account = _env("INSTAGRAM_ACCOUNT_ID", "IG_USER_ID")
+        page = _env("FACEBOOK_PAGE_ID", "FB_PAGE_ID")
+        return [] if token and (account or page) else ["INSTAGRAM_ACCESS_TOKEN"]
     if platform == "youtube":
         return [] if all(_env(a, b) for a, b in (
             ("YT_CLIENT_ID", "YOUTUBE_CLIENT_ID"),
@@ -175,9 +178,10 @@ def missing_creds(platform: str) -> list[str]:
     return [k for k in CREDS[platform] if not os.getenv(k, "").strip()]
 
 
-def upload_to_all(lesson: dict, dry_run: bool = False) -> dict:
+def upload_to_all(lesson: dict, dry_run: bool = False, platforms: list[str] | None = None) -> dict:
     funcs = load_uploaders()
     caption = long_caption(lesson)
+    selected = [p for p in (platforms or list(uploaders)) if p in uploaders]
     results = {
         "timestamp": datetime.now().isoformat(),
         "video": str(lesson["video"]),
@@ -200,7 +204,7 @@ def upload_to_all(lesson: dict, dry_run: bool = False) -> dict:
     print("=" * 78)
 
     yt_title = yt_description = yt_tags = None
-    for platform in uploaders:
+    for platform in selected:
         name = DISPLAY[platform]
         print(f"\n{name} ...")
         results["attempted"].append(platform)
@@ -227,7 +231,8 @@ def upload_to_all(lesson: dict, dry_run: bool = False) -> dict:
             result = None
             if platform == "facebook":
                 result = func(video_path=str(lesson["video"]), description=caption,
-                              title=f"{LANG_NAME}: {lesson['category']}")
+                              title=f"{LANG_NAME}: {lesson['category']}",
+                              thumbnail_path=str(lesson["thumbnail"]))
             elif platform == "instagram":
                 result = func(video_path=str(lesson["video"]), caption=caption, is_story=False)
             elif platform == "youtube":
@@ -290,7 +295,14 @@ def main():
     parser.add_argument("--lesson", help="lesson folder (default: newest in output/lessons)")
     parser.add_argument("--dry-run", action="store_true", help="check credentials and captions without uploading")
     parser.add_argument("--print-captions", action="store_true", help="print every caption variant and exit")
+    parser.add_argument("--platforms", help="comma-separated platforms to publish (default: all configured)")
+    parser.add_argument("--require", help="comma-separated platforms that must succeed, e.g. facebook,instagram")
     args = parser.parse_args()
+
+    platforms = [p.strip().lower() for p in (args.platforms or "").split(",") if p.strip()]
+    unknown = [p for p in platforms if p not in uploaders]
+    if unknown:
+        parser.error(f"unknown platform(s): {', '.join(unknown)}")
 
     folder = find_latest_lesson(args.lesson)
     if not folder:
@@ -307,7 +319,14 @@ def main():
         print(threads_caption(lesson))
         return
 
-    results = upload_to_all(lesson, dry_run=args.dry_run)
+    results = upload_to_all(lesson, dry_run=args.dry_run, platforms=platforms or None)
+    if not args.dry_run:
+        required = [p.strip().lower() for p in (args.require or "").split(",") if p.strip()]
+        missing_required = [p for p in required if p not in results["successful"]]
+        if missing_required:
+            print("\n  REQUIRED PLATFORMS NOT PUBLISHED: "
+                  + ", ".join(DISPLAY.get(p, p) for p in missing_required))
+            sys.exit(1)
     if results["successful"] or (args.dry_run and results["skipped"]):
         sys.exit(0)
     sys.exit(1)
