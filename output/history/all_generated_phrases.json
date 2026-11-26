@@ -4220,7 +4220,42 @@
       "transliteration": "ochitsuite, ima o taisetsu ni suru yo",
       "category": "Balance",
       "generated_at": "2026-11-25T22:53:09.603738"
+    },
+    {
+      "english": "Go straight ahead, then slow down.",
+      "japanese": "まっすぐ進んで、ゆっくりにしてね。",
+      "transliteration": "Massugu susunde, yukkuri ni shite ne.",
+      "category": "Directions",
+      "generated_at": "2026-11-26T00:53:23.631962"
+    },
+    {
+      "english": "Turn left at the traffic light.",
+      "japanese": "信号で左に曲がってください。",
+      "transliteration": "Shingō de hidari ni magatte kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-26T00:53:23.631974"
+    },
+    {
+      "english": "Take the first right, please.",
+      "japanese": "一つ目を右に曲がってください。",
+      "transliteration": "Hitotsume o migi ni magatte kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-26T00:53:23.631976"
+    },
+    {
+      "english": "At the corner, turn right.",
+      "japanese": "角で右に曲がってください。",
+      "transliteration": "Kado de migi ni magatte kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-26T00:53:23.631977"
+    },
+    {
+      "english": "Walk until you see a pharmacy.",
+      "japanese": "薬局が見えるまで歩いてください。",
+      "transliteration": "Yakkyoku ga mieru made aruite kudasai.",
+      "category": "Directions",
+      "generated_at": "2026-11-26T00:53:23.631979"
     }
   ],
-  "last_updated": "2026-11-25T22:53:09.603740"
+  "last_updated": "2026-11-26T00:53:23.631981"
 }
