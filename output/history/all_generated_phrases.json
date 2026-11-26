@@ -4290,7 +4290,42 @@
       "transliteration": "Yasai o takusan irete kudasai.",
       "category": "Food",
       "generated_at": "2026-11-26T02:34:22.745994"
+    },
+    {
+      "english": "This wall looks pale green, today.",
+      "japanese": "この壁は淡い緑に見えます。",
+      "transliteration": "Kono kabe wa awai midori ni miemasu.",
+      "category": "Colors",
+      "generated_at": "2026-11-26T07:58:19.522774"
+    },
+    {
+      "english": "The curtain is deep blue, wow.",
+      "japanese": "カーテンは濃い青だね。",
+      "transliteration": "Kāten wa koi ao da ne.",
+      "category": "Colors",
+      "generated_at": "2026-11-26T07:58:19.522786"
+    },
+    {
+      "english": "Your hoodie is bright yellow, nice.",
+      "japanese": "そのパーカー、鮮やかな黄色だね。",
+      "transliteration": "Sono pākā, azayakana kiiro da ne.",
+      "category": "Colors",
+      "generated_at": "2026-11-26T07:58:19.522787"
+    },
+    {
+      "english": "I bought a light purple mug.",
+      "japanese": "薄紫のマグカップを買った。",
+      "transliteration": "Usu-murasaki no magukappu o katta.",
+      "category": "Colors",
+      "generated_at": "2026-11-26T07:58:19.522788"
+    },
+    {
+      "english": "The berries look red and juicy, though.",
+      "japanese": "その実は赤くて、つやつやだね。",
+      "transliteration": "Sono mi wa akakute, tsuya-tsuya da ne.",
+      "category": "Colors",
+      "generated_at": "2026-11-26T07:58:19.522789"
     }
   ],
-  "last_updated": "2026-11-26T02:34:22.745996"
+  "last_updated": "2026-11-26T07:58:19.522791"
 }
