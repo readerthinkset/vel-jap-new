@@ -4255,7 +4255,42 @@
       "transliteration": "Yakkyoku ga mieru made aruite kudasai.",
       "category": "Directions",
       "generated_at": "2026-11-26T00:53:23.631979"
+    },
+    {
+      "english": "I’m craving ramen, today.",
+      "japanese": "今日はラーメンが食べたいです。",
+      "transliteration": "Kyou wa raamen ga tabetai desu.",
+      "category": "Food",
+      "generated_at": "2026-11-26T02:34:22.745975"
+    },
+    {
+      "english": "This sushi is really fresh.",
+      "japanese": "この寿司、すごく新鮮です。",
+      "transliteration": "Kono sushi, sugoku shinsen desu.",
+      "category": "Food",
+      "generated_at": "2026-11-26T02:34:22.745991"
+    },
+    {
+      "english": "Can I get spicy curry, please?",
+      "japanese": "スパイスカレーをください。",
+      "transliteration": "Supaisu karee o kudasai.",
+      "category": "Food",
+      "generated_at": "2026-11-26T02:34:22.745992"
+    },
+    {
+      "english": "I’ll have noodles, not rice.",
+      "japanese": "ご飯じゃなくて麺にします。",
+      "transliteration": "Gohan ja nakute men ni shimasu.",
+      "category": "Food",
+      "generated_at": "2026-11-26T02:34:22.745993"
+    },
+    {
+      "english": "Please add extra vegetables.",
+      "japanese": "野菜をたくさん入れてください。",
+      "transliteration": "Yasai o takusan irete kudasai.",
+      "category": "Food",
+      "generated_at": "2026-11-26T02:34:22.745994"
     }
   ],
-  "last_updated": "2026-11-26T00:53:23.631981"
+  "last_updated": "2026-11-26T02:34:22.745996"
 }
