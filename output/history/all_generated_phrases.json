@@ -31457,7 +31457,28 @@
       "transliteration": "Hitotsu shitsumon shite, atarashii koto o manabu.",
       "category": "Purpose",
       "generated_at": "2026-11-26T14:02:37.804338"
+    },
+    {
+      "english": "I’m here for you, anytime.",
+      "japanese": "いつでも、あなたのそばにいるよ。",
+      "transliteration": "Itsudemo, anata no soba ni iru yo.",
+      "category": "Friendship",
+      "generated_at": "2026-11-27T03:58:53.320334"
+    },
+    {
+      "english": "Let’s walk through tomorrow together.",
+      "japanese": "明日も、一緒に歩こうね。",
+      "transliteration": "Ashita mo, issho ni arukou ne.",
+      "category": "Friendship",
+      "generated_at": "2026-11-27T03:58:53.320349"
+    },
+    {
+      "english": "Your messages make me feel safe.",
+      "japanese": "あなたのメッセージ、安心するよ。",
+      "transliteration": "Anata no messeeji, anshin suru yo.",
+      "category": "Friendship",
+      "generated_at": "2026-11-27T03:58:53.320351"
     }
   ],
-  "last_updated": "2026-11-26T14:02:37.804340"
+  "last_updated": "2026-11-27T03:58:53.320352"
 }
