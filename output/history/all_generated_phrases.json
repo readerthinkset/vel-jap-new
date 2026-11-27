@@ -31478,7 +31478,28 @@
       "transliteration": "Anata no messeeji, anshin suru yo.",
       "category": "Friendship",
       "generated_at": "2026-11-27T03:58:53.320351"
+    },
+    {
+      "english": "A puppy is wagging its tail.",
+      "japanese": "子犬がしっぽを振っている。",
+      "transliteration": "Koinu ga shippo o futte iru.",
+      "category": "Animals",
+      "generated_at": "2026-11-27T11:37:07.619013"
+    },
+    {
+      "english": "The bird flutters from branch to branch.",
+      "japanese": "鳥が枝から枝へ飛び回る。",
+      "transliteration": "Tori ga e da kara e da e tobimawaru.",
+      "category": "Animals",
+      "generated_at": "2026-11-27T11:37:07.619031"
+    },
+    {
+      "english": "The cat is hiding under the sofa.",
+      "japanese": "猫がソファの下に隠れている。",
+      "transliteration": "Neko ga sofa no shita ni kakurete iru.",
+      "category": "Animals",
+      "generated_at": "2026-11-27T11:37:07.619033"
     }
   ],
-  "last_updated": "2026-11-27T03:58:53.320352"
+  "last_updated": "2026-11-27T11:37:07.619034"
 }
