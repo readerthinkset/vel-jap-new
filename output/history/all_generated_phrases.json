@@ -31499,7 +31499,28 @@
       "transliteration": "Neko ga sofa no shita ni kakurete iru.",
       "category": "Animals",
       "generated_at": "2026-11-27T11:37:07.619033"
+    },
+    {
+      "english": "It’s misty this morning, isn’t it?",
+      "japanese": "今朝は霧っぽいですね。",
+      "transliteration": "Kesa wa kirippoi desu ne.",
+      "category": "Weather",
+      "generated_at": "2026-11-27T19:20:39.675448"
+    },
+    {
+      "english": "The humidity feels heavy today.",
+      "japanese": "今日は湿気がつらいです。",
+      "transliteration": "Kyou wa shikke ga tsurai desu.",
+      "category": "Weather",
+      "generated_at": "2026-11-27T19:20:39.675463"
+    },
+    {
+      "english": "It’s freezing outside, wear a coat.",
+      "japanese": "外はすごく寒いよ、コートを。",
+      "transliteration": "Soto wa sugoku samui yo, kooto o.",
+      "category": "Weather",
+      "generated_at": "2026-11-27T19:20:39.675464"
     }
   ],
-  "last_updated": "2026-11-27T11:37:07.619034"
+  "last_updated": "2026-11-27T19:20:39.675466"
 }
