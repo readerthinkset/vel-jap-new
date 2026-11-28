@@ -31520,7 +31520,28 @@
       "transliteration": "Soto wa sugoku samui yo, kooto o.",
       "category": "Weather",
       "generated_at": "2026-11-27T19:20:39.675464"
+    },
+    {
+      "english": "Stand up, even if my knees shake.",
+      "japanese": "膝が震えても、立ち上がろう。",
+      "transliteration": "Hiza ga furue te mo, tachiagou.",
+      "category": "Courage",
+      "generated_at": "2026-11-28T03:46:53.842736"
+    },
+    {
+      "english": "I’ll try, one more time, calmly.",
+      "japanese": "落ち着いて、もう一度やってみる。",
+      "transliteration": "Ochitsuite, mou ichido yatte miru.",
+      "category": "Courage",
+      "generated_at": "2026-11-28T03:46:53.842746"
+    },
+    {
+      "english": "Let’s do it, despite the worry.",
+      "japanese": "不安があっても、やってみよう。",
+      "transliteration": "Fuan ga atte mo, yatte miyou.",
+      "category": "Courage",
+      "generated_at": "2026-11-28T03:46:53.842748"
     }
   ],
-  "last_updated": "2026-11-27T19:20:39.675466"
+  "last_updated": "2026-11-28T03:46:53.842750"
 }
