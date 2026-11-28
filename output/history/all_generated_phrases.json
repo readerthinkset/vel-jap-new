@@ -31541,7 +31541,28 @@
       "transliteration": "Fuan ga atte mo, yatte miyou.",
       "category": "Courage",
       "generated_at": "2026-11-28T03:46:53.842748"
+    },
+    {
+      "english": "I’m a bit lonely today, though.",
+      "japanese": "今日は少しさみしい、でも。",
+      "transliteration": "Kyou wa sukoshi samishii, demo.",
+      "category": "Feelings",
+      "generated_at": "2026-11-28T11:09:08.088617"
+    },
+    {
+      "english": "My stomach feels tense, right now.",
+      "japanese": "今、胃がきゅっとしてる。",
+      "transliteration": "Ima, i ga kyutto shiteru.",
+      "category": "Feelings",
+      "generated_at": "2026-11-28T11:09:08.088634"
+    },
+    {
+      "english": "I’m embarrassed about that message.",
+      "japanese": "あのメッセージ、恥ずかしい。",
+      "transliteration": "Ano messeeji, hazukashii.",
+      "category": "Feelings",
+      "generated_at": "2026-11-28T11:09:08.088635"
     }
   ],
-  "last_updated": "2026-11-28T03:46:53.842750"
+  "last_updated": "2026-11-28T11:09:08.088637"
 }
